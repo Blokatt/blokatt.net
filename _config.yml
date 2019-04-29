@@ -28,11 +28,16 @@ youtube_username:  blokatt
 twitch_username: blokatt
 instagram_username:  blokatt
 
+permalink: pretty
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
+
+collections:
+  visuals:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

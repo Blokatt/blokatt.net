@@ -5,7 +5,7 @@ title: Home
 # ASDASDASD
 <ul>
   {% for post in site.posts %}
-    <li>
+    <li>    
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
