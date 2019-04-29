@@ -1,0 +1,13 @@
+---
+# Jekyll needs front matter for SCSS files
+---
+
+$sidebar-bg-color: #1e1730;
+$link-color: #1e1730;
+$sidebar-sticky: false;
+
+$root-font-family: "Inconsolata", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$root-font-size: 1rem !default;
+$root-line-height: 1.5 !default;
+
+@import "hydeout";

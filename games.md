@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Games
 sidebar_link: true
 ---
 

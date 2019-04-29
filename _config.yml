@@ -16,7 +16,7 @@
 title: Blokatt
 email: jan@blokatt.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Game development, creative coding and audio by Jan Vorisek.
+  Things by Jan Vorisek.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blokatt.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: blokatt
@@ -30,7 +30,7 @@ instagram_username:  blokatt
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
 

@@ -1,0 +1,31 @@
+<div id="sidebar">  
+  <header>    
+    <p>
+
+    <div style="position:relative;">
+    <iframe src="/assets/3D/glHeader.html" style="box-sizing: border-box; overflow: hidden; width: 100%; border-style: dotted; border-width: 2px; border-color: white" scrolling="no" height="200"></iframe>    
+    <a href="{{ site.baseurl }}/" style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; border: none; z-index:2;"></a>
+    </div>
+    
+    </p>
+    <!--
+    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
+      <a href="{{ site.baseurl }}/">
+        {% unless page.url == "/" %}
+          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
+        {% endunless %}
+        {{ site.title }}
+      </a>
+    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+    -->
+    <p class="lead">{{ site.description }}</p>
+  </header>
+  {% include sidebar-nav-links.html %}
+
+  {% if site.version %}
+    <span class="site-version">Currently v{{ site.version }}</span>
+  {% endif %}
+
+  {% include sidebar-icon-links.html %}
+  {% include copyright.html %}
+</div>
