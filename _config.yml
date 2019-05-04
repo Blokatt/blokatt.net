@@ -16,7 +16,7 @@
 title: Blokatt
 email: jan@blokatt.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Things by Jan Vorisek.
+  Description here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blokatt.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: blokatt
