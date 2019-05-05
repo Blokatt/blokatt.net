@@ -1,0 +1,10 @@
+---
+title:  "Low pH"
+thumbnail: "/assets/visual_previews/thumbnail_low-ph.webm"
+description: "Don't put this in your hair."
+date: 2019-01-16 20:38:22
+categories: visual shader glsl glitch corrosion acid buffers
+shadertoy_id: "3sl3WX" 
+layout: shadertoy
+published: false
+---

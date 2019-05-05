@@ -25,57 +25,95 @@ sidebar_sort_order: 0
 
 section {
     display: flex;
-    overflow: hidden;
+    overflow: hidden;    
     padding: 5px;
     flex: 0 1 20%;
     
    }
-   img {    
-    height: 140px;
-    width: 140px;
-    object-fit: cover;
- 
-   }
+img {    
+height: 140px;
+width: 140px;
+object-fit: cover;
+}
+
+.visual-thumbnail {
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  overflow:hidden;
+  border: 2px black solid;
+}
+
+.visual-video {
+  width:100%;
+  height:140px;
+  overflow: hidden;
+}
+
+.visual-video video {
+  /*object-fit: contain;*/
+/*       object-fit: fill; */
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+video::-webkit-media-controls {
+  display:none !important;
 }
 
 </style>
 
 
 <div class="row"> 
-{% for item in site.visuals %}
+{% assign sorted = (site.visuals | sort: 'date') | reverse %}
+{% assign lastYear = time.date | date: '%Y' %}
+{% for item in sorted %}
+
   
   <p>
-  <section><div class="visual-thumbnail"><a href="{{ item.url }}"><img src="{{ item.thumbnail }}"></a></div></section> 
-  <section><div class="visual-thumbnail"><a href="{{ item.url }}"><img src="{{ item.thumbnail }}"></a></div></section>  
-  <section><div class="visual-thumbnail"><a href="{{ item.url }}"><img src="{{ item.thumbnail }}"></a></div></section>  
-  <section><div class="visual-thumbnail"><a href="{{ item.url }}"><img src="{{ item.thumbnail }}"></a></div></section>  
-  <section><div class="visual-thumbnail"><a href="{{ item.url }}"><img src="{{ item.thumbnail }}"></a></div></section>  
-  <section><div class="visual-thumbnail"><a href="{{ item.url }}"><img src="{{ item.thumbnail }}"></a></div></section>  
-  </p>
+  {% assign curYear = item.date | date: '%Y' %}
+  {% if curYear != lastYear %}
+    {% assign lastYear = curYear %}
+</p>
+</div>    
+<h2>{{curYear}}</h2>
+<hr style = "margin-top: 5px">
+<div class="row"> 
+<p>
 
+  {% endif %}
+
+  <section>
+  <div class="visual-thumbnail">
+  <a href="{{ item.url }}" alt="{{ item.title }}" >
+
+  <div class="visual-video">
+  <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}" type="video/webm"></video>
+
+  </div>
+  <!--<  img src="{{ item.thumbnail }}">!-->
+  </a>
+  </div></section>  
+  </p>
 
 {% endfor %}
 
 </div>
 
-<div class="row"> 
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/256/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/256/256/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-  <section><div class="visual-thumbnail"><a href=""><img src="https://loremflickr.com/145/145/"></a></div></section>
-</div>
 
+<script>
+var figure = $(".visual-video").hover( hoverVideo, hideVideo );
 
+function hoverVideo(e) {      
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).currentTime = 0; 
+    $('video', this).get(0).pause(); 
+}
+</script>
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

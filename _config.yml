@@ -28,6 +28,8 @@ youtube_username:  blokatt
 twitch_username: blokatt
 instagram_username:  blokatt
 
+previews: /assets/visual_previews/
+
 permalink: pretty
 # Build settings
 markdown: kramdown
@@ -38,6 +40,7 @@ plugins:
 collections:
   visuals:
     output: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,9 @@
+---
+title:  "Voronoided"
+thumbnail: "/assets/visual_previews/thumbnail_voronoided.webm"
+description: "Looks cool, but it's pretty slow."
+date: 2019-02-21 19:34:21
+categories: visual shader glsl voronoi
+shadertoy_id: "wdsXRN" 
+layout: shadertoy
+---

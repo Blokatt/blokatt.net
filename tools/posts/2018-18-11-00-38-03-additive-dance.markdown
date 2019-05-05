@@ -1,0 +1,12 @@
+---
+title:  "Additive Dance"
+thumbnail: "https://www.shadertoy.com/media/shaders/XtyfDD.jpg"
+description: "Trying out inverse square law. 
+This time around, using dithering was pretty much required to avoid banding (because maths and such)!
+More to come!
+LMB scrubs through time."
+date: 2018-11-18 00:38:03
+categories: visual shader glsl motionblur dither rgb lights invsqrt
+shadertoy_id: "XtyfDD" 
+layout: shadertoy
+---

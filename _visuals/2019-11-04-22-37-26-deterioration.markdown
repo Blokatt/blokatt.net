@@ -1,0 +1,9 @@
+---
+title:  "Deterioration"
+thumbnail: "/assets/visual_previews/thumbnail_deterioration.webm"
+description: "A simple noise exercise."
+date: 2019-04-11 22:37:26
+categories: visual shader glsl fractal terrain fbm oil layers rust
+shadertoy_id: "3dBSW3" 
+layout: shadertoy
+---

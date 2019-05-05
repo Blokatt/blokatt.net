@@ -1,0 +1,13 @@
+---
+title:  "Twister95"
+thumbnail: "/assets/visual_previews/thumbnail_twister95.webm"
+description: "Left click to rotate!
+
+Just a little 90's screensaver-style twister effect.
+Nothing massively impressive, but pretty good to look at nonetheless.
+The code may change a bit in the future."
+date: 2018-09-03 02:09:14
+categories: visual shader glsl oldschool demoscene demo twister metal screensaver dithering scroller
+shadertoy_id: "4lyyW1" 
+layout: shadertoy
+---

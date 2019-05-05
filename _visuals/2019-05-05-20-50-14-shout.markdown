@@ -1,0 +1,9 @@
+---
+title:  "'Graham Kartna - These Are The Shout' Promo Animation"
+layout: post
+thumbnail: "/assets/visual_previews/thumbnail_shout.webm"
+description: "Left click to rotate!"
+date: 2019-05-05 19:50:14 +0100
+categories: visual shader glsl oldschool demoscene demo twister metal screensaver dithering scroller
+---
+

@@ -1,0 +1,11 @@
+---
+title:  "ConwayCam"
+thumbnail: "https://www.shadertoy.com/media/shaders/WdXSRr.jpg"
+description: "Wanted to see if I could use a live feed from my webcam to create cells in GoL.
+A single edge detection matrix wasn't quite cutting it, so I had to upgrade to Sobel, which seems to work well.
+Needs good light and contrast to work."
+date: 2019-02-17 11:28:26
+categories: visual shader glsl sobel webcam gameoflife convolutionkernel celluarautomata
+shadertoy_id: "WdXSRr" 
+layout: shadertoy
+---

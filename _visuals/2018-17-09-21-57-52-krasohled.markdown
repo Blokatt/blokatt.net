@@ -1,0 +1,12 @@
+---
+title:  "Krasohled"
+thumbnail: "/assets/visual_previews/thumbnail_krasohled.webm"
+description: "A teeny UV modulo experiment.
+Full screen viewing recommended.
+Try changing the textures!
+Left click shifts time."
+date: 2018-09-17 21:57:52
+categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
+shadertoy_id: "MtKcRc" 
+layout: shadertoy
+---

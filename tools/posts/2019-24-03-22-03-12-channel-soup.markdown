@@ -1,0 +1,9 @@
+---
+title:  "Channel Soup"
+thumbnail: "https://www.shadertoy.com/media/shaders/tdBSWR.jpg"
+description: "Originally written on my phone during a bus ride, updated a bit later."
+date: 2019-03-24 22:03:12
+categories: visual shader glsl fbm plasma rgb smoke
+shadertoy_id: "tdBSWR" 
+layout: shadertoy
+---
