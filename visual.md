@@ -27,9 +27,18 @@ section {
     display: flex;
     overflow: hidden;    
     padding: 5px;
-    flex: 0 1 20%;
-    
-   }
+    flex: 0 1 20%;    
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    display: flex;
+    overflow: hidden;    
+    padding: 5px;
+    flex: 0 1 33%;    
+  }
+}
+
 img {    
 height: 140px;
 width: 140px;
