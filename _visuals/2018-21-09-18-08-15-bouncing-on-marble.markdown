@@ -1,6 +1,6 @@
 ---
 title:  "Bouncing on Marble"
-thumbnail: "/assets/visual_previews/thumbnail_bouncing-on-marble.webm"
+thumbnail: "/assets/visual_previews/thumbnail_bouncing-on-marble"
 description: "Quality pogo time.
 Anti-aliasing is done by dynamically smoothing the texture generation function, so it's not 100% perfect, but screen-space sampling may be added later.
 Feedback appreciated!"

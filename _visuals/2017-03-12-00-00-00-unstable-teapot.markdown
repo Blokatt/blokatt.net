@@ -1,6 +1,6 @@
 ---
 title:  "Unstable Teapot"
-thumbnail: "/assets/visual_previews/thumbnail_unstable-teapot.webm"
+thumbnail: "/assets/visual_previews/thumbnail_unstable-teapot"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

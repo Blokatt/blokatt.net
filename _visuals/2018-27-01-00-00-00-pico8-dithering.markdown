@@ -1,6 +1,6 @@
 ---
 title:  "PICO-8 palette dithering demo"
-thumbnail: "/assets/visual_previews/thumbnail_pico8-dithering.webm"
+thumbnail: "/assets/visual_previews/thumbnail_pico8-dithering"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

@@ -1,6 +1,6 @@
 ---
 title:  "n = 10"
-thumbnail: "/assets/visual_previews/thumbnail_n-equals-10.webm"
+thumbnail: "/assets/visual_previews/thumbnail_n-equals-10"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

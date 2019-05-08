@@ -1,6 +1,6 @@
 ---
 title:  "Terrain"
-thumbnail: "/assets/visual_previews/thumbnail_terrain.webm"
+thumbnail: "/assets/visual_previews/thumbnail_terrain"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

@@ -1,6 +1,6 @@
 ---
 title:  "It's terminal."
-thumbnail: "/assets/visual_previews/thumbnail_its-terminal.webm"
+thumbnail: "/assets/visual_previews/thumbnail_its-terminal"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

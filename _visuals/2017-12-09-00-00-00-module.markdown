@@ -1,6 +1,6 @@
 ---
 title:  "Module"
-thumbnail: "/assets/visual_previews/thumbnail_module.webm"
+thumbnail: "/assets/visual_previews/thumbnail_module"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

@@ -40,9 +40,9 @@ section {
 }
 
 img {    
-height: 140px;
-width: 140px;
-object-fit: cover;
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
 }
 
 .visual-thumbnail {
@@ -50,9 +50,8 @@ object-fit: cover;
   -webkit-border-radius:10px;
   border-radius:20px;
   overflow:hidden;
-  border: 2px black solid;
+  border: 2px black solid;  
 
-  
 -webkit-transition: all 300ms cubic-bezier(0.345, 0, 0.245, 0.750); /* older webkit */
 -webkit-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750); 
    -moz-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750); 
@@ -66,7 +65,6 @@ object-fit: cover;
         transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750); /* custom */
 
   outline-style: dashed;
-
 
   outline-color: rgba(100, 20, 255, 0.25);
   outline-width: 2px;
@@ -115,6 +113,49 @@ object-fit: cover;
   height:100%;
 }
 
+
+@supports (-ms-ime-align:auto) {
+  .visual-thumbnail {
+    background-color: black;
+  }
+
+  section {
+    display: flex;
+    overflow: hidden;    
+    padding: 5px;
+    flex: 1 1 20%;    
+  }
+
+  @media only screen and (max-width: 600px) {
+    section {
+      display: flex;
+      overflow: hidden;    
+      padding: 5px;
+      flex: 1 1 33%;    
+    }
+  }
+
+  .visual-video {    
+    object-fit: cover;
+    width:140px;
+    height:140px;
+    overflow: hidden;
+  }
+
+  .visual-video video {
+    /*object-fit: contain;*/
+  /*       object-fit: fill; */
+    filter: sepia(100%) hue-rotate(220deg) contrast(100%);
+    -webkit-transition: filter 0.3s; /* Safari */
+    transition: filter 0.3s;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    width:100%;
+    height:100%;
+  }
+}
+
+
 .visual-video video:hover {
   filter: sepia(0%) hue-rotate(360deg) contrast(100%);
   -webkit-transition: filter 0.1s; /* Safari */
@@ -154,7 +195,8 @@ video::-webkit-media-controls {
   <a href="{{ item.url }}" title="{{ item.title }}" >
 
   <div class="visual-video">
-  <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}" type="video/webm"></video>
+  <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}.webm" type="video/webm"></video>
+  <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}.mp4" type="video/mp4"></video>
 
   </div>
   <!--<  img src="{{ item.thumbnail }}">!-->

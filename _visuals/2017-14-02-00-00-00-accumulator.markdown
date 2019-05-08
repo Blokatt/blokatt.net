@@ -1,6 +1,6 @@
 ---
 title:  "Accumulator"
-thumbnail: "/assets/visual_previews/thumbnail_accumulator.webm"
+thumbnail: "/assets/visual_previews/thumbnail_accumulator"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

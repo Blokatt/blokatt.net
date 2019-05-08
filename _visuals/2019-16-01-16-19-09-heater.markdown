@@ -1,6 +1,6 @@
 ---
 title:  "Heater"
-thumbnail: "/assets/visual_previews/thumbnail_heater.webm"
+thumbnail: "/assets/visual_previews/thumbnail_heater"
 description: "!! If the audio doesn't play, click the shader preview window right after refreshing the page !!
 Feedback.
 Music: https://soundcloud.com/blokatt/lineman-splice"

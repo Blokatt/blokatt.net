@@ -1,6 +1,6 @@
 ---
 title:  "Analysing Sample..."
-thumbnail: "/assets/visual_previews/thumbnail_analysing-sample.webm"
+thumbnail: "/assets/visual_previews/thumbnail_analysing-sample"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

@@ -1,6 +1,6 @@
 ---
 title:  "Fork it."
-thumbnail: "/assets/visual_previews/thumbnail_fork-it.webm"
+thumbnail: "/assets/visual_previews/thumbnail_fork-it"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

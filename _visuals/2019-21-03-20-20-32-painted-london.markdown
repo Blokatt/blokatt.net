@@ -1,6 +1,6 @@
 ---
 title:  "Painted London"
-thumbnail: "/assets/visual_previews/thumbnail_painted-london.webm"
+thumbnail: "/assets/visual_previews/thumbnail_painted-london"
 description: "A modified shader implementation of the Kuwahara filter with some subtle motion."
 date: 2019-03-21 20:20:32
 categories: visual shader glsl painting oil kuwahara

@@ -1,6 +1,6 @@
 ---
 title:  "Pondering"
-thumbnail: "/assets/visual_previews/thumbnail_pondering.webm"
+thumbnail: "/assets/visual_previews/thumbnail_pondering"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

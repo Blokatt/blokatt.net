@@ -1,6 +1,6 @@
 ---
 title:  "Halftoned London"
-thumbnail: "/assets/visual_previews/thumbnail_halftoned-london.webm"
+thumbnail: "/assets/visual_previews/thumbnail_halftoned-london"
 description: "Basic CMYK Halftoning with varying screen angles.
 Mouse Y - Detail
 Mouse X - DJing

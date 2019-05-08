@@ -1,6 +1,6 @@
 ---
 title:  "Array of Reflections"
-thumbnail: "/assets/visual_previews/thumbnail_array-of-reflections.webm"
+thumbnail: "/assets/visual_previews/thumbnail_array-of-reflections"
 description: "A teeny UV modulo experiment.
 Full screen viewing recommended.
 Try changing the textures!

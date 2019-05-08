@@ -1,6 +1,6 @@
 ---
 title:  "Multipass Median"
-thumbnail: "/assets/visual_previews/thumbnail_multipass-median.webm"
+thumbnail: "/assets/visual_previews/thumbnail_multipass-median"
 description: "Reasonably fast multipass median filter.
 Left part of the screen shows the original image, right part shows the filtered result.
 "
