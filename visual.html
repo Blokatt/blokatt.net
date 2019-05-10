@@ -66,7 +66,7 @@ img {
 
   outline-style: dashed;
 
-  outline-color: rgba(100, 20, 255, 0.25);
+  outline-color: rgba(100, 77, 189, 0.46);
   outline-width: 2px;
   outline-offset: 8px; 
 
@@ -162,13 +162,65 @@ img {
   transition: filter 0.1s;
 }
 
+.visual-title {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top : -3px;
+  margin-bottom : -3px;
+}
+
+@media only screen and (max-width:790px) {
+  .visual-title-wrapper {
+    display: none;
+  }  
+}
+
+
+
 video::-webkit-media-controls {
   display:none !important;
 }
-
 </style>
 
-<h3>Experiments</h3>
+<script>
+var charsTyped = 0;
+var titleDefault = "Experiments"
+var titleCurrent = "";
+var titleTo = titleDefault;
+var typeClock = 0;
+var typeUnderscoreOpacity = 0.0;
+
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+}
+
+function visualTitleUpdate() {
+  typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5) * (titleTo == titleDefault || titleCurrent != titleTo);
+  for (var j = 0; j < 1 + Math.round(Math.random() * 3.0); ++j) {  
+    if (titleCurrent.length < titleTo.length) {
+      titleCurrent = titleCurrent + String.fromCharCode(33 + Math.round(Math.random() * 93));
+    } else if (titleCurrent.length > titleTo.length) {
+      titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
+    }
+  
+    for (var i = 0; i < Math.min(titleCurrent.length, titleTo.length); ++i) {
+      if (titleTo[i] != titleCurrent[i] && Math.random() < .5) {               
+        titleCurrent = titleCurrent.replaceAt(i, titleTo[i].toString());
+        break;
+      }     
+    }            
+  }
+  
+  $(".visual-title").html("&gt; " + titleCurrent + "<span style = \'opacity: " + typeUnderscoreOpacity + ";\'>_</span>");
+  requestAnimationFrame(visualTitleUpdate);
+}
+requestAnimationFrame(visualTitleUpdate);
+</script>
+
+<span class = "visual-title-wrapper">
+<hr style = "margin-top: 5px; margin-bottom: 5px;">
+<h4 class = "visual-title">&gt;</h4>
+</span>
 <hr style = "margin-top: 5px; margin-bottom: 10px;">
 <div class="row"> 
 {% assign sorted = (site.visuals | sort: 'date') | reverse %}
@@ -191,8 +243,8 @@ video::-webkit-media-controls {
 {% endif %}
 !-->
   <section>
-  <div class="visual-thumbnail">
-  <a href="{{ item.url }}" title="{{ item.title }}" >
+  <div class="visual-thumbnail" data-title="{{ item.title }}">
+  <a href="{{ item.url }}">
 
   <div class="visual-video">
   <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}.webm" type="video/webm"></video>
@@ -225,11 +277,19 @@ $(".visual-thumbnail").each(function(i, obj) {
   });
 });
 
-/*
-$(".visual-video video").hover(function() {
-    $(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+
+$(".visual-thumbnail").hover(function() {
+    titleTo = $(this).data('title');    
+    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
 });
-*/
+
+
+$(".visual-thumbnail").mouseleave(function() {
+    titleTo = titleDefault;    
+    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+});
 
 function hoverVideo(e) {      
     $('video', this).get(0).play(); 
