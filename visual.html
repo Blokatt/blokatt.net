@@ -6,7 +6,6 @@ sidebar_sort_order: 0
 ---
 
 <style>
-
 .row {
     padding: 0;
     margin: 0;
@@ -175,8 +174,6 @@ img {
   }  
 }
 
-
-
 video::-webkit-media-controls {
   display:none !important;
 }
@@ -184,7 +181,7 @@ video::-webkit-media-controls {
 
 <script>
 var charsTyped = 0;
-var titleDefault = "Experiments"
+var titleDefault = "Experiments";
 var titleCurrent = "";
 var titleTo = titleDefault;
 var typeClock = 0;
@@ -194,11 +191,19 @@ String.prototype.replaceAt = function(index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
 }
 
+function randChar() {
+  return String.fromCharCode(33 + Math.round(Math.random() * 93));
+}
+
 function visualTitleUpdate() {
-  typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5) * (titleTo == titleDefault || titleCurrent != titleTo);
-  for (var j = 0; j < 1 + Math.round(Math.random() * 3.0); ++j) {  
+  // * (titleTo == titleDefault || titleCurrent != titleTo)
+  typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
+  if (Math.random() <= .15) {
+    titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());  
+  }
+  for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {  
     if (titleCurrent.length < titleTo.length) {
-      titleCurrent = titleCurrent + String.fromCharCode(33 + Math.round(Math.random() * 93));
+      titleCurrent = titleCurrent + randChar();
     } else if (titleCurrent.length > titleTo.length) {
       titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
     }
@@ -215,6 +220,20 @@ function visualTitleUpdate() {
   requestAnimationFrame(visualTitleUpdate);
 }
 requestAnimationFrame(visualTitleUpdate);
+
+var $win = $(window);
+
+function typeResize() {
+  var w = $(".content").width();  
+  $(".visual-title").css("font-size", (w * .03));
+}
+$(document).ready(function () {
+  typeResize();
+});
+$win.on('resize', typeResize);
+
+
+
 </script>
 
 <span class = "visual-title-wrapper">
