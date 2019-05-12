@@ -6,7 +6,7 @@ sidebar_sort_order: 0
 ---
 
 <style>
-.row {
+  .row {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -19,303 +19,314 @@ sidebar_sort_order: 0
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: stretch;     
-}
-
-section {
-    display: flex;
-    overflow: hidden;    
-    padding: 5px;
-    flex: 0 1 20%;    
-}
-
-@media only screen and (max-width: 600px) {
-  section {
-    display: flex;
-    overflow: hidden;    
-    padding: 5px;
-    flex: 0 1 33%;    
-  }
-}
-
-img {    
-  height: 140px;
-  width: 140px;
-  object-fit: cover;
-}
-
-.visual-thumbnail {
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:20px;
-  overflow:hidden;
-  border: 2px black solid;  
-
--webkit-transition: all 300ms cubic-bezier(0.345, 0, 0.245, 0.750); /* older webkit */
--webkit-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750); 
-   -moz-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750); 
-     -o-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750); 
-        transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750); /* custom */
-
--webkit-transition-timing-function: cubic-bezier(0.345, 0, 0.245, 0.750); /* older webkit */
--webkit-transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750); 
-   -moz-transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750); 
-     -o-transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750); 
-        transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750); /* custom */
-
-  outline-style: dashed;
-
-  outline-color: rgba(100, 77, 189, 0.46);
-  outline-width: 2px;
-  outline-offset: 8px; 
-
-}
-
-.visual-thumbnail:hover {  
--webkit-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1); /* older webkit */
--webkit-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005); 
-   -moz-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005); 
-     -o-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005); 
-        transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005); /* custom */
-
--webkit-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1); /* older webkit */
--webkit-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005); 
-   -moz-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005); 
-     -o-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005); 
-        transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005); /* custom */
-  
-  
-  border-radius: 5px;
-  outline-color: rgba(100, 0, 155, 0.0);
-  outline-width: 2px;
-  outline-offset: -10px;  
- 
-}
-
-.visual-video {
-  width:100%;
-  height:140px;
-  overflow: hidden;
-}
-
-.visual-video video {
-  /*object-fit: contain;*/
-/*       object-fit: fill; */
-  filter: sepia(100%) hue-rotate(220deg) contrast(100%);
-  -webkit-transition: filter 0.3s; /* Safari */
-  transition: filter 0.3s;
-  transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-
-  object-fit: cover;
-  width:100%;
-  height:100%;
-}
-
-
-@supports (-ms-ime-align:auto) {
-  .visual-thumbnail {
-    background-color: black;
+    align-items: stretch;
   }
 
   section {
     display: flex;
-    overflow: hidden;    
+    overflow: hidden;
     padding: 5px;
-    flex: 1 1 20%;    
+    flex: 0 1 20%;
   }
 
   @media only screen and (max-width: 600px) {
     section {
       display: flex;
-      overflow: hidden;    
+      overflow: hidden;
       padding: 5px;
-      flex: 1 1 33%;    
+      flex: 0 1 33%;
     }
   }
 
-  .visual-video {    
+  img {
+    height: 140px;
+    width: 140px;
     object-fit: cover;
-    width:140px;
-    height:140px;
+  }
+
+  .visual-thumbnail {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px black solid;
+
+    -webkit-transition: all 300ms cubic-bezier(0.345, 0, 0.245, 0.750);
+    /* older webkit */
+    -webkit-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -moz-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -o-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(0.345, 0, 0.245, 0.750);
+    /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -moz-transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -o-transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    transition-timing-function: cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    /* custom */
+
+    outline-style: dashed;
+
+    outline-color: rgba(100, 77, 189, 0.46);
+    outline-width: 2px;
+    outline-offset: 8px;
+
+  }
+
+  .visual-thumbnail:hover {
+    -webkit-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1);
+    /* older webkit */
+    -webkit-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -moz-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -o-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1);
+    /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -moz-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -o-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    /* custom */
+
+
+    border-radius: 5px;
+    outline-color: rgba(100, 0, 155, 0.0);
+    outline-width: 2px;
+    outline-offset: -10px;
+
+  }
+
+  .visual-video {
+    width: 100%;
+    height: 140px;
     overflow: hidden;
   }
 
   .visual-video video {
     /*object-fit: contain;*/
-  /*       object-fit: fill; */
+    /*       object-fit: fill; */
     filter: sepia(100%) hue-rotate(220deg) contrast(100%);
-    -webkit-transition: filter 0.3s; /* Safari */
+    -webkit-transition: filter 0.3s;
+    /* Safari */
     transition: filter 0.3s;
     transition-timing-function: ease-out;
     -webkit-transition-timing-function: ease-out;
-    width:100%;
-    height:100%;
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
-}
 
 
-.visual-video video:hover {
-  filter: sepia(0%) hue-rotate(360deg) contrast(100%);
-  -webkit-transition: filter 0.1s; /* Safari */
-  transition: filter 0.1s;
-}
+  @supports (-ms-ime-align:auto) {
+    .visual-thumbnail {
+      background-color: black;
+    }
 
-.visual-title {
-  overflow: hidden;
-  white-space: nowrap;
-  margin-top : -3px;
-  margin-bottom : -3px;
-}
+    section {
+      display: flex;
+      overflow: hidden;
+      padding: 5px;
+      flex: 1 1 20%;
+    }
 
-@media only screen and (max-width:790px) {
+    @media only screen and (max-width: 600px) {
+      section {
+        display: flex;
+        overflow: hidden;
+        padding: 5px;
+        flex: 1 1 33%;
+      }
+    }
+
+    .visual-video {
+      object-fit: cover;
+      width: 140px;
+      height: 140px;
+      overflow: hidden;
+    }
+
+    .visual-video video {
+      /*object-fit: contain;*/
+      /*       object-fit: fill; */
+      filter: sepia(100%) hue-rotate(220deg) contrast(100%);
+      -webkit-transition: filter 0.3s;
+      /* Safari */
+      transition: filter 0.3s;
+      transition-timing-function: ease-out;
+      -webkit-transition-timing-function: ease-out;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  .visual-video video:hover {
+    filter: sepia(0%) hue-rotate(360deg) contrast(100%);
+    -webkit-transition: filter 0.1s;
+    /* Safari */
+    transition: filter 0.1s;
+  }
+
+  .visual-title {
+    position: -webkit-sticky;
+
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
   .visual-title-wrapper {
-    display: none;
-  }  
-}
+    background-color: inherit;
+    position: sticky;
+    top: -60px;
+    z-index: 2;
+  }
 
-video::-webkit-media-controls {
-  display:none !important;
-}
+  @media only screen and (max-width:790px) {
+    .visual-title-wrapper {
+      display: none;
+    }
+  }
+
+  video::-webkit-media-controls {
+    display: none !important;
+  }
 </style>
 
 <script>
-var charsTyped = 0;
-var titleDefault = "Experiments";
-var titleCurrent = "";
-var titleTo = titleDefault;
-var typeClock = 0;
-var typeUnderscoreOpacity = 0.0;
+  var charsTyped = 0;
+  var titleDefault = "Experiments";
+  var titleCurrent = "";
+  var titleTo = titleDefault;
+  var typeClock = 0;
+  var typeUnderscoreOpacity = 0.0;
 
-String.prototype.replaceAt = function(index, replacement) {
+  String.prototype.replaceAt = function (index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-}
-
-function randChar() {
-  return String.fromCharCode(33 + Math.round(Math.random() * 93));
-}
-
-function visualTitleUpdate() {
-  // * (titleTo == titleDefault || titleCurrent != titleTo)
-  typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
-  if (Math.random() <= .15) {
-    titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());  
   }
-  for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {  
-    if (titleCurrent.length < titleTo.length) {
-      titleCurrent = titleCurrent + randChar();
-    } else if (titleCurrent.length > titleTo.length) {
-      titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
+
+  function randChar() {
+    return String.fromCharCode(33 + Math.round(Math.random() * 93));
+  }
+
+  function visualTitleUpdate() {
+    // * (titleTo == titleDefault || titleCurrent != titleTo)
+    typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
+    if (Math.random() <= .15) {
+      titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
     }
-  
-    for (var i = 0; i < Math.min(titleCurrent.length, titleTo.length); ++i) {
-      if (titleTo[i] != titleCurrent[i] && Math.random() < .5) {               
-        titleCurrent = titleCurrent.replaceAt(i, titleTo[i].toString());
-        break;
-      }     
-    }            
+    for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
+      if (titleCurrent.length < titleTo.length) {
+        titleCurrent = titleCurrent + randChar();
+      } else if (titleCurrent.length > titleTo.length) {
+        titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
+      }
+
+      for (var i = 0; i < Math.min(titleCurrent.length, titleTo.length); ++i) {
+        if (titleTo[i] != titleCurrent[i] && Math.random() < .5) {
+          titleCurrent = titleCurrent.replaceAt(i, titleTo[i].toString());
+          break;
+        }
+      }
+    }
+
+    $(".visual-title").html("&gt; " + titleCurrent + "<span style = \'opacity: " + typeUnderscoreOpacity + ";\'>_</span>");
+    requestAnimationFrame(visualTitleUpdate);
   }
-  
-  $(".visual-title").html("&gt; " + titleCurrent + "<span style = \'opacity: " + typeUnderscoreOpacity + ";\'>_</span>");
   requestAnimationFrame(visualTitleUpdate);
-}
-requestAnimationFrame(visualTitleUpdate);
 
-var $win = $(window);
+  var $win = $(window);
 
-function typeResize() {
-  var w = $(".content").width();  
-  $(".visual-title").css("font-size", (w * .03));
-}
-$(document).ready(function () {
-  typeResize();
-});
-$win.on('resize', typeResize);
-
-
-
+  function typeResize() {
+    var w = $(".content").width();
+    $(".visual-title").css("font-size", (w * .03));
+  }
+  $(document).ready(function () {
+    typeResize();
+  });
+  $win.on('resize', typeResize);
 </script>
 
-<span class = "visual-title-wrapper">
-<hr style = "margin-top: 5px; margin-bottom: 5px;">
-<h4 class = "visual-title">&gt;</h4>
-</span>
-<hr style = "margin-top: 5px; margin-bottom: 10px;">
-<div class="row"> 
-{% assign sorted = (site.visuals | sort: 'date') | reverse %}
-{% assign lastYear = time.date | date: '%Y' %}
-{% for item in sorted %}
+<div class="visual-title-wrapper">
+  <hr style="margin-top: 5px; margin-bottom: 5px;">
+  <h4 class="visual-title">&gt;</h4>
+  <hr style="margin-top: 5px; margin-bottom: 10px;">
+</div>
 
-
-<p>
-  
-{% assign curYear = item.date | date: '%Y' %}
-<!--
-{% if curYear != lastYear %}
-{% assign lastYear = curYear %}
-</p>
-</div>    
-<h2>{{curYear}}</h2>
-<hr style = "margin-top: 5px">
-<div class="row"> 
-<p>
-{% endif %}
-!-->
+<div class="row">
+  {% assign sorted = (site.visuals | sort: 'date') | reverse %}
+  {% assign lastYear = time.date | date: '%Y' %}
+  {% for item in sorted %}
+  <p>  
+  {% assign curYear = item.date | date: '%Y' %}
+  <!--
+  {% if curYear != lastYear %}
+  {% assign lastYear = curYear %}
+  </p></div><h2>{{curYear}}</h2><hr style = "margin-top: 5px"><div class="row"><p>
+  {% endif %}!-->
   <section>
-  <div class="visual-thumbnail" data-title="{{ item.title }}">
-  <a href="{{ item.url }}">
+    <div class="visual-thumbnail" data-title="{{ item.title }}">
+      <a href="{{ item.url }}">
 
-  <div class="visual-video">
-  <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}.webm" type="video/webm"></video>
-  <video muted loop preload="metadata"> <source src="{{ item.thumbnail }}.mp4" type="video/mp4"></video>
+        <div class="visual-video">
+          <video muted loop preload="metadata">
+            <source src="{{ item.thumbnail }}.webm" type="video/webm"></video>
+          <video muted loop preload="metadata">
+            <source src="{{ item.thumbnail }}.mp4" type="video/mp4"></video>
 
-  </div>
-  <!--<  img src="{{ item.thumbnail }}">!-->
-  </a>
-  </div></section>  
-  </p>
+        </div>
+        <!--<  img src="{{ item.thumbnail }}">!-->
+      </a>
+    </div>
+  </section>
+</p>
 
 {% endfor %}
 
 </div>
 
-
 <script>
-var figure = $(".visual-video").hover( hoverVideo, hideVideo );
+  var figure = $(".visual-video").hover(hoverVideo, hideVideo);
 
 
-$(".visual-thumbnail").each(function(i, obj) {
-  var fade = Math.pow(i * .5, 1.2);
-  $(obj).css('transform', 'scale(.9)');    
-  $(obj).mouseleave(function() {
-    $(this).css('transform', 'scale(.9)');   
+  $(".visual-thumbnail").each(function (i, obj) {
+    var fade = Math.pow(i * .5, 1.2);
+    $(obj).css('transform', 'scale(.9)');
+    $(obj).mouseleave(function () {
+      $(this).css('transform', 'scale(.9)');
+    });
+
+    $(obj).mouseenter(function () {
+      $(this).css('transform', 'scale(1) rotate(0deg)');
+    });
   });
-  
-  $(obj).mouseenter(function() {
-    $(this).css('transform', 'scale(1) rotate(0deg)');    
+
+
+  $(".visual-thumbnail").hover(function () {
+    titleTo = $(this).data('title');
+    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
   });
-});
 
 
-$(".visual-thumbnail").hover(function() {
-    titleTo = $(this).data('title');    
+  $(".visual-thumbnail").mouseleave(function () {
+    titleTo = titleDefault;
     //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
     //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
-});
+  });
 
+  function hoverVideo(e) {
+    $('video', this).get(0).play();
+  }
 
-$(".visual-thumbnail").mouseleave(function() {
-    titleTo = titleDefault;    
-    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
-    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
-});
-
-function hoverVideo(e) {      
-    $('video', this).get(0).play(); 
-}
-
-function hideVideo(e) {
-    $('video', this).get(0).currentTime = 0; 
-    $('video', this).get(0).pause(); 
-}
+  function hideVideo(e) {
+    $('video', this).get(0).currentTime = 0;
+    $('video', this).get(0).pause();
+  }
 </script>
