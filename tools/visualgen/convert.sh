@@ -28,7 +28,7 @@ do
 	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
 	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
 	THUMB=$(echo "../out/full_"$NAME".webm");	
-	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libvpx-vp9 -b:v 2");
+	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libvpx-vp9 -crf 7 -b:v 5M");
 	
 	if [ -f "$THUMB" ]; then		
 		if [ "$THUMB" -ot "$f" ]; then
@@ -91,7 +91,7 @@ do
 	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
 	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
 	THUMB=$(echo "../out/full_"$NAME".mp4");	
-	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -movflags +faststart -preset veryslow -an -profile:v baseline -level 3.0 -crf 20");
+	ARGS=$(echo " -i "$f" -movflags +faststart -preset veryslow -an -vf "format=yuv420p" -profile:v baseline -level 3.0 -crf 20");
 	#ARGS0=$(echo " -y -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 1 -f mp4 /dev/null");
 	#ARGS1=$(echo " -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 2");
 	
