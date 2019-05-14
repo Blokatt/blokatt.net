@@ -1,0 +1,12 @@
+---
+title:  "System Sweep"
+thumbnail: "https://www.shadertoy.com/media/shaders/ttX3W2.jpg"
+description: |
+"My _lo-fi_ take on the classic demoscene tunnel effect. Procedural drone audio included! Spent a couple days tweaking the hell out of this, and I think it turned out pretty well."
+date: 2019-05-14 14:28:47
+categories: visual shader glsl demoscene
+shadertoy_id: "ttX3W2" 
+layout: shadertoy
+---
+
+

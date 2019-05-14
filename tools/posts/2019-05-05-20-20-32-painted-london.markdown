@@ -3,7 +3,7 @@ title:  "Painted London"
 thumbnail: "https://www.shadertoy.com/media/shaders/tlX3RX.jpg"
 description: "A modified shader implementation of the Kuwahara filter with some subtle motion."
 date: 2019-05-05 20:20:32
-categories: visual shader glsl paintingoilkuwahara
+categories: visual shader glsl kuwahara painting oil
 shadertoy_id: "tlX3RX" 
 layout: shadertoy
 ---

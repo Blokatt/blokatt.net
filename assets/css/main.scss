@@ -3,7 +3,7 @@
 ---
 //, #0f101d
 $sidebar-bg-color: #5e4c8a;
-$link-color: #1e1730;
+$link-color: #351e74;
 $sidebar-sticky: false;
 
 $body-bg: #fffef7 !default;
@@ -11,5 +11,8 @@ $body-bg: #fffef7 !default;
 $root-font-family: "Inconsolata", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
 $root-font-size: 1rem !default;
 $root-line-height: 1.5 !default;
+
+$code-font-family: "Inconsolata", Menlo, Monaco, "Courier New", monospace !default;
+$code-color: #bf616a !default;
 
 @import "hydeout";

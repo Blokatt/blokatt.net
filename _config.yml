@@ -33,6 +33,10 @@ previews: /assets/visual_previews/
 permalink: pretty
 # Build settings
 markdown: kramdown
+
+kramdown:  
+  parse_block_html: true
+  
 theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
