@@ -1,6 +1,6 @@
 ---
 title:  "System Sweep"
-thumbnail: "/assets/visual_previews/system-sweep"
+thumbnail: "/assets/visual_previews/thumbnail_system-sweep"
 date: 2019-05-14 14:28:47
 categories: visual shader glsl demoscene
 shadertoy_id: "ttX3W2" 
