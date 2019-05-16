@@ -11,12 +11,16 @@ layout: post
 {% if page.shadertoy_id %}
 <a target="_blank" href="https://www.shadertoy.com/view/{{ page.shadertoy_id }}">[ShaderToy]</a>
 {% endif %}
+{% if page.youtube_id %}
+<a target="_blank" href="https://www.youtube.com/watch?v={{ page.youtube_id }}">[YouTube]</a>
+{% endif %}
 {% if page.twitter_id %}
 <a target="_blank" href="https://twitter.com/blokatt/status/{{ page.twitter_id }}">[Twitter]</a>
 {% endif %}
 {% if page.instagram_id %}
 <a target="_blank" href="https://www.instagram.com/p/{{ page.instagram_id }}">[Instagram]</a>
 {% endif %}
+
 </p>
 
 

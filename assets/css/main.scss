@@ -1,6 +1,8 @@
 ---
 # Jekyll needs front matter for SCSS files
 ---
+
+
 //, #0f101d
 $sidebar-bg-color: #5e4c8a;
 $link-color: #351e74;
@@ -8,11 +10,42 @@ $sidebar-sticky: false;
 
 $body-bg: #fffef7 !default;
 
-$root-font-family: "Inconsolata", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
-$root-font-size: 1rem !default;
-$root-line-height: 1.5 !default;
+$root-font-family: "Inconsolata", "Courier New", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
 
 $code-font-family: "Inconsolata", Menlo, Monaco, "Courier New", monospace !default;
 $code-color: #bf616a !default;
 
 @import "hydeout";
+
+
+#sidebar {
+  flex: 0 0 auto;
+  padding: $section-spacing;
+
+  background-image: url('/assets/sidebar-background.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  .site-title {
+    font-family: "Abril Fatface", serif;
+    font-weight: normal;
+    font-size: $large-font-size;
+    margin-top: 0;
+    margin-bottom: $heading-spacing;
+
+    .back-arrow { margin-right: 0.5rem; }
+  }
+}
+
+@media only screen and (max-width: $large-breakpoint) {
+    #sidebar {
+        background-position: right 50% bottom -50px;
+    }
+}
+
+@media only screen and (max-height:820px) and (min-width: $large-breakpoint)  {
+    #sidebar {
+        background-image: none;
+    }
+}
+
