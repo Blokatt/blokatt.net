@@ -25,7 +25,7 @@ $code-color: #bf616a !default;
   background-image: url('/assets/sidebar-background.png');
   background-position: bottom;
   background-repeat: no-repeat;
-
+  background-blend-mode: lighten;
   .site-title {
     font-family: "Abril Fatface", serif;
     font-weight: normal;
@@ -43,9 +43,9 @@ $code-color: #bf616a !default;
     }
 }
 
-@media only screen and (max-height:820px) and (min-width: $large-breakpoint)  {
+@media only screen and (max-height: 677px) and (min-width: 49rem) {
     #sidebar {
-        background-image: none;
+        background-attachment: scroll;
+        background-position: right 50% top 417px;
     }
 }
-
