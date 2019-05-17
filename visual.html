@@ -260,7 +260,7 @@ sidebar_sort_order: 0
 </div>
 
 <div class="row">
-  {% assign sorted = (site.visuals | sort: 'date') | reverse %}
+  {% assign sorted = site.visuals | sort: 'date' | reverse %}
   {% assign lastYear = time.date | date: '%Y' %}
   {% for item in sorted %}
   <p>  

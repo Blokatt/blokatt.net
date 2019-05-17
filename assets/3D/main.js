@@ -10,7 +10,8 @@ function init() {
     renderer.gammaFactor = 2.2;				
     scene = new THREE.Scene();
     renderer.setClearColor(0x000000, 0);
-    camera = new THREE.PerspectiveCamera(49, w / h, 0.1, 1000);
+    
+    camera = new THREE.OrthographicCamera(w / - 200, w / 200, h / 200, h / - 200, 1, 1000);
     timer = new THREE.Clock(true);			
     loader = new THREE.GLTFLoader();
     
@@ -22,7 +23,8 @@ function init() {
                 node.material.flatShading = false; // r87+
                 node.material.needsUpdate = true;
                 node.material.transparent = false;
-                node.material.depthTest = false;
+               // node.material.depthTest = true;
+                node.material.color.setHex(0xffffff);
             }
         });
         scene.add(gltf.scene);
@@ -33,7 +35,7 @@ function init() {
 
     });
 
-    light = new THREE.PointLight(0xFA1000, 5, 5);
+    light = new THREE.PointLight(0x7A2020, 5, 5);
     light.castShadow = true;
     light.position.set(2.91251, 4.2293, -0.003803);
     scene.add(light);
@@ -50,7 +52,7 @@ function init() {
     bayerTexture.minFilter = THREE.NearestFilter;
 
     effect = new THREE.ShaderPass(THREE.BktCustom);
-    effect.uniforms['scale'].value = 4;
+    effect.uniforms['scale'].value = 2;
     effect.uniforms['tBayer'].value = bayerTexture;
     effect.uniforms['time'].value = timer.getElapsedTime();
     
@@ -59,7 +61,13 @@ function init() {
     window.addEventListener('resize', onWindowResize, false);
 }
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    w = window.innerWidth;
+    h = window.innerHeight;
+    camera.left = w / -200;
+    camera.right = w / 200
+    camera.top = h / 200;
+    camera.bottom = h / - 200;
+    //camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
     composer.setSize(window.innerWidth, window.innerHeight);
@@ -67,9 +75,10 @@ function onWindowResize() {
 
 function animate() {
     requestAnimationFrame(animate);		    
+    
     //model.rotation.y = -Math.PI / 2. + .1;
-    model.rotation.y = .055 + Math.sin(timer.getElapsedTime());
-    model.rotation.z = .25 * Math.sin(timer.getElapsedTime() * 2.);
+    model.rotation.y = .05 + Math.sin(timer.getElapsedTime() * .5) * .5;
+    model.rotation.z = .25 * Math.sin(timer.getElapsedTime() * 1.);
     model.position.x = 0.027778;
     model.position.z = 0.111111;
     model.position.y = 0.887044;
