@@ -5,5 +5,12 @@ description: "A simple noise exercise."
 date: 2019-04-11 22:37:26
 categories: visual shader glsl fractal terrain fbm oil layers rust
 shadertoy_id: "3dBSW3" 
+instagram_id: "BwIltbqAe8p"
+twitter_id: "1116439281898278912"
 layout: shadertoy
 ---
+A rusty-looking surface created using an implementation of [fractal brownian motion](https://thebookofshaders.com/13/), a really
+simple, yet effective method of creating different types of textures from smoke and clouds to terrain.   
+Live version with sound can be viewed on [Shadertoy](https://www.shadertoy.com/view/3dBSW3)!
+
+

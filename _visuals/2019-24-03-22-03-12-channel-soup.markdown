@@ -5,5 +5,11 @@ description: "Originally written on my phone during a bus ride, updated a bit la
 date: 2019-03-24 22:03:12
 categories: visual shader glsl fbm plasma rgb smoke
 shadertoy_id: "tdBSWR" 
+instagram_id: "BwIlVOqghJR"
+twitter_id: "1116393342420570112"
 layout: shadertoy
 ---
+Originally written on my phone (using [Shader Editor](https://play.google.com/store/apps/details?id=de.markusfisch.android.shadereditor&hl=en)) in one of Prague's theatres during an intermission. Later improved in Shadertoy. The smoke effect is achieved using my implementation of FBM.
+
+*[FBM]: Fractal Brownian Motion
+

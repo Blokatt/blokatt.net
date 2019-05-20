@@ -7,5 +7,9 @@ Music: https://soundcloud.com/blokatt/lineman-splice"
 date: 2019-01-16 16:19:09
 categories: visual shader glsl retro music dither visualizer rainbow feedback milkdrop
 shadertoy_id: "WdlGWX" 
+twitter_id: "1097935809544626177"
+instagram_id: "BuRhef6g4FJ"
 layout: shadertoy
 ---
+_Note: This shader relies on audio input which is disabled on this page. Please visit [Shadertoy](https://www.shadertoy.com/view/WdlGWX) to see the full version._  
+A retro multipass shader inspired by classic "milkdrop" music visualisers. Dithering is done in HSV-space on the hue channel.

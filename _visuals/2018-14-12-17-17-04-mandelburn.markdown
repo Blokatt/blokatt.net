@@ -7,5 +7,8 @@ This is as close as I could get to the look I wanted, so I'm calling it done!"
 date: 2018-12-14 17:17:04
 categories: visual shader glsl fractal mandelbrot light normalmap specular bump
 shadertoy_id: "WdXGR8" 
+twitter_id: "1073985649261375489"
+instagram_id: "BrZGXFLFE4_"
 layout: shadertoy
 ---
+A "burnt-in" multipass visualisation of a [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) with median filtered generated bump map.  
