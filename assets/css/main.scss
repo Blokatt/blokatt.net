@@ -84,6 +84,13 @@ hr {
   }
 }
 
+.defs-only {
+  position: absolute;
+  height: 0; width: 0;
+  overflow: none;
+  left: -100%;
+}
+
 @media only screen and (max-width: $large-breakpoint) {
     #sidebar {
         background-position: right 50% bottom -50px;
@@ -197,10 +204,14 @@ hr {
     overflow: hidden;
   }
 
+
+
   .visual-video video {
     /*object-fit: contain;*/
     /*       object-fit: fill; */
-    filter: sepia(100%) hue-rotate(220deg);
+    -webkit-filter: url(#visual-duotone);
+    filter: url(#visual-duotone);
+    /*filter: sepia(100%) hue-rotate(220deg);*/
     -webkit-transition: filter 0.3s;
     /* Safari */
     transition: filter 0.3s;
