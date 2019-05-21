@@ -3,6 +3,13 @@
 ---
 
 
+$sidebar-fg-color: #fff0ef !default;
+
+$sidebar-title-color: red;
+$sidebar-link-color: red;
+$sidebar-text-color: red;
+$sidebar-icon-color: red;
+
 //, #0f101d
 $sidebar-bg-color: #5e4c8a;
 $link-color: #6b3079;
@@ -23,9 +30,9 @@ $body-muted: #39324a !default;
 $heading-color: #48286d !default;
 
 
-
-
 @import "hydeout";
+
+
 
 .content a {          
     font-weight: bold;
@@ -70,6 +77,10 @@ hr {
     margin-bottom: $heading-spacing;
 
     .back-arrow { margin-right: 0.5rem; }
+  }
+
+  a {
+    color: $sidebar-fg-color; 
   }
 }
 
@@ -286,3 +297,6 @@ hr {
 
 
 
+body {
+      color: rgb(234, 191, 255);
+}
