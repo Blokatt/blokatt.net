@@ -1,0 +1,41 @@
+---
+layout: post
+---
+<p>
+    <div class="visual-preview-video">
+    <video class="visual-full" controls muted loop autoplay>
+        <source src="{{ page.video }}.webm" type="video/webm">
+        <source src="{{ page.video }}.mp4" type="video/mp4">
+    </video>
+    </div>
+</p>
+
+<p style = "font-weight: bold">
+{% if page.source_code %}
+<a target="_blank" href="{{ page.source_code }}">[Source code]</a>
+{% endif %}
+{% if page.gif %}
+<a target="_blank" href="{{ page.gif }}">[HQ GIF]</a>
+{% endif %}
+{% if page.youtube_id %}
+<a target="_blank" href="https://www.youtube.com/watch?v={{ page.youtube_id }}">[YouTube]</a>
+{% endif %}
+{% if page.twitter_id %}
+<a target="_blank" href="https://twitter.com/blokatt/status/{{ page.twitter_id }}">[Twitter]</a>
+{% endif %}
+{% if page.instagram_id %}
+<a target="_blank" href="https://www.instagram.com/p/{{ page.instagram_id }}">[Instagram]</a>
+{% endif %}
+
+</p>
+
+<script>
+    $(document).ready(function () {
+        $('.visual-fill').on('load', function () {
+            $('.loader').hide();
+        });
+    });
+</script>
+
+{{ content }}
+{% include lightbox.html %}

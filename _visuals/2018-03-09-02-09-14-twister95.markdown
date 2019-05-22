@@ -9,5 +9,8 @@ The code may change a bit in the future."
 date: 2018-09-03 02:09:14
 categories: visual shader glsl oldschool demoscene demo twister metal screensaver dithering scroller
 shadertoy_id: "4lyyW1" 
+instagram_id: "Bq20XytgbxJ"
+twitter_id: "1036724857864683525" 
 layout: shadertoy
 ---
+'90's screensaver'-style [twister effect](https://democyclopedia.wordpress.com/2015/11/29/t-comme-twister/) with cubemap reflections and Bayer dithering. 

@@ -1,12 +1,12 @@
 ---
 title:  "Krasohled"
 thumbnail: "/assets/visual_previews/thumbnail_krasohled"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+description: "Kaleidoscope."
 date: 2018-09-17 21:57:52
 categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-shadertoy_id: "MtKcRc" 
+shadertoy_id: "MtKcRc"
+instagram_id: "Bq252HmCoHF"
+twitter_id: "1042772348351533056" 
 layout: shadertoy
 ---
+Creating kaleidoscope-like patterns via texture mirroring.

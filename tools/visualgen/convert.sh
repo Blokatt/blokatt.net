@@ -56,7 +56,7 @@ echo ""
 for f in ./out/*.webm
 do
 	NAME=$(basename "$f");	
-	TARGET="../../assets/visuals/""$NAME"	
+	TARGET="../../assets/visual_full/""$NAME"	
 	
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
@@ -125,7 +125,7 @@ echo ""
 for f in ./out/*.mp4
 do
 	NAME=$(basename "$f");	
-	TARGET="../../assets/visuals/""$NAME"	
+	TARGET="../../assets/visual_full/""$NAME"	
 	
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	

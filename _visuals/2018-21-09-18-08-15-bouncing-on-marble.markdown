@@ -1,11 +1,13 @@
 ---
 title:  "Bouncing on Marble"
 thumbnail: "/assets/visual_previews/thumbnail_bouncing-on-marble"
-description: "Quality pogo time.
-Anti-aliasing is done by dynamically smoothing the texture generation function, so it's not 100% perfect, but screen-space sampling may be added later.
-Feedback appreciated!"
+description: "Rotozoomer."
 date: 2018-09-21 18:08:15
-categories: visual shader glsl demoscene motionblur demoeffect rotozoomer bouncing chromaticabberation pogo
+categories: shader visual
 shadertoy_id: "XlKyWy" 
+instagram_id: "Bq26OuxAekM"
+twitter_id: "1043433591521398784"
 layout: shadertoy
 ---
+Pogo time!  
+A modern take on the classic rotozoomer effect.

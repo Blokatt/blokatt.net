@@ -44,6 +44,20 @@ $heading-color: #48286d !default;
   background: #fff7f7;
 }
 
+.visual-preview-video {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: $heading-color;
+  font-size: 0; 
+}
+
+.visual-full {
+    position: relative;     
+    width: 100%; 
+    height: 100%;         
+    overflow: hidden;
+}
+
 .visual-preview {
   position:relative;
   width: 100%;
