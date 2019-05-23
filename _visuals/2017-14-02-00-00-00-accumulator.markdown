@@ -1,11 +1,15 @@
 ---
 title:  "Accumulator"
 thumbnail: "/assets/visual_previews/thumbnail_accumulator"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_accumulator"
+description: "My first Processing sketch."
+
+gif: "883027935246127108" 
+twitter_id: "831608990006177792" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/accumulator" 
+
 date: 2017-02-14 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual processing 3D
+layout: visual_video
 ---
+My first Processing sketch. Not sure why this is even here, but everybody's got to start somewhere...

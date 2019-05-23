@@ -1,11 +1,16 @@
 ---
 title:  "Pondering"
 thumbnail: "/assets/visual_previews/thumbnail_pondering"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_pondering"
+description: "Something to stare into."
+
+gif: "1042772348351533056" 
+instagram_id: "BeOJJdXj7_r"
+twitter_id: "903165101527752704" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/pondering" 
+
 date: 2017-08-31 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual processing
+layout: visual_video
 ---
+Written in Processing.

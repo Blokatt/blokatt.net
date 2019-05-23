@@ -1,11 +1,16 @@
 ---
 title:  "Impossi-box"
 thumbnail: "/assets/visual_previews/thumbnail_impossibox"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_impossi-box"
+description: "Metaballs in a box."
+
+gif: "1042772348351533056" 
+instagram_id: "BeOE6ZajeSX"
+twitter_id: "951243357623332865" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/impossiBox" 
+
 date: 2018-01-11 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual shader glsl 3D processing
+layout: visual_video
 ---
+Screen-space shader metaballs. Energised. In a box. Written in Processing.

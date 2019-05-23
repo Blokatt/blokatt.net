@@ -1,11 +1,16 @@
 ---
 title:  "PICO-8 palette dithering demo"
 thumbnail: "/assets/visual_previews/thumbnail_pico8-dithering"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_pico8-dithering"
+description: "Bayer dithering based on the PICO-8 palette."
+
+gif: "1042772348351533056" 
+instagram_id: "Bebkgx5jwsZ"
+twitter_id: "956972652647854081" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/dithering" 
+
 date: 2018-01-27 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual shader dithering pico-8 processing
+layout: visual_video
 ---
+Simple GLSL Bayer dithering using the 16-colour PICO-8 palette demo. Written in Processing.

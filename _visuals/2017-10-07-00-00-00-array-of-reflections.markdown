@@ -1,11 +1,16 @@
 ---
 title:  "Array of Reflections"
 thumbnail: "/assets/visual_previews/thumbnail_array-of-reflections"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_array-of-reflections"
+description: "Mirrors?"
+
+gif: "1042772348351533056" 
+instagram_id: "BeOI26ij2Oy"
+twitter_id: "883831523081891840" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/arrayOfReflections" 
+
 date: 2017-07-10 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual shader processing 3D
+layout: visual_video
 ---
+A cubemap-less fake reflection shader experiment. Written in Processing.

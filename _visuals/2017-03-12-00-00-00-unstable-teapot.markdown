@@ -1,11 +1,17 @@
 ---
 title:  "Unstable Teapot"
 thumbnail: "/assets/visual_previews/thumbnail_unstable-teapot"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_unstable-teapot"
+description: "The Utah Teapot. I think."
+
+gif: "1042772348351533056" 
+instagram_id: "BeOJCQWDTDK"
+twitter_id: "937114899481841664" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/unstableTeapot" 
+
 date: 2017-12-03 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual processing 3D
+layout: visual_video
 ---
+Experimenting on the Utah Teapot model with a custom OBJ importer. Written in Processing.
+

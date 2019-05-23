@@ -1,11 +1,18 @@
 ---
 title:  "Terrain"
 thumbnail: "/assets/visual_previews/thumbnail_terrain"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_terrain"
+description: "It rotates, it's glitchy, it's transparent."
+
+gif: "883027935246127108" 
+instagram_id: "BeOIh1GDo"
+twitter_id: "831880856725762048" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/terrain" 
+
 date: 2017-02-15 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual shader processing 3D
+layout: visual_video
 ---
+Glitchy rainbow surface with wonky semi-transparent triangle rendering. Written in Processing.
+
+...what's depth sorting?  

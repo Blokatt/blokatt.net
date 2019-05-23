@@ -1,11 +1,16 @@
 ---
 title:  "Fork it."
 thumbnail: "/assets/visual_previews/thumbnail_fork-it"
-description: "A teeny UV modulo experiment.
-Full screen viewing recommended.
-Try changing the textures!
-Left click shifts time."
+video: "/assets/visual_full/full_fork-it"
+description: "Forks'n'sockets."
+
+gif: "1042772348351533056" 
+instagram_id: "BhPhKxbDSIA"
+twitter_id: "982336542113804288" 
+source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ForkIt" 
+
 date: 2018-04-06 00:00:00
-categories: visual shader glsl reflection kaleidoscope trippy mirror geometry
-layout: post
+categories: visual shader processing 3D
+layout: visual_video
 ---
+Yet another exercise mainly meant to improve my 3D modeling skills, this time with some inverse culling-based [cel shading](https://en.wikipedia.org/wiki/Cel_shading). Made in Processing.
