@@ -143,7 +143,12 @@ $(document).ready(function() {
 				var filename = href.split('/').pop();
 				var split = filename.split(".");
 				var name = split[0];
+				/*				
 				$(this).attr('title',name);
+				*/
+				if ($(this).attr('title') == "") {
+					$(this).attr('title', "");
+				}
 			}
 		}
 	});

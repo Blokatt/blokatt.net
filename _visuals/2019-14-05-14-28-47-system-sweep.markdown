@@ -15,4 +15,4 @@ My _lo-fi_ take on the classic demoscene tunnel effect.
 Spent a couple days tweaking the hell out of this, and I think it turned out pretty well. 
 
 
-[![Alt text](https://pbs.twimg.com/media/D6ihYLQWwAEUww4.jpg)](https://pbs.twimg.com/media/D6ihYLQWwAEUww4.jpg)
+[![](https://pbs.twimg.com/media/D6ihYLQWwAEUww4.jpg)](https://pbs.twimg.com/media/D6ihYLQWwAEUww4.jpg "Test screenshot!")
