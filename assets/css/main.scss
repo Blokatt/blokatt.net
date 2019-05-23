@@ -206,7 +206,7 @@ hr {
     /* custom */
 
     border-radius: 5px;
-    outline-color: $colour-border-purple;
+    outline-color: rgba(100, 77, 189, 0.0);
     outline-width: 2px;
     outline-offset: -10px;
 
@@ -225,13 +225,14 @@ hr {
     /*       object-fit: fill; */
     -webkit-filter: url(#visual-duotone);
     filter: url(#visual-duotone);
-    /*filter: sepia(100%) hue-rotate(220deg);*/
-    -webkit-transition: filter 0.3s;
-    /* Safari */
+    
+  
+    -webkit-transition: filter 0.3s;    
     transition: filter 0.3s;
     transition-timing-function: ease-out;
     -webkit-transition-timing-function: ease-out;
-
+    
+    /* Safari */
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -267,16 +268,28 @@ hr {
     }
 
     .visual-video video {
+      /*
+      -webkit-filter: url(#visual-duotone);
+      filter: url(#visual-duotone);
+      */
+      -webkit-filter: sepia(100%) hue-rotate(220deg);
+      filter: sepia(100%) hue-rotate(220deg);
       object-fit: cover;
 
     }
   }
 
   .visual-video video:hover {
+    -webkit-filter: none;
+    filter: none;
+     /*
     filter: sepia(0%) hue-rotate(360deg) contrast(100%);
+   
     -webkit-transition: filter 0.1s;
     /* Safari */
+    /*
     transition: filter 0.1s;
+    */
   }
 
   .visual-title {
