@@ -28,7 +28,7 @@ do
 	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
 	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
 	THUMB=$(echo "../out/full_"$NAME".webm");	
-	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libvpx-vp9 -crf 7 -b:v 5M");
+	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libvpx-vp9 -crf 5 -b:v 5M");
 	
 	if [ -f "$THUMB" ]; then		
 		if [ "$THUMB" -ot "$f" ]; then
