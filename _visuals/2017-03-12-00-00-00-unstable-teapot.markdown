@@ -4,7 +4,7 @@ thumbnail: "/assets/visual_previews/thumbnail_unstable-teapot"
 video: "/assets/visual_full/full_unstable-teapot"
 description: "The Utah Teapot. I think."
 
-gif: "1042772348351533056" 
+gif: "/assets/visual_gif/unstable-teapot.gif"
 instagram_id: "BeOJCQWDTDK"
 twitter_id: "937114899481841664" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/unstableTeapot" 

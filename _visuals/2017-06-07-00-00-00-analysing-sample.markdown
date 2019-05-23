@@ -4,7 +4,7 @@ thumbnail: "/assets/visual_previews/thumbnail_analysing-sample"
 video: "/assets/visual_full/full_analysing-sample"
 description: "A fake sci-fi science lab screen."
 
-gif: "883027935246127108" 
+gif: "/assets/visual_gif/analysing-sample.gif"
 instagram_id: "BeOIpyYDPu9"
 twitter_id: "883831523081891840" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/analysingSample" 

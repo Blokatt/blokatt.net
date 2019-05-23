@@ -4,7 +4,8 @@ thumbnail: "/assets/visual_previews/thumbnail_terrain"
 video: "/assets/visual_full/full_terrain"
 description: "It rotates, it's glitchy, it's transparent."
 
-gif: "883027935246127108" 
+
+gif: "/assets/visual_gif/terrain.gif"
 instagram_id: "BeOIh1GDo"
 twitter_id: "831880856725762048" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/terrain" 

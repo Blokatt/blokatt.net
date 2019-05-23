@@ -4,7 +4,7 @@ thumbnail: "/assets/visual_previews/thumbnail_impossibox"
 video: "/assets/visual_full/full_impossi-box"
 description: "Metaballs in a box."
 
-gif: "1042772348351533056" 
+gif: "/assets/visual_gif/impossi-box.gif"
 instagram_id: "BeOE6ZajeSX"
 twitter_id: "951243357623332865" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/impossiBox" 
