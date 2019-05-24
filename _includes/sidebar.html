@@ -5,7 +5,7 @@
   <header>    
     <p>
 
-    <div style="position:relative;">
+    <div class="header-logo" style="position:relative;">
     <iframe src="/assets/3D/glHeader.html" style="box-sizing: border-box; overflow: hidden; width: 100%; border-style: dotted; border-width: 2px; border-color: white" scrolling="no" height="200"></iframe>    
     <a href="{{ site.baseurl }}/" style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; border: none; z-index:2;"></a>
     </div>
@@ -44,6 +44,9 @@
     @media only screen and (max-width: 49rem) {
       #sidebar {
         background-position: right 50% bottom -135px;
+      }
+      .header-logo {
+        display: none;
       }
     }
   </style>{% endif %}
