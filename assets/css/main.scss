@@ -32,7 +32,9 @@ $heading-color: #48286d !default;
 
 @import "hydeout";
 
-
+td, th {
+    border: 2px solid $link-color;
+}
 
 .content a {          
     font-weight: bold;
