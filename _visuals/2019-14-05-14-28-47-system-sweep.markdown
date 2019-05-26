@@ -9,14 +9,20 @@ twitter_id: "1128326191117680640"
 youtube_id: "NGMfiGGR7lg"
 layout: shadertoy
 ---
+<div markdown="1">
 My _lo-fi_ take on the classic demoscene tunnel effect.   
 [Procedural drone audio included, visit the ShaderToy page to hear it!](https://www.shadertoy.com/view/ttX3W2)
 
 Spent a couple days tweaking the hell out of this, and I think it turned out pretty well. 
+</div>
 
+<div markdown="0">
+    <div class = "gallery-container">
+    {% for image in site.data.gallery_system-sweep %}
+        <a class ="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
+            <img src="{{ image.thumbnail }}">
+        </a>  
+    {% endfor %}
+    </div>
+</div>
 
-[![](https://pbs.twimg.com/media/D6ihYLQWwAEUww4.jpg)](https://pbs.twimg.com/media/D6ihYLQWwAEUww4.jpg "Test screenshot!")
-
-| ![space-1.jpg](http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg) | 
-|:--:| 
-| *Space* |

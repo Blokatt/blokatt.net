@@ -34,7 +34,7 @@ else
 
 		if [[ $f -nt $THUMBOUTPATH || ! -f $THUMBOUTPATH ]]; then
 			echo "$green""Converting $f -> $THUMBOUTPATH$reset"
-			magick convert -strip -thumbnail '>x240' "$f" "$THUMBOUTPATH"
+			magick convert -strip -thumbnail 'x150' "$f" "$THUMBOUTPATH"
 		fi
 
 		cp -R -u "$f" "$OUTPATH"
