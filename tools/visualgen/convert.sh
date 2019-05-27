@@ -15,7 +15,7 @@ function print_skipped_and_reset {
 }
 
 ##################################
-
+echo -e "\nFull visual convertor.\n"
 echo "${orange}WEBM pass.${reset}"
 echo "Converting."
 echo ""
@@ -61,14 +61,79 @@ do
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
 			echo "${green}$NAME${reset}"
-			echo "Updated thumbnail.";
+			echo "Updated.";
 			cp -f "$f" "$TARGET"
 		else
 			SKIPPED=$(($SKIPPED + 1))
 		fi;
 	else
 		echo "${green}$NAME${reset}"
-		echo "Fresh thumbnail.";
+		echo "Fresh.";
+		cp -f "$f" "$TARGET"
+	fi;
+done
+
+print_skipped_and_reset
+
+
+##################################
+
+
+##################################
+
+echo "${orange}OGV pass.${reset}"
+echo "Converting."
+echo ""
+
+
+cd in
+
+for f in *.gif
+do
+	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
+	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	THUMB=$(echo "../out/full_"$NAME".ogv");	
+	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libtheora -b:v 10M");
+	
+	if [ -f "$THUMB" ]; then		
+		if [ "$THUMB" -ot "$f" ]; then
+			echo "${orange}$THUMB${reset}"
+			echo "Replacing."
+			ffmpeg $ARGS -y "$THUMB";
+		else
+			SKIPPED=$(($SKIPPED + 1))
+		fi;
+	else
+		echo "${orange}$THUMB${reset}"
+		echo "New, converting."	
+		ffmpeg $ARGS -n "$THUMB";		
+	fi;
+done
+
+cd ..
+
+print_skipped_and_reset
+
+echo ""
+echo "Copying."
+echo ""
+
+for f in ./out/*.ogv
+do
+	NAME=$(basename "$f");	
+	TARGET="../../assets/visual_full/""$NAME"	
+	
+	if [ -f "$TARGET" ]; then
+		if [ "$TARGET" -ot "$f" ]; then	
+			echo "${green}$NAME${reset}"
+			echo "Updated.";
+			cp -f "$f" "$TARGET"
+		else
+			SKIPPED=$(($SKIPPED + 1))
+		fi;
+	else
+		echo "${green}$NAME${reset}"
+		echo "Fresh.";
 		cp -f "$f" "$TARGET"
 	fi;
 done
@@ -130,14 +195,14 @@ do
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
 			echo "${green}$NAME${reset}"
-			echo "Updated thumbnail.";
+			echo "Updated.";
 			cp -f "$f" "$TARGET"
 		else
 			SKIPPED=$(($SKIPPED + 1))
 		fi;
 	else
 		echo "${green}$NAME${reset}"
-		echo "Fresh thumbnail.";
+		echo "Fresh.";
 		cp -f "$f" "$TARGET"
 	fi;
 done

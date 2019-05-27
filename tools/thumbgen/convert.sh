@@ -75,6 +75,68 @@ done
 
 print_skipped_and_reset
 
+##################################
+
+##################################
+
+echo "${orange}OGV pass.${reset}"
+echo "Converting."
+echo ""
+
+
+cd in
+
+for f in *.mp4
+do
+	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
+	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	THUMB=$(echo "../out/thumbnail_"$NAME".ogv");	
+	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libtheora -qscale:a 10 -r 30");
+	
+	if [ -f "$THUMB" ]; then		
+		if [ "$THUMB" -ot "$f" ]; then
+			echo "${orange}$THUMB${reset}"
+			echo "Replacing."
+			ffmpeg $ARGS -y "$THUMB";
+		else
+			SKIPPED=$(($SKIPPED + 1))
+		fi;
+	else
+		echo "${orange}$THUMB${reset}"
+		echo "New, converting."	
+		ffmpeg $ARGS -n "$THUMB";		
+	fi;
+done
+
+cd ..
+
+print_skipped_and_reset
+
+echo ""
+echo "Copying."
+echo ""
+
+for f in ./out/*.ogv
+do
+	NAME=$(basename "$f");	
+	TARGET="../../assets/visual_previews/""$NAME"	
+	
+	if [ -f "$TARGET" ]; then
+		if [ "$TARGET" -ot "$f" ]; then	
+			echo "${green}$NAME${reset}"
+			echo "Updated thumbnail.";
+			cp -f "$f" "$TARGET"
+		else
+			SKIPPED=$(($SKIPPED + 1))
+		fi;
+	else
+		echo "${green}$NAME${reset}"
+		echo "Fresh thumbnail.";
+		cp -f "$f" "$TARGET"
+	fi;
+done
+
+print_skipped_and_reset
 
 ##################################
 
