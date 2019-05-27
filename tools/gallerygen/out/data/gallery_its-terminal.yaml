@@ -1,0 +1,31 @@
+- image: /assets/galleries/its-terminal/term0.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term0.jpg
+  description: HQ still #2.
+
+- image: /assets/galleries/its-terminal/term1.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term1.jpg
+  description: HQ still #1.
+
+- image: /assets/galleries/its-terminal/term2.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term2.jpg
+  description: The finished model.
+
+- image: /assets/galleries/its-terminal/term3.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term3.jpg
+  description: Adding colour into the mix.
+
+- image: /assets/galleries/its-terminal/term4.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term4.jpg
+
+- image: /assets/galleries/its-terminal/term5.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term5.jpg
+  description: First lighting test.
+
+- image: /assets/galleries/its-terminal/term6.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term6.jpg
+  description: First test of the ASCII shader.
+
+- image: /assets/galleries/its-terminal/term7.png
+  thumbnail: /assets/galleries/its-terminal/thumbnail_term7.jpg
+  description: The model in early stages.
+

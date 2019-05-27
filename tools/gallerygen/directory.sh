@@ -26,7 +26,7 @@ else
 	for f in *.png; do
 		NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
 		EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
-		THUMBOUTPATH="../../out/$GALLERY/thumbnail_$NAME.png"
+		THUMBOUTPATH="../../out/$GALLERY/thumbnail_$NAME.jpg"
 		OUTPATH="../../out/$GALLERY/$f"
 		
 		DESCRIPTION="$(magick identify -format "%[Description]" $f 2>/dev/null)"
@@ -34,13 +34,13 @@ else
 
 		if [[ $f -nt $THUMBOUTPATH || ! -f $THUMBOUTPATH ]]; then
 			echo "$green""Converting $f -> $THUMBOUTPATH$reset"
-			magick convert -strip -thumbnail 'x150' "$f" "$THUMBOUTPATH"
+			magick convert -strip -thumbnail '240x140^' "$f" -quality 100 "$THUMBOUTPATH"
 		fi
 
 		cp -R -u "$f" "$OUTPATH"
 
 		echo "- image: /assets/galleries/$GALLERY/$f" >> $METADATA
-		echo "  thumbnail: /assets/galleries/$GALLERY/thumbnail_$NAME.png" >> $METADATA
+		echo "  thumbnail: /assets/galleries/$GALLERY/thumbnail_$NAME.jpg" >> $METADATA
 		if [ ! -z "$DESCRIPTION" ]; then
 			echo "  description: $DESCRIPTION" >> $METADATA
 		fi

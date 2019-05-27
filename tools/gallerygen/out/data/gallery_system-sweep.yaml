@@ -1,20 +1,20 @@
 - image: /assets/galleries/system-sweep/sweephq0.png
-  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq0.png
+  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq0.jpg
 
 - image: /assets/galleries/system-sweep/sweephq1.png
-  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq1.png
+  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq1.jpg
 
 - image: /assets/galleries/system-sweep/sweephq2.png
-  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq2.png
+  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq2.jpg
 
 - image: /assets/galleries/system-sweep/sweephq3.png
-  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq3.png
+  thumbnail: /assets/galleries/system-sweep/thumbnail_sweephq3.jpg
 
 - image: /assets/galleries/system-sweep/sweeptest0.png
-  thumbnail: /assets/galleries/system-sweep/thumbnail_sweeptest0.png
+  thumbnail: /assets/galleries/system-sweep/thumbnail_sweeptest0.jpg
   description: First test.
 
 - image: /assets/galleries/system-sweep/sweeptest1.png
-  thumbnail: /assets/galleries/system-sweep/thumbnail_sweeptest1.png
+  thumbnail: /assets/galleries/system-sweep/thumbnail_sweeptest1.jpg
   description: Originally, I was going for a more retro look.
 
