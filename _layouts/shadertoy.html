@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: visual
 ---
+
 <p>
 <div class="visual-preview">
     <div class ="loader" style="z-index: 1; position: relative; width: 100%; height: 100%; text-align: center;">
@@ -11,21 +12,7 @@ layout: post
     </div>
 
 </p>
-<p style = "font-weight: bold">
-{% if page.shadertoy_id %}
-<a target="_blank" href="https://www.shadertoy.com/view/{{ page.shadertoy_id }}">[ShaderToy]</a>
-{% endif %}
-{% if page.youtube_id %}
-<a target="_blank" href="https://www.youtube.com/watch?v={{ page.youtube_id }}">[YouTube]</a>
-{% endif %}
-{% if page.twitter_id %}
-<a target="_blank" href="https://twitter.com/blokatt/status/{{ page.twitter_id }}">[Twitter]</a>
-{% endif %}
-{% if page.instagram_id %}
-<a target="_blank" href="https://www.instagram.com/p/{{ page.instagram_id }}">[Instagram]</a>
-{% endif %}
 
-</p>
 
 <script>
     $(document).ready(function () {
@@ -38,4 +25,4 @@ layout: post
 
 {{ content }}
 
-{% include lightbox.html %}
+

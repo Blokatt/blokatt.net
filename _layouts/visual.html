@@ -1,0 +1,45 @@
+---
+layout: post
+---
+{{ content }}
+
+{% if page.gallery %}
+
+<div>
+    <hr style="margin-top: 5px; margin-bottom: 5px;">
+    <h4 class="visual-title">&gt; Pics</h4>
+    <hr style="margin-top: 5px; margin-bottom: 10px;">
+</div>
+<p>
+    <div class="gallery-container">
+        {% for image in site.data.[page.gallery] %}
+        <a class="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
+            <img src="{{ image.thumbnail }}">
+        </a>
+        {% endfor %}
+    </div>
+</p>
+{% endif %}
+
+
+<div>
+    <hr style="margin-top: 5px; margin-bottom: 5px;">
+    <h4 class="visual-title">&gt; Links</h4>
+    <hr style="margin-top: 5px; margin-bottom: 10px;">
+</div>
+<p style="font-weight: bold">
+    {% if page.shadertoy_id %}
+    <a target="_blank" href="https://www.shadertoy.com/view/{{ page.shadertoy_id }}">[ShaderToy]</a>
+    {% endif %}
+    {% if page.youtube_id %}
+    <a target="_blank" href="https://www.youtube.com/watch?v={{ page.youtube_id }}">[YouTube]</a>
+    {% endif %}
+    {% if page.twitter_id %}
+    <a target="_blank" href="https://twitter.com/blokatt/status/{{ page.twitter_id }}">[Twitter]</a>
+    {% endif %}
+    {% if page.instagram_id %}
+    <a target="_blank" href="https://www.instagram.com/p/{{ page.instagram_id }}">[Instagram]</a>
+    {% endif %}
+</p>
+
+{% include lightbox.html %}

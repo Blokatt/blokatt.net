@@ -32,6 +32,17 @@ $heading-color: #48286d !default;
 
 @import "hydeout";
 
+.link_icon{
+    margin: -5px;
+    transform: rotate(180deg);   
+    -webkit-transform: rotate(180deg);   
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);    
+}
+.link_icon:hover{    
+    transform: rotate(360deg);   
+    -webkit-transform: rotate(360deg);  
+}
+
 article + *, .post-body ~ section {
     padding-top: 2rem;
     border-top: 1px solid $colour-border-purple;

@@ -7,6 +7,7 @@ shadertoy_id: "ttX3W2"
 instagram_id: "Bxc7E5GCiwT"
 twitter_id: "1128326191117680640"
 youtube_id: "NGMfiGGR7lg"
+gallery: "gallery_system-sweep"
 layout: shadertoy
 ---
 <div markdown="1">
@@ -16,13 +17,4 @@ My _lo-fi_ take on the classic demoscene tunnel effect.
 Spent a couple days tweaking the hell out of this, and I think it turned out pretty well. 
 </div>
 
-<div markdown="0">
-    <div class = "gallery-container">
-    {% for image in site.data.gallery_system-sweep %}
-        <a class ="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
-            <img src="{{ image.thumbnail }}">
-        </a>  
-    {% endfor %}
-    </div>
-</div>
 
