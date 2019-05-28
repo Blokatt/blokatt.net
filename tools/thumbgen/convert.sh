@@ -29,19 +29,24 @@ do
 	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
 	THUMB=$(echo "../out/thumbnail_"$NAME".webm");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -r 30");
-	
+	ARGS0=$(echo " -y -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -crf 29 -pass 1 -an -f webm /dev/null -r 30");
+	ARGS1=$(echo " -y -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -crf 29 -pass 2 -r 30");
 	if [ -f "$THUMB" ]; then		
 		if [ "$THUMB" -ot "$f" ]; then
 			echo "${orange}$THUMB${reset}"
 			echo "Replacing."
-			ffmpeg $ARGS -y "$THUMB";
+			#ffmpeg $ARGS -y "$THUMB";
+			ffmpeg $ARGS0 && \
+			ffmpeg $ARGS1 $THUMB;
 		else
 			SKIPPED=$(($SKIPPED + 1))
 		fi;
 	else
 		echo "${orange}$THUMB${reset}"
 		echo "New, converting."	
-		ffmpeg $ARGS -n "$THUMB";		
+		#ffmpeg $ARGS -n "$THUMB";		
+		ffmpeg $ARGS0 && \
+		ffmpeg $ARGS1 $THUMB;
 	fi;
 done
 
