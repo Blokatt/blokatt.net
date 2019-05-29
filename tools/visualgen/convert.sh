@@ -55,7 +55,7 @@ function make_webm {
 	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 2000k \
 	-minrate 1000k -maxrate 3000k \
 	-quality good -crf 32 -c:v libvpx-vp9 -an \
-	-pass 2 -speed 0 -y "$OUT"
+	-pass 2 -speed 1 -y "$OUT"
 
 	#ffmpeg $ARGS0 && \
 	#ffmpeg $ARGS1 "$OUT";
@@ -77,8 +77,8 @@ function make_mp4 {
 	#ARGS=$(echo " -hide_banner -loglevel panic -i $TEMPVID -movflags +faststart -preset veryslow -an -vf "format=yuv420p" -profile:v baseline -level 3.0 -crf 25");
 	#ffmpeg $ARGS -n "$OUT";		
 	
-	ffmpeg -y -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pass 1 -an -f mp4 /dev/null && \
-	ffmpeg -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pass 2 -an "$OUT"
+	ffmpeg -hide_banner -loglevel panic -y -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pass 1 -an -f mp4 /dev/null && \
+	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pass 2 -an "$OUT"
 
 	#ffmpeg $ARGS0 && \
 	#ffmpeg $ARGS1 "$OUT";	
