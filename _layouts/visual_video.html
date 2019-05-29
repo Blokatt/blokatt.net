@@ -4,7 +4,7 @@ layout: visual
 <p>
     <div class="visual-preview-video">
     <video class="visual-full" preload="auto" muted loop autoplay>
-        <source src="{{ page.video }}.webm" type="video/webm">
+        <source src="{{ page.video }}.webm" type="video/webm; codecs=vp9">
         <source src="{{ page.video }}.mp4" type="video/mp4">
         <source src="{{ page.video }}.ogv" type="video/ogg">
         Your browser does not support HTML5 video, sorry!
@@ -18,6 +18,12 @@ layout: visual
             $('.loader').hide();
         });
     });
+    if ($(window).width() < 790) {
+        $('.visual-full').attr('controls', '');
+    } else {
+        $('.visual-full').removeAttr('controls');
+    }
 </script>
+
 
 {{ content }}

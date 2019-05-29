@@ -79,12 +79,13 @@ sidebar_sort_order: 0
     <div class="visual-thumbnail" data-title="{{ item.title }}">
       <a href="{{ item.url }}">
 
-        <div class="visual-video">
-          <video muted loop preload="metadata">
+        <div class="visual-video">          
+          <video class="visual-video-image" playsinline muted loop preload="metadata">
             <source src="{{ item.thumbnail }}.webm" type="video/webm">
             <source src="{{ item.thumbnail }}.mp4" type="video/mp4">            
             <source src="{{ item.thumbnail }}.ogv" type="video/ogg">
           </video>          
+          <img class="visual-video-image" src="{{ item.thumbnail }}.png">
         </div>
         <!--<  img src="{{ item.thumbnail }}">!-->
       </a>

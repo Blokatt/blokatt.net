@@ -47,15 +47,22 @@ function make_webm {
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libvpx-vp9 -crf 5 -b:v 5M");
 	ARGS0=$(echo " -y -hide_banner -loglevel panic -i $TEMPVID -c:v libvpx-vp9 -b:v 10M -pass 1 -an -f webm /dev/null");
 	ARGS1=$(echo " -y -hide_banner -loglevel panic -i $TEMPVID -c:v libvpx-vp9 -b:v 10M -pass 2 -an");
-	
-	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 2000k \
-	-minrate 1000k -maxrate 3000k \
-	-quality good -crf 32 -c:v libvpx-vp9 -an \
-	-pass 1 -speed 0 "$OUT" && \
-	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 2000k \
-	-minrate 1000k -maxrate 3000k \
-	-quality good -crf 32 -c:v libvpx-vp9 -an \
-	-pass 2 -speed 1 -y "$OUT"
+	ffmpeg -y -i "$f" -c:v libvpx-vp9 -pass 1 -b:v 2600K -threads 8 -speed 4 \
+    -tile-columns 6 -frame-parallel 1 \
+  	-an -f webm /dev/null
+   	ffmpeg -i "$f" -c:v libvpx-vp9 -pass 2 -b:v 2600K -threads 8 -speed 1 \
+  	-tile-columns 6 -frame-parallel 1 -auto-alt-ref 1 -lag-in-frames 25 \
+  	-an -f webm "$OUT"
+
+
+	#ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 1800k \
+	#-minrate 900k -maxrate 2610k \
+	#-quality good -crf 32 -c:v libvpx-vp9 -an \
+	#-pass 1 -speed 0 "$OUT" && \
+	#ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 1800k \
+	#-minrate 900k -maxrate 2610k \
+	#-quality good -crf 32 -c:v libvpx-vp9 -an \
+	#-pass 2 -speed 1 -y "$OUT"
 
 	#ffmpeg $ARGS0 && \
 	#ffmpeg $ARGS1 "$OUT";
@@ -77,8 +84,8 @@ function make_mp4 {
 	#ARGS=$(echo " -hide_banner -loglevel panic -i $TEMPVID -movflags +faststart -preset veryslow -an -vf "format=yuv420p" -profile:v baseline -level 3.0 -crf 25");
 	#ffmpeg $ARGS -n "$OUT";		
 	
-	ffmpeg -hide_banner -loglevel panic -y -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pass 1 -an -f mp4 /dev/null && \
-	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pass 2 -an "$OUT"
+	ffmpeg -hide_banner -loglevel panic -y -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pix_fmt yuv420p -profile:v baseline -level 3 -pass 1 -an -f mp4 /dev/null && \
+	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pix_fmt yuv420p -profile:v baseline -level 3 -pass 2 -an "$OUT"
 
 	#ffmpeg $ARGS0 && \
 	#ffmpeg $ARGS1 "$OUT";	
