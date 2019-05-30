@@ -1,0 +1,32 @@
+- image: /assets/galleries/fork-it/fork-it_0.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_0.jpg
+  description: "Dithered still of the finished product."
+
+- image: /assets/galleries/fork-it/fork-it_1.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_1.jpg
+  description: "WIP"
+
+- image: /assets/galleries/fork-it/fork-it_2.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_2.jpg
+  description: "WIP"
+
+- image: /assets/galleries/fork-it/fork-it_3.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_3.jpg
+  description: "More fork-friendly socket."
+
+- image: /assets/galleries/fork-it/fork-it_4.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_4.jpg
+  description: "Original EU-style socket, first cel-shading test."
+
+- image: /assets/galleries/fork-it/fork-it_5.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_5.jpg
+  description: "Trypophobia-evoking normals."
+
+- image: /assets/galleries/fork-it/fork-it_6.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_6.jpg
+  description: "Don't try this at home."
+
+- image: /assets/galleries/fork-it/fork-it_7.png
+  thumbnail: /assets/galleries/fork-it/thumbnail_fork-it_7.jpg
+  description: "The beginnings."
+

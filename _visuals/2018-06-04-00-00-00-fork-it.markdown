@@ -8,7 +8,7 @@ gif: "/assets/visual_gif/fork-it.gif"
 instagram_id: "BhPhKxbDSIA"
 twitter_id: "982336542113804288" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ForkIt" 
-
+gallery: "gallery_fork-it"
 date: 2018-04-06 00:00:00
 categories: visual shader processing 3D
 layout: visual_video
