@@ -12,9 +12,9 @@
 
 - image: /assets/galleries/system-sweep/sweeptest0.png
   thumbnail: /assets/galleries/system-sweep/thumbnail_sweeptest0.jpg
-  description: First test.
+  description: "First test."
 
 - image: /assets/galleries/system-sweep/sweeptest1.png
   thumbnail: /assets/galleries/system-sweep/thumbnail_sweeptest1.jpg
-  description: Originally, I was going for a more retro look.
+  description: "Originally, I was going for a more retro look."
 

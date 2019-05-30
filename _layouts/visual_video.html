@@ -3,12 +3,11 @@ layout: visual
 ---
 <p>
     <div class="visual-preview-video">
-    <video class="visual-full" preload="auto" muted loop autoplay>
+    <video class="visual-full" preload="auto" muted loop autoplay poster="{{ page.video }}.png">
         <source src="{{ page.video }}.webm" type="video/webm; codecs=vp9">
         <source src="{{ page.video }}.mp4" type="video/mp4">
-        <source src="{{ page.video }}.ogv" type="video/ogg">
-        Your browser does not support HTML5 video, sorry!
-    </video>
+        <source src="{{ page.video }}.ogv" type="video/ogg">                        
+    </video>    
     </div>
 </p>
 

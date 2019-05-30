@@ -11,6 +11,11 @@ TEMPVID='/tmp/.temp.mkv'
 WEBMSKIPPED=0
 OGVSKIPPED=0
 MP4SKIPPED=0
+PNGSKIPPED=0
+
+function test { 
+	echo "asd$1"
+}
 
 function print_skipped_and_reset { 
 	if [[ "$WEBMSKIPPED" > 0 ]]; then
@@ -25,9 +30,14 @@ function print_skipped_and_reset {
 		echo "${cyan}MP4: $MP4SKIPPED files skipped.${reset}"
 	fi;
 
+	if [[ "$PNGSKIPPED" > 0 ]]; then
+		echo "${cyan}PNG: $PNGSKIPPED files skipped.${reset}"
+	fi;
+
 	WEBMSKIPPED=0
 	OGVSKIPPED=0
 	MP4SKIPPED=0
+	PNGSKIPPED=0
 }
 
 function make_temp_vid {
@@ -92,7 +102,33 @@ function make_mp4 {
 
 
 } 
-
+function make_png {
+	make_temp_vid
+	echo "$(timestamp):$orange $f -> $OUT$reset"
+	ARGS=$(echo " -hide_banner -loglevel panic -i $TEMPVID -an -c:v libtheora -b:v 10M");
+	magick convert "$f"[0] -interlace Plane -colors 255 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip "$OUT"	
+} 
+	
+function copy_assets {
+	local -n _SKIPCOUNT=$2
+	for f in ./out/*.$1
+	do
+		NAME=$(basename "$f");	
+		TARGET="../../assets/visual_full/""$NAME"	
+		
+		if [ -f "$TARGET" ]; then
+			if [ "$TARGET" -ot "$f" ]; then	
+				echo "Updated: ${cyan}$NAME${reset}"			
+				cp -f "$f" "$TARGET"
+			else
+				_SKIPCOUNT=$(($_SKIPCOUNT + 1))
+			fi;
+		else
+			echo "Fresh: ${cyan}$NAME${reset}"		
+			cp -f "$f" "$TARGET"
+		fi;
+	done
+}
 
 ##################################
 echo -e "\nFull visual convertor.\n"
@@ -151,6 +187,20 @@ do
 	fi;
 
 	
+	OUT=$(echo "../out/full_"$NAME".png");	
+	
+	if [ -f "$OUT" ]; then		
+		if [ "$OUT" -ot "$f" ]; then			
+			echo "Replace: "
+			make_png
+		else
+			PNGSKIPPED=$(($PNGSKIPPED + 1))
+		fi;
+	else		
+		echo "New: "	
+		make_png	
+	fi;
+	
 done
 
 cd ..
@@ -159,64 +209,16 @@ print_skipped_and_reset
 
 echo ""
 echo "${green}Copying WEBM...${reset}"
-
-for f in ./out/*.webm
-do
-	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_full/""$NAME"	
-	
-	if [ -f "$TARGET" ]; then
-		if [ "$TARGET" -ot "$f" ]; then	
-			echo "Updated: ${green}$NAME${reset}"			
-			cp -f "$f" "$TARGET"
-		else
-			WEBMSKIPPED=$(($WEBMSKIPPED + 1))
-		fi;
-	else
-		echo "Fresh: ${green}$NAME${reset}"		
-		cp -f "$f" "$TARGET"
-	fi;
-done
+copy_assets webm WEBMSKIPPED
 
 echo "${orange}Copying OGV...${reset}"
-
-for f in ./out/*.ogv
-do
-	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_full/""$NAME"	
-	
-	if [ -f "$TARGET" ]; then
-		if [ "$TARGET" -ot "$f" ]; then	
-			echo "Updated: ${orange}$NAME${reset}"			
-			cp -f "$f" "$TARGET"
-		else
-			OGVSKIPPED=$(($OGVSKIPPED + 1))
-		fi;
-	else
-		echo "Fresh: ${orange}$NAME${reset}"		
-		cp -f "$f" "$TARGET"
-	fi;
-done
+copy_assets ogv OGVSKIPPED
 
 echo "${cyan}Copying MP4...${reset}"
+copy_assets mp4 MP4SKIPPED
 
-for f in ./out/*.mp4
-do
-	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_full/""$NAME"	
-	
-	if [ -f "$TARGET" ]; then
-		if [ "$TARGET" -ot "$f" ]; then	
-			echo "Updated: ${cyan}$NAME${reset}"			
-			cp -f "$f" "$TARGET"
-		else
-			MP4SKIPPED=$(($MP4SKIPPED + 1))
-		fi;
-	else
-		echo "Fresh: ${cyan}$NAME${reset}"		
-		cp -f "$f" "$TARGET"
-	fi;
-done
+echo "${cyan}Copying PNG...${reset}"
+copy_assets png PNGSKIPPED
 
 echo ""
 

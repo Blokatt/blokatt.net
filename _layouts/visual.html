@@ -28,6 +28,9 @@ layout: post
     <hr style="margin-top: 5px; margin-bottom: 10px;">
 </div>
 <p style="font-weight: bold">
+    {% if page.gif %}
+    <a title="HQ GIF" class="no-lightbox" target="_blank" href="{{ page.gif }}">[GIF]</a>
+    {% endif %}
     {% if page.shadertoy_id %}
     <a target="_blank" href="https://www.shadertoy.com/view/{{ page.shadertoy_id }}">[ShaderToy]</a>
     {% endif %}

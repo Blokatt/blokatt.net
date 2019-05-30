@@ -80,7 +80,7 @@ sidebar_sort_order: 0
       <a href="{{ item.url }}">
 
         <div class="visual-video">          
-          <video class="visual-video-image" playsinline muted loop preload="metadata">
+          <video class="visual-video-image" playsinline muted loop preload="metadata" poster="{{ item.thumbnail }}.png">
             <source src="{{ item.thumbnail }}.webm" type="video/webm">
             <source src="{{ item.thumbnail }}.mp4" type="video/mp4">            
             <source src="{{ item.thumbnail }}.ogv" type="video/ogg">

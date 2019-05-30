@@ -42,7 +42,7 @@ else
 		echo "- image: /assets/galleries/$GALLERY/$f" >> $METADATA
 		echo "  thumbnail: /assets/galleries/$GALLERY/thumbnail_$NAME.jpg" >> $METADATA
 		if [ ! -z "$DESCRIPTION" ]; then
-			echo "  description: $DESCRIPTION" >> $METADATA
+			echo "  description: \"$DESCRIPTION\"" >> $METADATA
 		fi
 		echo "" >> $METADATA
 
