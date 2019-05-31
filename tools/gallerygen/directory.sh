@@ -61,14 +61,18 @@ else
 		
 		if [[ $f -nt $THUMBOUTPATH || ! -f $THUMBOUTPATH ]]; then
 			echo "$green""Converting $f -> $THUMBOUTPATH$reset"
+
+			if [[ "$EXTENSION" == "png" ]]; then
+				#strip gamma
+				magick convert -strip "$f" "$OUTPATH" 
+			fi
 			if [[ "$EXTENSION" == "gif" ]]; then
 				magick convert -strip -thumbnail '240x140^' "$f" -layers Optimize +map "$THUMBOUTPATH"
 				gifsicle -U -O3 --colors=32 --dither=ordered "$THUMBOUTPATH" -o "$THUMBOUTPATH"
 			else
 				magick convert -strip -thumbnail '240x140^' "$f[0]" -quality 100 "$THUMBOUTPATH"
 			fi
-		fi
-
+		fi	
 		cp -R -u "$f" "$OUTPATH"
 
 		echo "- image: /assets/galleries/$GALLERY/$f" >> $METADATA
