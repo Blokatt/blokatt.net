@@ -6,6 +6,7 @@ This time around, using dithering was pretty much required to avoid banding (bec
 More to come!
 LMB scrubs through time."
 date: 2018-11-18 00:38:03
+gallery: "gallery_additive-dance"
 categories: visual shader glsl motionblur dither rgb lights invsqrt
 shadertoy_id: "XtyfDD" 
 twitter_id: "1068629160871034883"

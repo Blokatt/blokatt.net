@@ -1,4 +1,4 @@
-if [[ $# == 0 ]]; then
+if (( "$#" == 0 )); then
 	echo "Not enough arguments."
 	exit 1
 fi

@@ -1,0 +1,28 @@
+- image: /assets/galleries/mandelburn/mandelburn_0.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_0.jpg
+  description: "Composition - finished image"
+
+- image: /assets/galleries/mandelburn/mandelburn_1.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_1.jpg
+  description: "Composition - normal map"
+
+- image: /assets/galleries/mandelburn/mandelburn_2.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_2.jpg
+  description: "Composition - fractal"
+
+- image: /assets/galleries/mandelburn/mandelburn_3.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_3.jpg
+  description: "WIP"
+
+- image: /assets/galleries/mandelburn/mandelburn_4.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_4.jpg
+  description: "WIP"
+
+- image: /assets/galleries/mandelburn/mandelburn_5.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_5.jpg
+  description: "WIP"
+
+- image: /assets/galleries/mandelburn/mandelburn_6.png
+  thumbnail: /assets/galleries/mandelburn/thumbnail_mandelburn_6.jpg
+  description: "WIP"
+

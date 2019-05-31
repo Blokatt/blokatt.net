@@ -25,8 +25,8 @@ cd in
 
 for f in *.mp4
 do
-	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
-	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	NAME="${f%%.*}"
+	EXTENSION="${f##*.}"
 	THUMB=$(echo "../out/thumbnail_"$NAME".webm");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -r 30");
 	ARGS0=$(echo " -y -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -crf 29 -pass 1 -an -f webm /dev/null -r 30");
@@ -94,8 +94,8 @@ cd in
 
 for f in *.mp4
 do
-	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
-	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	NAME="${f%%.*}"
+	EXTENSION="${f##*.}"
 	THUMB=$(echo "../out/thumbnail_"$NAME".ogv");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -vf scale=-1:140 -an -c:v libtheora -qscale:a 10 -r 30");
 	
@@ -156,8 +156,8 @@ cd in
 
 for f in *.mp4
 do
-	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
-	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	NAME="${f%%.*}"
+	EXTENSION="${f##*.}"
 	THUMB=$(echo "../out/thumbnail_"$NAME".mp4");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -profile:v baseline -level 3.0 -crf 20 -r 30");
 	#ARGS0=$(echo " -y -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 1 -f mp4 /dev/null");
@@ -224,8 +224,8 @@ cd in
 
 for f in *.mp4
 do
-	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
-	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	NAME="${f%%.*}"
+	EXTENSION="${f##*.}"
 	THUMB=$(echo "../out/thumbnail_"$NAME".png");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -r 1 -vframes 1 -f image2 -vf scale=-1:140");
 	#ARGS0=$(echo " -y -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 1 -f mp4 /dev/null");

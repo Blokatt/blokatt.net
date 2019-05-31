@@ -140,8 +140,8 @@ cd in
 
 for f in *.gif
 do
-	NAME=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f1);
-	EXTENSION=$(echo "$f" | sed 's/\./ /g' | cut -d' ' -f2);
+	NAME="${f%%.*}"
+	EXTENSION="${f##*.}"
 	OUT=$(echo "../out/full_"$NAME".webm");	
 	
 	rm -f "$TEMPVID"

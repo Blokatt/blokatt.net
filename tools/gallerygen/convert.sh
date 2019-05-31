@@ -6,8 +6,6 @@ orange=`tput setaf 3`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
 
-
-
 for f in in/*/
 do
     #process directory

@@ -7,9 +7,10 @@ Just a little 90's screensaver-style twister effect.
 Nothing massively impressive, but pretty good to look at nonetheless.
 The code may change a bit in the future."
 date: 2018-09-03 02:09:14
-categories: visual shader glsl oldschool demoscene demo twister metal screensaver dithering scroller
+categories: visual shader demoscene
 shadertoy_id: "4lyyW1" 
 instagram_id: "Bq20XytgbxJ"
+gallery: "gallery_twister95"
 twitter_id: "1036724857864683525" 
 layout: shadertoy
 ---
