@@ -3,7 +3,7 @@ title:  "Module"
 thumbnail: "/assets/visual_previews/thumbnail_module"
 video: "/assets/visual_full/full_module"
 description: "A thing made out of circles."
-
+permalink: /gfx/misc/module
 gif: "/assets/visual_gif/module.gif"
 instagram_id: "BeOJMsUjRB_"
 twitter_id: "907375958621114368" 

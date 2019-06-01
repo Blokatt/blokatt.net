@@ -8,6 +8,7 @@ Nothing massively impressive, but pretty good to look at nonetheless.
 The code may change a bit in the future."
 date: 2018-09-03 02:09:14
 categories: visual shader demoscene
+permalink: /gfx/misc/twister95
 shadertoy_id: "4lyyW1" 
 instagram_id: "Bq20XytgbxJ"
 gallery: "gallery_twister95"

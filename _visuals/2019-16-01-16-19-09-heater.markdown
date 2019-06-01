@@ -9,6 +9,7 @@ categories: visual shader glsl retro music dither visualizer rainbow feedback mi
 shadertoy_id: "WdlGWX" 
 twitter_id: "1097935809544626177"
 instagram_id: "BuRhef6g4FJ"
+permalink: /gfx/misc/heater
 layout: shadertoy
 ---
 _Note: This shader relies on audio input which is disabled on this page. Please visit [Shadertoy](https://www.shadertoy.com/view/WdlGWX) to see the full version._  

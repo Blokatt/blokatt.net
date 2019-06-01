@@ -6,6 +6,7 @@ date: 2019-03-21 20:20:32
 categories: visual shader glsl painting oil kuwahara
 shadertoy_id: "tlX3RX" 
 layout: shadertoy
+permalink: /gfx/misc/painted-london
 twitter_id: "1109071189199204352"
 ---
 A modified implementation of the [Kuwahara filter](https://en.wikipedia.org/wiki/Kuwahara_filter), originally done as a commission. The shader includes an optional experimental final median pass, which can be enabled by modifying a preprocessor directive, as well as other modifiable parameters.

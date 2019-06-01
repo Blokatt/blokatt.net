@@ -3,7 +3,7 @@ title:  "Pondering"
 thumbnail: "/assets/visual_previews/thumbnail_pondering"
 video: "/assets/visual_full/full_pondering"
 description: "Something to stare into."
-
+permalink: /gfx/misc/pondering
 gif: "/assets/visual_gif/pondering.gif"
 instagram_id: "BeOJJdXj7_r"
 twitter_id: "903165101527752704" 

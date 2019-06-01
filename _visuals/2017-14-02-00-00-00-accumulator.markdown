@@ -3,7 +3,7 @@ title:  "Accumulator"
 thumbnail: "/assets/visual_previews/thumbnail_accumulator"
 video: "/assets/visual_full/full_accumulator"
 description: "My first Processing sketch."
-
+permalink: /gfx/misc/accumulator
 gif: "/assets/visual_gif/accumulator.gif"
 twitter_id: "831608990006177792" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/accumulator" 

@@ -1,0 +1,8 @@
+- image: /assets/galleries/n-10/n_0.png
+  thumbnail: /assets/galleries/n-10/thumbnail_n_0.jpg
+  description: "Mask imperefections minimised by tonemapping."
+
+- image: /assets/galleries/n-10/n_1.png
+  thumbnail: /assets/galleries/n-10/thumbnail_n_1.jpg
+  description: "Early version of the scene without post-processing."
+

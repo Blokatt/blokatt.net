@@ -9,6 +9,7 @@ instagram_id: "BlaZui_Dagt"
 twitter_id: "1019921961043062784" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ItsTerminal" 
 gallery: "gallery_its-terminal"
+permalink: /gfx/misc/its-terminal
 date: 2018-07-19 00:00:00
 categories: processing visual ascii 
 layout: visual_video
