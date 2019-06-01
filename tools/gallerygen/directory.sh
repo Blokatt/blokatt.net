@@ -67,8 +67,32 @@ else
 				magick convert -strip "$f" "$OUTPATH" 
 			fi
 			if [[ "$EXTENSION" == "gif" ]]; then
-				magick convert -strip -thumbnail '240x140^' "$f" -layers Optimize +map "$THUMBOUTPATH"
-				gifsicle -U -O3 --colors=32 --dither=ordered "$THUMBOUTPATH" -o "$THUMBOUTPATH"
+				#magick convert -strip -thumbnail '240x140^' "$f" "$THUMBOUTPATH"
+				#gifsicle "$f" --colors=255 --resize-touch-width 240 -o "$THUMBOUTPATH"
+				gifsicle --colors=255 "$f" -o "$THUMBOUTPATH"				
+				gifsicle -U -O3 --colors=32 --dither=ordered --resize-touch-width 240 "$THUMBOUTPATH" -o "$THUMBOUTPATH"
+				W=$(magick identify -ping -format "%w" $THUMBOUTPATH[0])
+				H=$(magick identify -ping -format "%h" $THUMBOUTPATH[0])
+				X0=0
+				Y0=0
+				X1=$W
+				Y1=$H
+				CROP=false
+				if (( W > 240 )); then
+					X0=$(($W / 2 - 120))
+					X1=$(($W / 2 + 120))
+					CROP=true
+				fi;
+
+				if (( H > 140 )); then
+					Y0=$(($H / 2 - 70))
+					Y1=$(($H / 2 + 70))
+					CROP=true
+				fi;
+				
+				if $CROP; then
+					gifsicle -O3 --crop "$X0,$Y0-$X1,$Y1" "$THUMBOUTPATH" -o "$THUMBOUTPATH"
+				fi
 			else
 				magick convert -strip -thumbnail '240x140^' "$f[0]" -quality 100 "$THUMBOUTPATH"
 			fi

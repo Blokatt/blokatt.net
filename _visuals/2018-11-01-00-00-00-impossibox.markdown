@@ -8,7 +8,7 @@ gif: "/assets/visual_gif/impossi-box.gif"
 instagram_id: "BeOE6ZajeSX"
 twitter_id: "951243357623332865" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/impossiBox" 
-
+gallery: "gallery_impossi-box"
 date: 2018-01-11 00:00:00
 categories: visual shader glsl 3D processing
 layout: visual_video

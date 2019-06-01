@@ -1,0 +1,33 @@
+- image: /assets/galleries/impossi-box/box_0.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_0.jpg
+  description: "Here it is finished, after adding a trail effect."
+
+- image: /assets/galleries/impossi-box/box_1.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_1.jpg
+
+- image: /assets/galleries/impossi-box/box_2.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_2.jpg
+
+- image: /assets/galleries/impossi-box/box_3.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_3.jpg
+  description: "Experimenting with low-res dithering."
+
+- image: /assets/galleries/impossi-box/box_4.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_4.jpg
+  description: "Using a kernel of sorts to provide an emboss-like effect as well as anti-aliasing."
+
+- image: /assets/galleries/impossi-box/box_5.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_5.jpg
+  description: "Some colour is always nice."
+
+- image: /assets/galleries/impossi-box/box_6.gif
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_6.gif
+
+- image: /assets/galleries/impossi-box/box_7.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_7.jpg
+  description: "After screen-space thresholding."
+
+- image: /assets/galleries/impossi-box/box_8.png
+  thumbnail: /assets/galleries/impossi-box/thumbnail_box_8.jpg
+  description: "Metaballs before post-processing."
+
