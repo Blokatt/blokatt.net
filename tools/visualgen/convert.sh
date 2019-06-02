@@ -138,7 +138,7 @@ SDIR="$PWD"
 
 cd in
 
-for f in *.gif
+for f in *.gif *.mkv
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"

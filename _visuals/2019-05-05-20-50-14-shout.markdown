@@ -1,10 +1,17 @@
 ---
-title:  "'Graham Kartna - These Are The Shout' Promo Animation"
-layout: post
+title:  "Graham Kartna - These Are The Shout"
+layout: visual_video
 thumbnail: "/assets/visual_previews/thumbnail_shout"
+video: "/assets/visual_full/full_shout"
 permalink: /gfx/misc/shout
+gallery: "gallery_shout"
 description: "Left click to rotate!"
+twitter_id: "1124646928535441409"
+youtube_id: "I2Dm-mKgSjU"
 date: 2019-05-05 19:50:14 +0100
-categories: visual shader glsl oldschool demoscene demo twister metal screensaver dithering scroller
+categories: visual shader processing 3D
 ---
+A looping animation produced for musician/visual artist [Graham Kartna](https://twitter.com/GrahamKartna). Included in various materials related to his May 2019 album ['These Are The Shout'](https://grahamkartna.bandcamp.com/album/these-are-the-shout). Blender was used to both model the scene and generate its lighting. The rendering was taken care of by Processing using a version of my [water shader](https://twitter.com/blokatt/status/1105948069588287488).
 
+I highly recommend you [check the album out on Bandcamp](https://grahamkartna.bandcamp.com/album/these-are-the-shout), it's pretty sweet!   
+More of Graham's music can be heard on [his Soundcloud page](https://soundcloud.com/grahamkartna)!

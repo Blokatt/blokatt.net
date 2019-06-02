@@ -32,7 +32,7 @@ else
 	mkdir -p out/"$GALLERY"
 
 	cd $1
-	FILES=$(ls *.{gif,png} | sort | tr '\n' ' ')	
+	FILES=$(ls *.{gif,png} | sort -V | tr '\n' ' ')	
 	
 	# Avoid needless processing
 
