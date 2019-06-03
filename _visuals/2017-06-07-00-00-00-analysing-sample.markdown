@@ -3,7 +3,7 @@ title:  "Analysing Sample..."
 thumbnail: "/assets/visual_previews/thumbnail_analysing-sample"
 video: "/assets/visual_full/full_analysing-sample"
 description: "A fake sci-fi science lab screen."
-permalink: /gfx/misc/analysing-sample
+permalink: /gfx/misc/analysing-sample/
 gif: "/assets/visual_gif/analysing-sample.gif"
 instagram_id: "BeOIpyYDPu9"
 twitter_id: "883831523081891840" 

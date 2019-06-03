@@ -7,7 +7,7 @@ More to come!
 LMB scrubs through time."
 date: 2018-11-18 00:38:03
 gallery: "gallery_additive-dance"
-permalink: /gfx/misc/additive-dance
+permalink: /gfx/misc/additive-dance/
 shadertoy_id: "XtyfDD" 
 twitter_id: "1068629160871034883"
 instagram_id: "Bq26cSqg-Ks"

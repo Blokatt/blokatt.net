@@ -3,7 +3,7 @@ title:  "n = 10"
 thumbnail: "/assets/visual_previews/thumbnail_n-equals-10"
 video: "/assets/visual_full/full_n-10"
 description: "Lovely fractal trees in the neighbourhood."
-permalink: /gfx/misc/n-10
+permalink: /gfx/misc/n-10/
 gif: "/assets/visual_gif/n-10.gif"
 instagram_id: "BeOKSUuDzxK"
 twitter_id: "932374666081193989" 

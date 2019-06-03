@@ -6,7 +6,7 @@ date: 2019-02-21 19:34:21
 shadertoy_id: "wdsXRN" 
 instagram_id: "BuRk0G7gtpF"
 twitter_id: "1098712743639699457"
-permalink: /gfx/misc/voronoided
+permalink: /gfx/misc/voronoided/
 layout: shadertoy
 ---
 A straightforward naive implementation of a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram).

@@ -9,7 +9,7 @@ instagram_id: "Bebkgx5jwsZ"
 twitter_id: "956972652647854081" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/dithering" 
 reddit_id: "7t8oxi"
-permalink: /gfx/misc/pico8-dithering
+permalink: /gfx/misc/pico8-dithering/
 date: 2018-01-27 00:00:00
 layout: visual_video
 ---

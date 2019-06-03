@@ -3,7 +3,7 @@ title:  "Channel Soup"
 thumbnail: "/assets/visual_previews/thumbnail_channel-soup"
 description: "Originally written on my phone during a bus ride, updated a bit later."
 date: 2019-03-24 22:03:12
-permalink: /gfx/misc/channel-soup
+permalink: /gfx/misc/channel-soup/
 shadertoy_id: "tdBSWR" 
 instagram_id: "BwIlVOqghJR"
 reddit_id: "bejsht"

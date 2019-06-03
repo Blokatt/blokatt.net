@@ -7,7 +7,7 @@ instagram_id: "Bxc7E5GCiwT"
 twitter_id: "1128326191117680640"
 youtube_id: "NGMfiGGR7lg"
 gallery: "gallery_system-sweep"
-permalink: /gfx/misc/system-sweep
+permalink: /gfx/misc/system-sweep/
 reddit_id: "bwe55z"
 layout: shadertoy
 ---
