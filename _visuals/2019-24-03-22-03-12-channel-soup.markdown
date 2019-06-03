@@ -3,14 +3,14 @@ title:  "Channel Soup"
 thumbnail: "/assets/visual_previews/thumbnail_channel-soup"
 description: "Originally written on my phone during a bus ride, updated a bit later."
 date: 2019-03-24 22:03:12
-categories: visual shader glsl fbm plasma rgb smoke
 permalink: /gfx/misc/channel-soup
 shadertoy_id: "tdBSWR" 
 instagram_id: "BwIlVOqghJR"
+reddit_id: "bejsht"
 twitter_id: "1116393342420570112"
 layout: shadertoy
 ---
-Originally written on my phone (using [Shader Editor](https://play.google.com/store/apps/details?id=de.markusfisch.android.shadereditor&hl=en)) in one of Prague's theatres during an intermission. Later improved in Shadertoy. The smoke effect is achieved using my implementation of FBM.
+Originally written on my phone (using [Shader Editor](https://play.google.com/store/apps/details?id=de.markusfisch.android.shadereditor&hl=en)). Later improved in Shadertoy. The smoke effect is achieved using FBM.
 
 *[FBM]: Fractal Brownian Motion
 

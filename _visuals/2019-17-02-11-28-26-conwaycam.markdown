@@ -6,7 +6,6 @@ A single edge detection matrix wasn't quite cutting it, so I had to upgrade to S
 Needs good light and contrast to work."
 date: 2019-02-17 11:28:26
 permalink: /gfx/misc/conwaycam
-categories: visual shader glsl sobel webcam gameoflife convolutionkernel celluarautomata
 shadertoy_id: "WdXSRr" 
 layout: shadertoy
 published: false

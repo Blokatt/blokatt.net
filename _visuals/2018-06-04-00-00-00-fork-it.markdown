@@ -9,9 +9,9 @@ instagram_id: "BhPhKxbDSIA"
 twitter_id: "982336542113804288" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ForkIt" 
 gallery: "gallery_fork-it"
+reddit_id: "8acp8w"
 permalink: /gfx/misc/fork-it
 date: 2018-04-06 00:00:00
-categories: visual shader processing 3D
 layout: visual_video
 ---
 Yet another exercise mainly meant to improve my 3D modeling skills, this time with some inverse culling-based [cel shading](https://en.wikipedia.org/wiki/Cel_shading). Made in Processing.

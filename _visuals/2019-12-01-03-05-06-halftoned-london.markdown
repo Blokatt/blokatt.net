@@ -3,7 +3,6 @@ title:  "Halftoned London"
 thumbnail: "/assets/visual_previews/thumbnail_halftoned-london"
 description: "CMYK halftone shader."
 date: 2019-01-12 03:05:06
-categories: visual shader glsl texture dither halftone cmyk printing
 permalink: /gfx/misc/halftoned-london
 shadertoy_id: "wssGzs" 
 twitter_id: "1085980839840763904"

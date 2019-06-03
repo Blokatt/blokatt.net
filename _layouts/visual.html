@@ -37,6 +37,9 @@ layout: post
     {% if page.source_code %}
     <a target="_blank" href="{{ page.source_code }}">[Source code]</a>
     {% endif %}
+    {% if page.reddit_id %}
+    <a target="_blank" href="https://redd.it/{{ page.reddit_id }}">[Reddit]</a>
+    {% endif %}
     {% if page.youtube_id %}
     <a target="_blank" href="https://www.youtube.com/watch?v={{ page.youtube_id }}">[YouTube]</a>
     {% endif %}

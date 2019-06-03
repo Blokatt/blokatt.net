@@ -9,12 +9,12 @@ instagram_id: "BlaZui_Dagt"
 twitter_id: "1019921961043062784" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ItsTerminal" 
 gallery: "gallery_its-terminal"
+reddit_id: "905hxl"
 permalink: /gfx/misc/its-terminal
 date: 2018-07-19 00:00:00
-categories: processing visual ascii 
 layout: visual_video
 ---
-An ASCII-art piece made in Processing using a custom ASCII shader, as well as my first attempt at modelling something more complex in Blender.
+An ASCII-art piece made in Processing using a custom shader, as well as my first attempt at modelling something more complex in Blender. The font used to generate the gradient texture is [Perfect DOS VGA 437](https://www.dafont.com/perfect-dos-vga-437.font).
 
 This one was a real success on [Reddit](https://www.reddit.com/r/perfectloops/comments/905hxl/its_terminal_aoc/) and [Imgur](https://imgur.com/gallery/jStRunJ).   
 

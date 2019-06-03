@@ -6,7 +6,6 @@ Left part of the screen shows the original image, right part shows the filtered 
 "
 date: 2018-12-14 21:02:23
 permalink: /gfx/misc/multipass-median
-categories: visual shader glsl noise median
 shadertoy_id: "3sXGz8" 
 layout: shadertoy
 published: false

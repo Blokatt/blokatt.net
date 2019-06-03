@@ -9,7 +9,6 @@ description: "Left click to rotate!"
 twitter_id: "1124646928535441409"
 youtube_id: "I2Dm-mKgSjU"
 date: 2019-05-05 19:50:14 +0100
-categories: visual shader processing 3D
 ---
 A looping animation produced for musician/visual artist [Graham Kartna](https://twitter.com/GrahamKartna). Included in various materials related to his May 2019 album ['These Are The Shout'](https://grahamkartna.bandcamp.com/album/these-are-the-shout). Blender was used to both model the scene and generate its lighting. The rendering was taken care of by Processing using a version of my [water shader](https://twitter.com/blokatt/status/1105948069588287488).
 

@@ -410,10 +410,16 @@ hr {
     width: 100%;
     height: 140px;
     overflow: hidden;
+    filter: brightness(75%) contrast(120%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 .gallery-item:hover {
-    /**/
+  filter: brightness(100%) contrast(100%);
+  background: inherit !important;
+  border: none !important;     
+  transition: all ease-in 0.02s;
+  /**/
 }
 
 .gallery-item img { 

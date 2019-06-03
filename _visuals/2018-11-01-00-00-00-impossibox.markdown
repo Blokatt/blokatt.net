@@ -7,12 +7,12 @@ description: "Metaballs in a box."
 gif: "/assets/visual_gif/impossi-box.gif"
 instagram_id: "BeOE6ZajeSX"
 twitter_id: "951243357623332865" 
+reddit_id: "7pk85o"
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/impossiBox" 
 gallery: "gallery_impossi-box"
 permalink: /gfx/misc/impossibox
 date: 2018-01-11 00:00:00
-categories: visual shader glsl 3D processing
 layout: visual_video
 ---
-Screen-space thresholded hyper-energised metaballs in a box.   
+Screen-space thresholded hyper-energised [metaballs](https://en.wikipedia.org/wiki/Metaballs) inside a cube.   
 Written in Processing.

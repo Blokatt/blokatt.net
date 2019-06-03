@@ -2,7 +2,7 @@
 layout: index
 title: Home
 ---
-# ASDASDASD
+# TITLE!
 <ul>
   {% for post in site.posts %}
     <li>    

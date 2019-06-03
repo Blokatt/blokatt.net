@@ -3,13 +3,9 @@ title:  "Painted London"
 thumbnail: "/assets/visual_previews/thumbnail_painted-london"
 description: "A modified shader implementation of the Kuwahara filter with some subtle motion."
 date: 2019-03-21 20:20:32
-categories: visual shader glsl painting oil kuwahara
 shadertoy_id: "tlX3RX" 
 layout: shadertoy
 permalink: /gfx/misc/painted-london
 twitter_id: "1109071189199204352"
 ---
 A modified implementation of the [Kuwahara filter](https://en.wikipedia.org/wiki/Kuwahara_filter), originally done as a commission. The shader includes an optional experimental final median pass, which can be enabled by modifying a preprocessor directive, as well as other modifiable parameters.
-
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="en" dir="ltr">Add a median filter to it and you get something really cool with minimal effort. <a href="https://t.co/uT6a7wcnD4">pic.twitter.com/uT6a7wcnD4</a></p>&mdash; Jan Vorisek (@blokatt) <a href="https://twitter.com/blokatt/status/1129472629910450176?ref_src=twsrc%5Etfw">17 May 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

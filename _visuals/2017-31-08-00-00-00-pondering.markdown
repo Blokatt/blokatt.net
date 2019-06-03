@@ -8,9 +8,9 @@ gif: "/assets/visual_gif/pondering.gif"
 instagram_id: "BeOJJdXj7_r"
 twitter_id: "903165101527752704" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/pondering" 
-
+reddit_id: "6x5jca"
 date: 2017-08-31 00:00:00
-categories: visual processing
 layout: visual_video
 ---
 Written in Processing.
+

@@ -5,7 +5,6 @@ description: "My attempt at rendering the Mandelbrot set as a bumpy texture. Mul
 Normal map is generated using a simple gradient, cleaned up a bit with the help of median filtering.
 This is as close as I could get to the look I wanted, so I'm calling it done!"
 date: 2018-12-14 17:17:04
-categories: visual shader glsl fractal mandelbrot light normalmap specular bump
 permalink: /gfx/misc/mandelburn
 shadertoy_id: "WdXGR8" 
 gallery: "gallery_mandelburn"

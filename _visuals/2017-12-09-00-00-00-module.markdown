@@ -8,9 +8,9 @@ gif: "/assets/visual_gif/module.gif"
 instagram_id: "BeOJMsUjRB_"
 twitter_id: "907375958621114368" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/module" 
-
+reddit_id: "70p0ta"
 date: 2017-09-12 00:00:00
-categories: visual shader glsl processing 3D
 layout: visual_video
 ---
-A halftone-ish shader experiment. Written in Processing.
+A halftone-ish post-processing shader.   
+Written in Processing.

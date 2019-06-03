@@ -5,7 +5,6 @@ description: "!! If the audio doesn't play, click the shader preview window righ
 Feedback.
 Music: https://soundcloud.com/blokatt/lineman-splice"
 date: 2019-01-16 16:19:09
-categories: visual shader glsl retro music dither visualizer rainbow feedback milkdrop
 shadertoy_id: "WdlGWX" 
 twitter_id: "1097935809544626177"
 instagram_id: "BuRhef6g4FJ"

@@ -10,9 +10,7 @@ twitter_id: "831880856725762048"
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/terrain" 
 
 date: 2017-02-15 00:00:00
-categories: visual shader processing 3D
 layout: visual_video
 ---
-Glitchy rainbow surface with wonky semi-transparent triangle rendering. Written in Processing.
-
-...what's depth sorting?  
+Written in Processing.
+ 

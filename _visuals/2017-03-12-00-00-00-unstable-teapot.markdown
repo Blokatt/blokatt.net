@@ -8,10 +8,9 @@ gif: "/assets/visual_gif/unstable-teapot.gif"
 instagram_id: "BeOJCQWDTDK"
 twitter_id: "937114899481841664" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/unstableTeapot" 
-
+reddit_id: "7h6wc1"
 date: 2017-12-03 00:00:00
-categories: visual processing 3D
 layout: visual_video
 ---
-Experimenting on the Utah Teapot model with a custom OBJ importer. Written in Processing.
-
+Experimenting on the classic [Utah teapot](https://en.wikipedia.org/wiki/Utah_teapot) model with a custom OBJ renderer.   
+Written in Processing.
