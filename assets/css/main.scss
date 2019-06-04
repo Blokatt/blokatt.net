@@ -196,10 +196,48 @@ hr {
     }
   }
 
-  .visual-thumbnail img {
+  .visual-thumbnail-wide-image {
+    width: 100%;
+    float: left;
+    user-select: none;
+    border-right: 2px $body-muted solid;
+  }
+
+
+  .visual-thumbnail-wide {
+    margin: 0 auto;
+    width: 100%;
     height: 140px;
+    background: rgba(102, 15, 140, 0.04);
+    display: block;
+    outline-style: dashed;
+    outline-color: $body-muted;
+    outline-width: 2px;    
+    cursor: pointer;
+    margin-right: 10px;
+    overflow: hidden;    
+  }
+
+  .visual-thumbnail-wide-description {  
+    padding-left: 12px;
+    overflow:auto;
+    -webkit-transition: all 300ms ease-in;
+  }
+
+  .visual-thumbnail img {    
     width: 140px;
+    object-fit: cover;    
+  }
+
+  .visual-thumbnail-wide-image img {
     object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 0%;
+    margin: 0;
+    max-width: inherit;
+    float: left;
+    width: 100%;
+    height: 140px;
   }
 
   .visual-thumbnail {
@@ -275,8 +313,6 @@ hr {
     
 
   }
-
-
 
   .visual-video-image {
 

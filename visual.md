@@ -4,6 +4,14 @@ title: Visual
 sidebar_link: true
 sidebar_sort_order: 0
 ---
+Lorem markdownum fidelius **usus eras resolvit** temptat quoque armat factos
+**furens**. Peto dei! E pedes nostrumque, inpia **vulnus**, quae possis se odit
+probant vivunt ducibus; ore procul fratri esse. Ora exsangue faciem placuisse,
+vincere revulsum eo damna solis coronis, non abeunt. Rutilis et sequitur
+verbaque vulnera sua *viscera Romana*, ore, honores, baculo venturorumque
+ingentia sinit, si.
+
+<div markdown="0">
 <script>
   var charsTyped = 0;
   var titleDefault = "Experiments";
@@ -56,14 +64,48 @@ sidebar_sort_order: 0
     typeResize();
   });
   $win.on('resize', typeResize);
+
 </script>
+
+<p>
+  
+    <div class="visual-thumbnail-wide" onclick="location.href='#';">
+      <div class="visual-thumbnail-wide-image">
+        <img src = "\assets\visual_previews\thumbnail_bktglich.jpg">
+      </div>
+      <div class="visual-thumbnail-wide-description">
+<div markdown="1">
+## bktGlitch
+_A glitch shader for GameMaker: Studio._
+</div>
+</div>
+</div>
+
+<script>
+$(".visual-thumbnail-wide").hover( function() {
+  $(this).children('.visual-thumbnail-wide-image')
+    .css("width", "25%")
+    .css("-webkit-filter", "url(#visual-duotone)")
+    .css("filter", "url(#visual-duotone)")
+    .css("-webkit-transition", "all 200ms ease-out");  
+  $(this).children('.visual-thumbnail-wide-description').css("opacity", "1.0");
+}, function() {
+  $(this).children('.visual-thumbnail-wide-image')
+    .css("width", "100%")
+    .css("-webkit-filter", "none")
+    .css("filter", "none")    
+    .css("-webkit-transition", "all 200ms ease-in");      
+  $(this).children('.visual-thumbnail-wide-description').css("opacity", "0.0");
+});
+</script>
+
+</p>
 
 <div class="visual-title-wrapper">
   <hr style="margin-top: 5px; margin-bottom: 5px;">
   <h4 class="visual-title">&gt;</h4>
   <hr style="margin-top: 5px; margin-bottom: 10px;">
 </div>
-
 <div class="visual-row">
   {% assign sorted = site.visuals | sort: 'date' | reverse %}
   {% assign lastYear = time.date | date: '%Y' %}
@@ -136,3 +178,5 @@ sidebar_sort_order: 0
     $('video', this).get(0).pause();
   }
 </script>
+
+</div>
