@@ -200,7 +200,25 @@ hr {
     width: 100%;
     float: left;
     user-select: none;
+    position: relative;
     border-right: 2px $body-muted solid;
+    border-width: 0px;
+  }
+
+  .visual-thumbnail-wide-title {          
+    position: absolute;      
+    right: 0px;
+    background: $body-muted;
+    background-blend-mode: lighten;
+    color: $body-bg;
+    width: 100%;
+    top: 18px;    
+    vertical-align: middle;
+    line-height: 2rem;
+    font-size: 1.5rem;      
+    padding-right: 16px;
+    text-align: right;
+    -webkit-transition: all 300ms;
   }
 
 
@@ -214,6 +232,7 @@ hr {
     outline-color: $body-muted;
     outline-width: 2px;    
     cursor: pointer;
+    position: relative;
     margin-right: 10px;
     overflow: hidden;    
   }

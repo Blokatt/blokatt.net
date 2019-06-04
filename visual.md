@@ -1,16 +1,10 @@
 ---
 layout: page
-title: Visual
+title: Graphics
 sidebar_link: true
 sidebar_sort_order: 0
 ---
-Lorem markdownum fidelius **usus eras resolvit** temptat quoque armat factos
-**furens**. Peto dei! E pedes nostrumque, inpia **vulnus**, quae possis se odit
-probant vivunt ducibus; ore procul fratri esse. Ora exsangue faciem placuisse,
-vincere revulsum eo damna solis coronis, non abeunt. Rutilis et sequitur
-verbaque vulnera sua *viscera Romana*, ore, honores, baculo venturorumque
-ingentia sinit, si.
-
+Here are some things I've made that somehow relate to computer graphics, generative art, creative coding or *whatever you wanna call it*! My main focus has always been real-time rendering, so that's mostly what you'll find here!
 <div markdown="0">
 <script>
   var charsTyped = 0;
@@ -68,36 +62,22 @@ ingentia sinit, si.
 </script>
 
 <p>
-  
-    <div class="visual-thumbnail-wide" onclick="location.href='#';">
-      <div class="visual-thumbnail-wide-image">
-        <img src = "\assets\visual_previews\thumbnail_bktglich.jpg">
-      </div>
-      <div class="visual-thumbnail-wide-description">
+
+<div class="visual-thumbnail-wide" onclick="location.href='#';" data-title="Break your game!">
+  <div class="visual-thumbnail-wide-image">    
+    <img src = "\assets\visual_previews\thumbnail_bktglich.jpg">    
+    <div class="visual-thumbnail-wide-title">
+    bktGlitch
+    </div>
+  </div>  
+  <div class="visual-thumbnail-wide-description">  
 <div markdown="1">
 ## bktGlitch
 _A glitch shader for GameMaker: Studio._
-</div>
-</div>
+</div>    
+  </div>  
 </div>
 
-<script>
-$(".visual-thumbnail-wide").hover( function() {
-  $(this).children('.visual-thumbnail-wide-image')
-    .css("width", "25%")
-    .css("-webkit-filter", "url(#visual-duotone)")
-    .css("filter", "url(#visual-duotone)")
-    .css("-webkit-transition", "all 200ms ease-out");  
-  $(this).children('.visual-thumbnail-wide-description').css("opacity", "1.0");
-}, function() {
-  $(this).children('.visual-thumbnail-wide-image')
-    .css("width", "100%")
-    .css("-webkit-filter", "none")
-    .css("filter", "none")    
-    .css("-webkit-transition", "all 200ms ease-in");      
-  $(this).children('.visual-thumbnail-wide-description').css("opacity", "0.0");
-});
-</script>
 
 </p>
 
@@ -177,6 +157,32 @@ $(".visual-thumbnail-wide").hover( function() {
     $('video', this).get(0).currentTime = 0;
     $('video', this).get(0).pause();
   }
+
+  $(".visual-thumbnail-wide").hover( function() {
+    $(this).children('.visual-thumbnail-wide-image')
+      .css("width", "25%")
+      .css("-webkit-filter", "url(#visual-duotone)")
+      .css("filter", "url(#visual-duotone)")
+      .css("-webkit-transition", "all 200ms ease-out")
+      .css("border-width", "2px");
+    $(this).children('.visual-thumbnail-wide-description').css("opacity", "1.0");
+    $(this).children('.visual-thumbnail-wide-image').children('.visual-thumbnail-wide-title')
+      .css("padding-right", "1000px")
+      .css("opacity", "0.0");
+    titleTo = $(this).data('title');
+  }, function() {
+    $(this).children('.visual-thumbnail-wide-image')
+      .css("width", "100%")
+      .css("-webkit-filter", "none")
+      .css("filter", "none")    
+      .css("-webkit-transition", "all 200ms ease-in")
+      .css("border-width", "0px");    
+    $(this).children('.visual-thumbnail-wide-description').css("opacity", "0.0");
+    $(this).children('.visual-thumbnail-wide-image').children('.visual-thumbnail-wide-title')
+      .css("padding-right", "16px")
+      .css("opacity", "1.0");  
+    titleTo = titleDefault;
+  });
 </script>
 
 </div>
