@@ -17,7 +17,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
   String.prototype.replaceAt = function (index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
   }
-
+  
   function randChar() {
     return String.fromCharCode(33 + Math.round(Math.random() * 93));
   }
@@ -54,10 +54,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
     var w = $(".content").width();
     $(".visual-title").css("font-size", (w * .03));
   }
-  $(document).ready(function () {
-    titleTo = titleDefault;
-    typeResize();
-  });
+  
   $win.on('resize', typeResize);
 
 </script>
@@ -122,7 +119,7 @@ _A glitch shader for GameMaker: Studio._
 
 <script>
   var figure = $(".visual-video").hover(hoverVideo, hideVideo);
-
+  var wideFilterSwapped = false;
 
   $(".visual-thumbnail").each(function (i, obj) {
     var fade = Math.pow(i * .5, 1.2);
@@ -138,16 +135,11 @@ _A glitch shader for GameMaker: Studio._
 
 
   $(".visual-thumbnail").hover(function () {
-    titleTo = $(this).data('title');
-    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
-    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+    titleTo = $(this).data('title');    
   });
 
-
   $(".visual-thumbnail").mouseleave(function () {
-    titleTo = titleDefault;
-    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
-    //$(this).css('filter','sepia(0%) hue-rotate(0deg) contrast(100%)');
+    titleTo = titleDefault;  
   });
 
   function hoverVideo(e) {
@@ -159,11 +151,15 @@ _A glitch shader for GameMaker: Studio._
     $('video', this).get(0).pause();
   }
 
-  $(".visual-thumbnail-wide").hover( function() {
+  /*
+  if ($(window).width() < 790) {
+  */
+
+  function wideShow(e) {  
     $(this).children('.visual-thumbnail-wide-image')
       .css("width", "25%")
-      .css("-webkit-filter", "url(#visual-duotone)")
-      .css("filter", "url(#visual-duotone)")
+      .css("-webkit-filter", (!wideFilterSwapped) ? "url(#visual-duotone)" :"none")
+      .css(".filter", (!wideFilterSwapped) ? "url(#visual-duotone)" :"none")
       .css("-webkit-transition", "all 200ms ease-out")
       .css("border-width", "2px");
     $(this).children('.visual-thumbnail-wide-description').css("opacity", "1.0");
@@ -171,11 +167,13 @@ _A glitch shader for GameMaker: Studio._
       .css("padding-right", "1000px")
       .css("opacity", "0.0");
     titleTo = $(this).data('title');
-  }, function() {
+  }
+
+  function wideHide(e) {  
     $(this).children('.visual-thumbnail-wide-image')
       .css("width", "100%")
-      .css("-webkit-filter", "none")
-      .css("filter", "none")    
+      .css("-webkit-filter", (!wideFilterSwapped) ? "none" : "url(#visual-duotone)")
+      .css(".filter", (!wideFilterSwapped) ? "none" : "url(#visual-duotone)")
       .css("-webkit-transition", "all 200ms ease-in")
       .css("border-width", "0px");    
     $(this).children('.visual-thumbnail-wide-description').css("opacity", "0.0");
@@ -183,7 +181,22 @@ _A glitch shader for GameMaker: Studio._
       .css("padding-right", "16px")
       .css("opacity", "1.0");  
     titleTo = titleDefault;
+  }
+  if ($(window).width() < 790) {
+    $(".visual-thumbnail-wide").hover( wideHide, wideShow);
+  } else {
+    $(".visual-thumbnail-wide").hover( wideShow, wideHide);
+  }
+  
+  $(document).ready(function () {
+    if ($(window).width() < 790) {
+      wideFilterSwapped = true;
+      $( ".visual-thumbnail-wide" ).each(wideShow);      
+    }
+    titleTo = titleDefault;
+    typeResize();
   });
+
 </script>
 
 </div>
