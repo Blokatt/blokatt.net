@@ -8,9 +8,9 @@ Here are some things I've made that somehow relate to computer graphics, generat
 <div markdown="0">
 <script>
   var charsTyped = 0;
-  var titleDefault = "Experiments";
-  var titleCurrent = "...........";
-  var titleTo = titleDefault;
+  var titleDefault = "";
+  var titleCurrent = "Loading stuff...";
+  var titleTo = titleCurrent;
   var typeClock = 0;
   var typeUnderscoreOpacity = 0.0;
 
@@ -55,6 +55,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
     $(".visual-title").css("font-size", (w * .03));
   }
   $(document).ready(function () {
+    titleTo = titleDefault;
     typeResize();
   });
   $win.on('resize', typeResize);
@@ -63,7 +64,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
 
 <p>
 
-<div class="visual-thumbnail-wide" onclick="location.href='#';" data-title="Break your game!">
+<div class="visual-thumbnail-wide" onclick="location.href='https://blokatt.itch.io/bktglitch';" data-title="If it ain't broke, break it!">
   <div class="visual-thumbnail-wide-image">    
     <img src = "\assets\visual_previews\thumbnail_bktglich.jpg">    
     <div class="visual-thumbnail-wide-title">
