@@ -1,0 +1,14 @@
+---
+title:  "Neon Glow"
+thumbnail: "/assets/visual_previews/thumbnail_neon-glow"
+date: 2019-06-08 22:27:00 +0300
+twitter_id: "1136676263635116032"
+permalink: /gfx/misc/neon-glow/
+source_code: "https://github.com/Blokatt/NeonGlow" 
+layout: visual_canvas
+canvas_script: "/assets/visual_scripts/neon-glow.js"
+---
+My _lo-fi_ take on the classic demoscene tunnel effect.   
+[Procedural drone audio included, visit the ShaderToy page to hear it!](https://www.shadertoy.com/view/ttX3W2)
+
+Spent a couple days tweaking the hell out of this, and I think it turned out pretty well. 

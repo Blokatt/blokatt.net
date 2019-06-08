@@ -1,0 +1,38 @@
+---
+layout: visual
+---
+{% if page.canvas_script %}
+<script src="{{ page.canvas_script }}"></script>
+{% endif %}
+<p>    
+    <div class="visual-preview-outer">
+    
+        
+    <div class="loader" style="z-index: 1; position: relative; width: 100%; height: 100%; text-align: center;">
+        Loading...
+    </div>
+    <canvas id="canvas-visual"></canvas>
+    <script>
+    $('.loader').hide();
+    var canvas = $("#canvas-visual")[0];        
+    function resizeCanvas() {
+        canvas.width = $('.visual-preview-outer')[0].offsetWidth - 4;
+        canvas.height = $('.visual-preview-outer')[0].offsetHeight - 4;
+    }
+    window.addEventListener('resize', resizeCanvas, false);
+    resizeCanvas();   
+    
+    main();
+
+    $(document).ready(function () {
+        $("#canvas-visual").css('opacity', '1.0');
+        resizeCanvas();        
+    });
+
+    </script>
+    </div>
+</p>
+
+
+{{ content }}
+
