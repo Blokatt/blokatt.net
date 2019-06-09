@@ -16,18 +16,17 @@ layout: visual
     $('.loader').hide();
     var canvas = $("#canvas-visual")[0];        
     function resizeCanvas() {
-        canvas.width = $('.visual-preview-outer')[0].offsetWidth - 4;
-        canvas.height = $('.visual-preview-outer')[0].offsetHeight - 4;
+        var newW = $('.visual-preview-outer')[0].offsetWidth - 4;
+        var newH = $('.visual-preview-outer')[0].offsetHeight - 4;
+        if (Math.floor(canvas.width) != Math.floor(newW) || Math.floor(canvas.height) != Math.floor(newH)) {
+            canvas.width = newW;
+            canvas.height = newH;
+        }        
     }
-    window.addEventListener('resize', resizeCanvas, false);
-    resizeCanvas();   
-    
+    //window.addEventListener('resize', resizeCanvas, false);
+         
     main();
 
-    $(document).ready(function () {
-        $("#canvas-visual").css('opacity', '1.0');
-        resizeCanvas();        
-    });
 
     </script>
     </div>
