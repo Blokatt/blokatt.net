@@ -23,6 +23,11 @@ layout: visual
             canvas.height = newH;
         }        
     }
+    function glFailed() {
+        $("#canvas-visual").remove();                
+        $(".visual-preview-outer").css("overflow", "hidden");                
+        $(".visual-preview-outer").append("<center><h2>Something WebGL-related went wrong. Sorry.</h2><h1>:c</h1> </center>")
+    }
     //window.addEventListener('resize', resizeCanvas, false);
          
     main();

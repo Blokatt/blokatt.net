@@ -8,7 +8,4 @@ source_code: "https://github.com/Blokatt/NeonGlow"
 layout: visual_canvas
 canvas_script: "/assets/visual_scripts/neon-glow/neon-glow.js"
 ---
-My _lo-fi_ take on the classic demoscene tunnel effect.   
-[Procedural drone audio included, visit the ShaderToy page to hear it!](https://www.shadertoy.com/view/ttX3W2)
-
-Spent a couple days tweaking the hell out of this, and I think it turned out pretty well. 
+A post-processsing neon/glow effect done in two-passes using [Gaussian blurring](https://en.wikipedia.org/wiki/Gaussian_blur). Originally made in GameMaker:Studio (see source code), subsequently ported to WebGL.

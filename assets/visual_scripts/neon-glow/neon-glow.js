@@ -363,6 +363,7 @@ function main() {
     var canvas = $("#canvas-visual");    
     gl = canvas[0].getContext("webgl", { alpha: false });
     if (!gl) {
+        glFailed();
         return;
     }         
     gl.getExtension('OES_standard_derivatives');
@@ -444,7 +445,10 @@ function main() {
 
     blendColour = [1.0, 1.0, 1.0, 1.0];
 
-    function drawScene() {           
+    function drawScene() {    
+
+
+        
         if (timePrev != 0) {        
             time += (Date.now() - timePrev);
         }
@@ -577,7 +581,10 @@ function main() {
             //gl.clearColor(0, 0, 0, 1);
             //gl.clear(gl.COLOR_BUFFER_BIT);
         }
-
+        if (gl.getError() != gl.NO_ERROR) {
+            glFailed();
+            return;
+        } 
         requestAnimationFrame(drawScene);
     }
 
