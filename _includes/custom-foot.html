@@ -1,5 +1,10 @@
 <script>
-    var activeLink = $('.page-title');
+    var activeLink;
+    if ($(window).width() < 790) {
+        activeLink = $('.page-title');
+    } else {
+        activeLink = $('.page-link.active');
+    }
     if (activeLink) {
         var activeLinkLetters = activeLink.text().split("");
         activeLink.html("");
