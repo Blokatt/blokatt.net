@@ -6,6 +6,7 @@ Feedback.
 Music: https://soundcloud.com/blokatt/lineman-splice"
 date: 2019-01-16 16:19:09
 shadertoy_id: "WdlGWX" 
+gallery: "gallery_heater"
 twitter_id: "1097935809544626177"
 instagram_id: "BuRhef6g4FJ"
 permalink: /gfx/misc/heater/
