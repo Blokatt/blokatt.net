@@ -36,10 +36,24 @@
 
 
 </div>
+  
+  <script>
+  /*
+    var sidebarPageLinkMaxY = 0;
+    var sidebarHeight = 0;
+    if ($('#sidebar').height) {
+      sidebarHeight = $('#sidebar').height();
+      sidebarPageLinkMaxY = sidebarHeight - $('#sidebar-icon-links').position().top;          
+      //alert(sidebarPageLinkMaxY);
+    }
 
+    document.styleSheets[0].insertRule(' @media only screen and(max - height:' + (sidebarHeight - 111).toString() + 'px) and(min - width: 49rem) { #sidebar { background - attachment: scroll; background - position: right 50 % top ' + (sidebarPageLinkMaxY + 111).toString() + 'px; } }', 0);
+
+  */
+  </script>
+  
 
   {% if page.layout != "index" %}
-  
   <style>
     @media only screen and (max-width: 49rem) {
       #sidebar {

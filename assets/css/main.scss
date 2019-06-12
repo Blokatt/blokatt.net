@@ -55,6 +55,7 @@ td, th {
 
 .content a {          
     font-weight: bold;
+    transition: 0.1s all;
 }
 
 .content a:hover {
@@ -137,8 +138,9 @@ hr {
   }
 
   a {
-    color: $sidebar-fg-color; 
+    color: $sidebar-fg-color;     
   }
+  
 }
 
 .defs-only {

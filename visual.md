@@ -13,7 +13,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
   var titleTo = titleCurrent;
   var typeClock = 0;
   var typeUnderscoreOpacity = 0.0;
-
+  var titleGlitchProbability = 0;
   String.prototype.replaceAt = function (index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
   }
@@ -22,10 +22,17 @@ Here are some things I've made that somehow relate to computer graphics, generat
     return String.fromCharCode(33 + Math.round(Math.random() * 93));
   }
 
+  function changeTitle(title) {
+    titleGlitchProbability = 1;
+    titleTo = title;
+  }
+
   function visualTitleUpdate() {
     // * (titleTo == titleDefault || titleCurrent != titleTo)
+    titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
     typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
-    if (Math.random() <= .15) {
+    if (Math.random() <= titleGlitchProbability) {
+      titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
       titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
     }
     for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
@@ -135,11 +142,11 @@ _A glitch shader for GameMaker: Studio._
 
 
   $(".visual-thumbnail").hover(function () {
-    titleTo = $(this).data('title');    
+    changeTitle($(this).data('title'));    
   });
 
   $(".visual-thumbnail").mouseleave(function () {
-    titleTo = titleDefault;  
+    changeTitle(titleDefault);  
   });
 
   function hoverVideo(e) {
@@ -180,7 +187,7 @@ _A glitch shader for GameMaker: Studio._
     $(this).children('.visual-thumbnail-wide-image').children('.visual-thumbnail-wide-title')
       .css("padding-right", "16px")
       .css("opacity", "1.0");  
-    titleTo = titleDefault;
+    changeTitle(titleDefault);
   }
   if ($(window).width() < 790) {
     $(".visual-thumbnail-wide").hover( wideHide, wideShow);
@@ -193,7 +200,7 @@ _A glitch shader for GameMaker: Studio._
       wideFilterSwapped = true;
       $( ".visual-thumbnail-wide" ).each(wideShow);      
     }
-    titleTo = titleDefault;
+    changeTitle(titleDefault);
     typeResize();
   });
 
