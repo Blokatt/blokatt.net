@@ -65,25 +65,21 @@ Here are some things I've made that somehow relate to computer graphics, generat
   $win.on('resize', typeResize);
 
 </script>
-
 <p>
-
 <div class="visual-thumbnail-wide" onclick="location.href='/gfx/bktglitch/';" data-title="If it ain't broke, break it!">
-  <div class="visual-thumbnail-wide-image">    
+  <div class="visual-thumbnail-wide-image right">    
     <img src = "\assets\visual_previews\thumbnail_bktglich.jpg">    
-    <div class="visual-thumbnail-wide-title">
-    bktGlitch
+    <div class="visual-thumbnail-wide-title right">
+      bktGlitch
     </div>
   </div>  
-  <div class="visual-thumbnail-wide-description">  
-<div markdown="1">
+  <div class="visual-thumbnail-wide-description right">  
+    <div markdown="1">
 ## bktGlitch
 _A glitch shader for GameMaker: Studio._
 </div>    
-  </div>  
+</div>  
 </div>
-
-
 </p>
 
 <div class="visual-title-wrapper">
@@ -123,6 +119,23 @@ _A glitch shader for GameMaker: Studio._
 {% endfor %}
 
 </div>
+<hr style="margin-top: 10px; margin-bottom: 5px;">
+<p>
+<div class="visual-thumbnail-wide" onclick="location.href='https://twitter.com/i/moments/900699332286050306';" data-title="Relatively decipherable.">
+  <div class="visual-thumbnail-wide-image left">    
+    <img src = "\assets\visual_previews\thumbnail_tweetcarts.png">    
+    <div class="visual-thumbnail-wide-title left">
+      PICO-8 Tweetcarts
+    </div>
+  </div>  
+  <div class="visual-thumbnail-wide-description left">  
+    <div markdown="1">
+## PICO-8 Tweetcarts
+_Various PICO-8 experiments that fit in a single tweet!_
+</div>    
+</div>  
+</div>
+</p>
 
 <script>
   var figure = $(".visual-video").hover(hoverVideo, hideVideo);
