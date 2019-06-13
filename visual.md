@@ -68,7 +68,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
 
 <p>
 
-<div class="visual-thumbnail-wide" onclick="location.href='https://blokatt.itch.io/bktglitch';" data-title="If it ain't broke, break it!">
+<div class="visual-thumbnail-wide" onclick="location.href='/gfx/bktglitch/';" data-title="If it ain't broke, break it!">
   <div class="visual-thumbnail-wide-image">    
     <img src = "\assets\visual_previews\thumbnail_bktglich.jpg">    
     <div class="visual-thumbnail-wide-title">
