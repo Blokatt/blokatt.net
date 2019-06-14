@@ -55,7 +55,7 @@ td, th {
 
 .content a {          
     font-weight: bold;
-    transition: 0.1s all;
+    transition: 0.25s all;
 }
 
 .content a:hover {
@@ -117,16 +117,33 @@ hr {
     background-color: $colour-border-purple;
     border: none;
 }
+#sidebar-stripe {
+  position: relative;
+  float: right;
+  width: 24px;
+  min-width: 24px;
+  height: 100%;
+  display: block;
+  background-image: url('/assets/sidebar-stripe.png');
+  background-position: right;
+  background-repeat: repeat-y;
+  opacity: 0.75;
+  background-blend-mode: lighten;
+}
+
+@media only screen and (max-width: $large-breakpoint) {
+  #sidebar-stripe {
+    display: none;
+  }
+}
 
 
 #sidebar {
   flex: 0 0 auto;
   padding: $section-spacing;
 
-  background-image: url('/assets/sidebar-background.png');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
+
+
   .site-title {
     font-family: "Abril Fatface", serif;
     font-weight: normal;
@@ -346,12 +363,12 @@ hr {
   }
 
   .visual-thumbnail:hover {
-    -webkit-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1);
+    -webkit-transition: all 50ms cubic-bezier(1.000, 0.005, 0.680, 1);
     /* older webkit */
-    -webkit-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
-    -moz-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
-    -o-transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
-    transition: all 100ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -webkit-transition: all 50ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -moz-transition: all 50ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    -o-transition: all 50ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
+    transition: all 50ms cubic-bezier(1.000, 0.005, 0.680, 1.005);
     /* custom */
 
     -webkit-transition-timing-function: cubic-bezier(1.000, 0.005, 0.680, 1);
@@ -399,6 +416,7 @@ hr {
  .visual-video:hover {
     -webkit-filter: none;
     filter: none;
+    
      /*
     filter: sepia(0%) hue-rotate(360deg) contrast(100%);
    

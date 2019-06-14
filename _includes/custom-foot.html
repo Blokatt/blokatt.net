@@ -55,6 +55,11 @@
     }
     window.requestAnimationFrame(sidebarAnimation);
 
+    $('.container').bind('scroll', function () {        
+        var scrollAmount = - ($('.container').scrollTop()) * .1;
+        console.log(scrollAmount);
+        $("#sidebar-stripe").css("background-position", "right " + scrollAmount.toString() + "px");
+    });
 
 
 
