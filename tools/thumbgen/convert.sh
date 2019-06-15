@@ -235,7 +235,7 @@ do
 		if [ "$THUMB" -ot "$f" ]; then
 			echo "${orange}$THUMB${reset}"
 			echo "Replacing."
-			magick convert "$f"[0] -interlace Plane -colors 255 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"	
+			magick convert "$f"[0] -interlace Plane -ordered-dither o8x8,3 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"	
 			#ffmpeg $ARGS0 && \
 			#ffmpeg $ARGS1 -y "$THUMB";
 		else
@@ -244,7 +244,7 @@ do
 	else
 		echo "${orange}$THUMB${reset}"	
 		echo "New, converting."	
-		magick convert "$f"[0] -interlace Plane -colors 255 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"		
+		magick convert "$f"[0] -interlace Plane -ordered-dither o8x8,3 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"		
 		#ffmpeg $ARGS0 && \
 		#ffmpeg $ARGS1 "$THUMB";		
 	fi;
