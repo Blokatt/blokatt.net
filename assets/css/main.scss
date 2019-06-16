@@ -141,7 +141,7 @@ hr {
   background-position: right 0px;
   background-repeat: repeat-y;  
   
-  transition: all 0.02s;  
+  //transition: all 0.02s;  
 }
 
 @media only screen and (max-width: $large-breakpoint) {
@@ -498,6 +498,7 @@ hr {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 1.25rem;
     margin-top: -3px;
     margin-bottom: -3px;
   }

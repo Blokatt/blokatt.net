@@ -49,10 +49,12 @@ function sidebarAnimation() {
         $(this).css('letter-spacing', (linkCharFade * (.08 + Math.sin(index * .5 + time / 100.0) * 0.04)).toString() + 'rem');
         //$(this).css('padding-right', (0.2 + Math.sin(index * .5 + time / 100) * 0.1).toString() + "rem");
     });
+    /*
     var hue = Math.sin(time / 3000) * 5;
     var valA = Math.sin(time / 1000) * .2 + 1;
     var valB = Math.cos(time / 1000) * .2 + 1;
     $('body').css('background-image', 'linear-gradient(to bottom, hsla(' + (258 + hue).toString() + ', 29%, ' + (49 * valA).toString() + '%, 1), hsla(' + (257 + hue).toString() + ', 29%, ' + (35 * valB).toString() + '%, 1)');
+    */
     window.requestAnimationFrame(sidebarAnimation);
 }
 window.requestAnimationFrame(sidebarAnimation);
