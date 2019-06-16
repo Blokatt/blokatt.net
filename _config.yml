@@ -32,7 +32,13 @@ previews: /assets/visual_previews/
 
 permalink: pretty
 # Build settings
-markdown: kramdown
+markdown:         kramdown
+highlighter:      rouge
+
+paginate:         5
+
+disqus:
+  shortname: blokatt
 
 kramdown:  
   parse_block_html: true
@@ -40,6 +46,8 @@ kramdown:
 theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
 collections:
   visuals:

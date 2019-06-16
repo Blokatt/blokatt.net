@@ -64,7 +64,7 @@ else
 
 			if [[ "$EXTENSION" == "png" ]]; then
 				#strip gamma
-				magick convert -strip "$f" "$OUTPATH" 
+				magick convert -strip -interlace Plane "$f" "$OUTPATH" 
 			fi
 			if [[ "$EXTENSION" == "gif" ]]; then
 				#magick convert -strip -thumbnail '240x140^' "$f" "$THUMBOUTPATH"
