@@ -139,10 +139,9 @@ hr {
   display: block;
   background-image: url('/assets/sidebar-stripe.png');
   background-position: right 0px;
-  background-repeat: repeat-y;
-  opacity: 0.75;
-  background-blend-mode: lighten;
-  transition: all 0.02s;
+  background-repeat: repeat-y;  
+  
+  transition: all 0.02s;  
 }
 
 @media only screen and (max-width: $large-breakpoint) {
@@ -497,6 +496,7 @@ hr {
   .visual-title {
     position: -webkit-sticky;    
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: -3px;
     margin-bottom: -3px;

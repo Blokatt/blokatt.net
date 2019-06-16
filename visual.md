@@ -59,7 +59,7 @@ Here are some things I've made that somehow relate to computer graphics, generat
 
   function typeResize() {
     var w = $(".content").width();
-    $(".visual-title").css("font-size", (w * .03));
+    $(".visual-title").css("font-size", (w * .035));
   }
   
   $win.on('resize', typeResize);
@@ -137,86 +137,5 @@ _Various PICO-8 experiments that fit in a single tweet!_
 </div>
 </p>
 
-<script>
-  var figure = $(".visual-video").hover(hoverVideo, hideVideo);
-  var wideFilterSwapped = false;
-
-  $(".visual-thumbnail").each(function (i, obj) {
-    var fade = Math.pow(i * .5, 1.2);
-    $(obj).css('transform', 'scale(.9)');
-    $(obj).mouseleave(function () {
-      $(this).css('transform', 'scale(.9)');
-    });
-
-    $(obj).mouseenter(function () {
-      $(this).css('transform', 'scale(1) rotate(0deg)');
-    });
-  });
-
-
-  $(".visual-thumbnail").hover(function () {
-    changeTitle($(this).data('title'));    
-  });
-
-  $(".visual-thumbnail").mouseleave(function () {
-    changeTitle(titleDefault);  
-  });
-
-  function hoverVideo(e) {
-    $('video', this).get(0).play();
-  }
-
-  function hideVideo(e) {
-    $('video', this).get(0).currentTime = 0;
-    $('video', this).get(0).pause();
-  }
-
-  /*
-  if ($(window).width() < 790) {
-  */
-
-  function wideShow(e) {  
-    $(this).children('.visual-thumbnail-wide-image')
-      .css("width", "25%")
-      .css("-webkit-filter", (!wideFilterSwapped) ? "url(#visual-duotone)" :"none")
-      .css(".filter", (!wideFilterSwapped) ? "url(#visual-duotone)" :"none")
-      .css("-webkit-transition", "all 200ms ease-out")
-      .css("border-width", "2px");
-    $(this).children('.visual-thumbnail-wide-description').css("opacity", "1.0");
-    $(this).children('.visual-thumbnail-wide-image').children('.visual-thumbnail-wide-title')
-      .css("padding-right", "1000px")
-      .css("opacity", "0.0");
-    titleTo = $(this).data('title');
-  }
-
-  function wideHide(e) {  
-    $(this).children('.visual-thumbnail-wide-image')
-      .css("width", "100%")
-      .css("-webkit-filter", (!wideFilterSwapped) ? "none" : "url(#visual-duotone)")
-      .css(".filter", (!wideFilterSwapped) ? "none" : "url(#visual-duotone)")
-      .css("-webkit-transition", "all 200ms ease-in")
-      .css("border-width", "0px");    
-    $(this).children('.visual-thumbnail-wide-description').css("opacity", "0.0");
-    $(this).children('.visual-thumbnail-wide-image').children('.visual-thumbnail-wide-title')
-      .css("padding-right", "16px")
-      .css("opacity", "1.0");  
-    changeTitle(titleDefault);
-  }
-  if ($(window).width() < 790) {
-    $(".visual-thumbnail-wide").hover( wideHide, wideShow);
-  } else {
-    $(".visual-thumbnail-wide").hover( wideShow, wideHide);
-  }
-  
-  $(document).ready(function () {
-    if ($(window).width() < 790) {
-      wideFilterSwapped = true;
-      $( ".visual-thumbnail-wide" ).each(wideShow);      
-    }
-    changeTitle(titleDefault);
-    typeResize();
-  });
-
-</script>
 
 </div>
