@@ -55,6 +55,10 @@ td, th {
 
 body {
   background-image: linear-gradient(to bottom, rgba(110, 89, 161, 1), rgba(78, 63, 115, 1));
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: subpixel-antialiased;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 .header-frame {
@@ -351,12 +355,12 @@ hr {
     border-radius: 20px;
     border: 2px $body-color solid;
 
-    -webkit-transition: all 300ms cubic-bezier(0.345, 0, 0.245, 0.750);
+    -webkit-transition: all 500ms cubic-bezier(0.345, 0, 0.245, 0.750);
     /* older webkit */
-    -webkit-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
-    -moz-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
-    -o-transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
-    transition: all 300ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -webkit-transition: all 500ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -moz-transition: all 500ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    -o-transition: all 500ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
+    transition: all 500ms cubic-bezier(0.345, -0.245, 0.245, 0.750);
     /* custom */
 
     -webkit-transition-timing-function: cubic-bezier(0.345, 0, 0.245, 0.750);

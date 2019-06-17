@@ -55,6 +55,7 @@ function sidebarAnimation() {
     var valB = Math.cos(time / 1000) * .2 + 1;
     $('body').css('background-image', 'linear-gradient(to bottom, hsla(' + (258 + hue).toString() + ', 29%, ' + (49 * valA).toString() + '%, 1), hsla(' + (257 + hue).toString() + ', 29%, ' + (35 * valB).toString() + '%, 1)');
     */
+    //$(".visual-video").css("-webkit-filter", "url(#visual-duotone)");
     window.requestAnimationFrame(sidebarAnimation);
 }
 window.requestAnimationFrame(sidebarAnimation);
