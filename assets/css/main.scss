@@ -410,9 +410,11 @@ hr {
 
         /*object-fit: contain;*/
     /*       object-fit: fill; */
+
+    /* ORIGINAL
     -webkit-filter: url(#visual-duotone);
     filter: url(#visual-duotone);
-    
+    */
   
     -webkit-transition: filter 0.3s;    
     transition: filter 0.3s;
@@ -480,8 +482,11 @@ hr {
       -webkit-filter: sepia(100%) hue-rotate(220deg);
       filter: sepia(100%) hue-rotate(220deg);
       */
+
+      /* ORIGINAL
       -webkit-filter: brightness(115%) grayscale(50%);
       filter: brightness(115%) grayscale(50%);
+      */
       overflow: hidden;
     }
 

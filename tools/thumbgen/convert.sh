@@ -235,7 +235,17 @@ do
 		if [ "$THUMB" -ot "$f" ]; then
 			echo "${orange}$THUMB${reset}"
 			echo "Replacing."
-			magick convert "$f"[0] -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"	
+			
+			
+			magick convert "$f"[0] -color-matrix "6x3:  \
+									0.30 1.02 0.00 0.00 0.00 0.04 \
+									0.25 0.72 0.00 0.00 0.00 0.02 \
+									0.40 0.72 0.05 0.00 0.00 0.20 " "$THUMB"							
+
+			magick convert "$THUMB" -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"	
+
+			
+
 			#ffmpeg $ARGS0 && \
 			#ffmpeg $ARGS1 -y "$THUMB";
 		else
@@ -244,7 +254,13 @@ do
 	else
 		echo "${orange}$THUMB${reset}"	
 		echo "New, converting."	
-		magick convert "$f"[0] -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"		
+
+		magick convert "$f"[0] -color-matrix "6x3: \
+									0.30 1.02 0.00 0.00 0.00 0.04 \
+									0.25 0.72 0.00 0.00 0.00 0.02 \
+									0.40 0.72 0.05 0.00 0.00 0.20 " "$THUMB"				
+
+		magick convert "$THUMB"	-interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"		
 		#ffmpeg $ARGS0 && \
 		#ffmpeg $ARGS1 "$THUMB";		
 	fi;
