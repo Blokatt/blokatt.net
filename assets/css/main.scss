@@ -43,6 +43,26 @@ $heading-color: #48286d !default;
     -webkit-transform: rotate(360deg);  
 }
 
+.page-link {
+  border-radius: 5px;
+  margin: 2px;
+  padding-left: 5px;
+  background-color: rgba(154, 135, 234, 0.1);
+  transition: background-color 1.0s;
+}
+
+.page-link:hover {  
+  background-color: rgba(178, 135, 234, 0.25);
+  transition: background-color 0.1s;
+}
+
+@media only screen and (max-width: $large-breakpoint) {
+  .page-link {    
+    padding-left: 0px;    
+  }
+}
+
+
 article + *, .post-body ~ section {
     padding-top: 2rem;
     border-top: 1px solid $colour-border-purple;

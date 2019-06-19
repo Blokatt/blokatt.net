@@ -6,6 +6,7 @@ function responsiveElements() {
     if ($(window).width() < 790) {
         activeLink = $('.page-title');
         $('.visual-full').attr('controls', '');
+       // $('.header-frame').height = 100;
     } else {
         if (activeLinkLetters) {
             if (activeLinkLetters[0] == '>') activeLinkLetters = activeLinkLetters.slice(2, activeLinkLetters.length);
@@ -13,7 +14,7 @@ function responsiveElements() {
             //alert(activeLinkLetters);
             $('.page-title').text(activeLinkLetters);
         }
-
+        //$('.header-frame').height = 200;    
         activeLink = $('.page-link.active');
         $('.visual-full').removeAttr('controls');
     }
