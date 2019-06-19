@@ -4,12 +4,7 @@ layout: post
 {{ content }}
 
 {% if page.gallery %}
-<div>
-    <hr style="margin-top: 5px; margin-bottom: 5px;">
-    <h4 class="visual-title">&gt; Pics</h4>
-    <hr style="margin-top: 5px; margin-bottom: 10px;">
-</div>
-<p>
+<h4 class="visual-title">&gt; Pics</h4>    
     <div class="gallery-container">
         {% for image in site.data.[page.gallery] %}
         <a class="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
@@ -17,16 +12,11 @@ layout: post
         </a>
         {% endfor %}
     </div>
-</p>
 {% endif %}
 
-
-<div>
-    <hr style="margin-top: 5px; margin-bottom: 5px;">
-    <h4 class="visual-title">&gt; Other links</h4>
-    <hr style="margin-top: 5px; margin-bottom: 10px;">
-</div>
-<p style="font-weight: bold">
+<div class="subsection">
+<h4 class="visual-title">&gt; Other links</h4>    
+<span style="font-weight: bold">
     {% if page.gif %}
     <a title="HQ GIF" class="no-lightbox" target="_blank" href="{{ page.gif }}">[GIF]</a>
     {% endif %}
@@ -48,6 +38,6 @@ layout: post
     {% if page.instagram_id %}
     <a target="_blank" href="https://www.instagram.com/p/{{ page.instagram_id }}">[Instagram]</a>
     {% endif %}
-</p>
-
+</span>
+</div>
 {% include lightbox.html %}
