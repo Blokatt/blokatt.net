@@ -1,7 +1,21 @@
 var activeLink;
 var activeLinkLetters;
 $(document).ready(responsiveElements);
+$(document).ready(init);
 $(window).resize(responsiveElements);
+
+var glitchyTitles = [];
+function init() {
+    $(".visual-title").each(function() {
+        var current = $(this);
+        current.originalText = current.text();
+        glitchyTitles.push(current);               
+    });
+    glitchyTitles.forEach(function(item) {
+        console.log(item.originalText);
+    });     
+}
+
 function responsiveElements() {
     if ($(window).width() < 790) {
         activeLink = $('.page-title');
@@ -37,7 +51,16 @@ function responsiveElements() {
 var time = 0;
 var timePrev = 0;
 var linkCharFade = 0.0;
-function sidebarAnimation() {
+
+String.prototype.replaceAt = function (index, replacement) {
+    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+}
+
+function randChar() {
+    return String.fromCharCode(33 + Math.round(Math.random() * 93));
+}
+
+function mainAnimation() {
     if (timePrev != 0) {
         time += (Date.now() - timePrev);
     }
@@ -50,6 +73,34 @@ function sidebarAnimation() {
         $(this).css('letter-spacing', (linkCharFade * (.08 + Math.sin(index * .5 + time / 100.0) * 0.04)).toString() + 'rem');
         //$(this).css('padding-right', (0.2 + Math.sin(index * .5 + time / 100) * 0.1).toString() + "rem");
     });
+    
+    var viewHeight = $('.container').height();
+    glitchyTitles.forEach(function (item) {
+        //item.text("test");
+        let currentText = item.text();
+        let originalText = item.originalText;        
+        let fromTop = $('.container').scrollTop();
+        let scrollOffset = Math.max(0, Math.abs(viewHeight / 2 - item.position().top) - viewHeight / 2.25);
+   
+        
+        //titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
+        //let typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
+        if (Math.random() <= 0.05 + scrollOffset * .05) {
+            currentText = currentText.replaceAt(Math.random() * currentText.length, randChar());
+            currentText = currentText.replaceAt(Math.random() * currentText.length, randChar());
+        }
+        for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
+            for (var i = 0; i < Math.min(currentText.length, originalText.length); ++i) {
+                if (originalText[i] != currentText[i] && Math.random() < .5) {
+                    currentText = currentText.replaceAt(i, originalText[i].toString());
+                    break;
+                }
+            }
+        }
+        item.text(currentText);
+        //console.log(item.originalText);
+    }); 
+
     /*
     var hue = Math.sin(time / 3000) * 5;
     var valA = Math.sin(time / 1000) * .2 + 1;
@@ -57,16 +108,14 @@ function sidebarAnimation() {
     $('body').css('background-image', 'linear-gradient(to bottom, hsla(' + (258 + hue).toString() + ', 29%, ' + (49 * valA).toString() + '%, 1), hsla(' + (257 + hue).toString() + ', 29%, ' + (35 * valB).toString() + '%, 1)');
     */
     //$(".visual-video").css("-webkit-filter", "url(#visual-duotone)");
-    window.requestAnimationFrame(sidebarAnimation);
+    window.requestAnimationFrame(mainAnimation);
 }
-window.requestAnimationFrame(sidebarAnimation);
+window.requestAnimationFrame(mainAnimation);
 
 $('.container').bind('scroll', positionStripe);
 
 function positionStripe() {
-    var scrollAmount = - ($('.container').scrollTop()) * .1;
-    console.log(scrollAmount);
-
+    let scrollAmount = - ($('.container').scrollTop()) * .1;
     $("#sidebar-stripe").css("background-position", "right " + scrollAmount.toString() + "px")
         .css("opacity", "0.75");
 }

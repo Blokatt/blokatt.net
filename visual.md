@@ -15,13 +15,7 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
     var typeClock = 0;
     var typeUnderscoreOpacity = 0.0;
     var titleGlitchProbability = 0;
-    String.prototype.replaceAt = function (index, replacement) {
-      return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-    }
-
-    function randChar() {
-      return String.fromCharCode(33 + Math.round(Math.random() * 93));
-    }
+    
 
     function changeTitle(title) {
       titleGlitchProbability = 1;
@@ -36,6 +30,7 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
         titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
         titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
       }
+      
       for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
         if (titleCurrent.length < titleTo.length) {
           titleCurrent = titleCurrent + randChar();

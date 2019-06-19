@@ -40,11 +40,13 @@ $heading-color: #48286d !default;
 }
 .link_icon:hover{    
     transform: rotate(360deg);   
-    -webkit-transform: rotate(360deg);  
+    -webkit-transform: rotate(360deg);      
 }
 
 .page-link {
-  border-radius: 5px;
+  border-radius: 1px;
+  border: rgba(154, 135, 234, 0.1) 2px dashed;
+
   margin: 2px;
   padding-left: 5px;
   background-color: rgba(154, 135, 234, 0.1);
@@ -52,8 +54,9 @@ $heading-color: #48286d !default;
 }
 
 .page-link:hover {  
-  background-color: rgba(178, 135, 234, 0.25);
-  transition: background-color 0.1s;
+  background-color: rgba(178, 135, 234, 0.25);    
+  text-decoration: none;
+  transition: background-color 0.05s;
 }
 
 @media only screen and (max-width: $large-breakpoint) {
