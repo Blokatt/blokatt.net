@@ -4,6 +4,7 @@ layout: post
 {{ content }}
 
 {% if page.gallery %}
+<div class ="subsection">
 <h4 class="visual-title">&gt; Pics</h4>    
     <div class="gallery-container">
         {% for image in site.data.[page.gallery] %}
@@ -12,6 +13,7 @@ layout: post
         </a>
         {% endfor %}
     </div>
+</div>
 {% endif %}
 
 <div class="subsection">
