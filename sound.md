@@ -15,7 +15,6 @@ Most of my music can be found on [Soundcloud](https://soundcloud.com/blokatt) an
 
 <div class="subsection">
 <h3 class="visual-title">&gt; Tools</h3>
-
 <div class="dashed-border visual-thumbnail-wide" onclick="location.href='/gfx/bktglitch/';">
   <div class="visual-thumbnail-wide-image right">    
     <img src = "\assets\visual_previews\thumbnail_monoctrl.png">    
@@ -33,9 +32,8 @@ _A Korg Monologue MIDI interface for REAPER 5._
 </div>
 <div class="subsection">
 <h3 class="visual-title">&gt; Tracks</h3>
-<div class="dashed-border">
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/70988738&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-</div>
+<div class="dashed-border" style="line-height: 0px">
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/70988738&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
 </div>
 <div class="subsection">
 <h3 class="visual-title">&gt; Vids</h3>
