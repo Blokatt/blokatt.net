@@ -82,7 +82,7 @@ _A glitch shader for GameMaker: Studio._
 <div markdown="0">
 <div class="subsection">
     <div class="visual-title-wrapper">
-      <h4 class="visual-title">&gt;</h4>
+      <h4 class="visual-title noauto">&gt;</h4>
     </div>
       <div class="visual-row">
         {% assign sorted = site.visuals | sort: 'date' | reverse %}

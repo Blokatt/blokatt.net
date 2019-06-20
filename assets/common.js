@@ -7,12 +7,13 @@ $(window).resize(responsiveElements);
 var glitchyTitles = [];
 function init() {
     $(".visual-title").each(function() {
-        var current = $(this);
-        current.originalText = current.text();
+        var current = $(this);        
+        if (current.hasClass("noauto")) return; // I realise this is an awful, awful hack.
+        current.originalText = current.text();        
         glitchyTitles.push(current);               
     });
     $(".visual-video").css("width", "100%");
-    glitchyTitles.forEach(function(item) {
+    glitchyTitles.forEach(function(item) {        
         console.log(item.originalText);
     });     
 }
@@ -77,11 +78,11 @@ function mainAnimation() {
     });
     
     var viewHeight = $('.container').height();
+    
     glitchyTitles.forEach(function (item) {        
         //item.text("test");
         let currentText = item.text();
-        let originalText = item.originalText;        
-        if (originalText === ">") return;
+        let originalText = item.originalText;                
         let fromTop = $('.container').scrollTop();
         let scrollOffset = Math.max(0, Math.abs(viewHeight / 2 - item.position().top) - viewHeight / 2.25);
    
