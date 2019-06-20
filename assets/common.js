@@ -16,6 +16,15 @@ function init() {
     glitchyTitles.forEach(function(item) {        
         console.log(item.originalText);
     });     
+
+    //$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
+
+    // in case something breaks
+    $(".visual-video-image").each(function () {
+        if ($(this).css("opacity") < 1.0) {
+            $(this).css("opacity", "1.0");
+        }
+    });
 }
 
 
