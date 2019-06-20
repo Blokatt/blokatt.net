@@ -11,10 +11,12 @@ function init() {
         current.originalText = current.text();
         glitchyTitles.push(current);               
     });
+    $(".visual-video").css("width", "100%");
     glitchyTitles.forEach(function(item) {
         console.log(item.originalText);
     });     
 }
+
 
 function responsiveElements() {
     if ($(window).width() < 790) {
@@ -212,3 +214,5 @@ $(document).ready(function () {
     typeResize();
 });
 
+//$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
+$(".visual-video-image").bind("load", function () { console.log($(this)); $(this).css("opacity", "1.0"); $(this).prev().css("opacity", "1.0");});
