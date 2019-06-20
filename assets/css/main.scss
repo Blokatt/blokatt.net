@@ -668,6 +668,20 @@ iframe {
     height: 100%;
 }
 
+.div-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 2;
+    background: none;
+    color: none;
+    opacity: 0.0;
+}
+
 
 body {
     color: rgb(234, 191, 255);

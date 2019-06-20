@@ -62,8 +62,7 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
 
   </script>
   <p>
-    <div class="dashed-border visual-thumbnail-wide" onclick="location.href='/gfx/bktglitch/';"
-      data-title="If it ain't broke, break it!">
+    <div class="dashed-border visual-thumbnail-wide" data-title="If it ain't broke, break it!">
       <div class="visual-thumbnail-wide-image right">
         <img src="\assets\visual_previews\thumbnail_bktglich.jpg">
         <div class="visual-thumbnail-wide-title right">
@@ -76,6 +75,7 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
 _A glitch shader for GameMaker: Studio._
 </div>
       </div>
+<a href="/gfx/bktglitch/" class="div-link"></a>
     </div>
   </p>
 
@@ -115,8 +115,8 @@ _A glitch shader for GameMaker: Studio._
   </div>
   <hr style="margin-top: 10px; margin-bottom: 5px;">
   </div>
-    <div class="dashed-border visual-thumbnail-wide"
-      onclick="location.href='https://twitter.com/i/moments/900699332286050306';" data-title="Relatively decipherable.">
+
+<div class="dashed-border visual-thumbnail-wide" data-title="Relatively decipherable.">
       <div class="visual-thumbnail-wide-image left">
         <img src="\assets\visual_previews\thumbnail_tweetcarts.png">
         <div class="visual-thumbnail-wide-title left">
@@ -129,4 +129,5 @@ _A glitch shader for GameMaker: Studio._
 _Various PICO-8 experiments that fit in a single tweet!_
 </div>
       </div>
+<a href="https://twitter.com/i/moments/900699332286050306" target="_blank" class="div-link"></a>  
     </div>

@@ -15,21 +15,25 @@ Most of my music can be found on [Soundcloud](https://soundcloud.com/blokatt) an
 
 <div class="subsection">
 <h3 class="visual-title">&gt; Tools</h3>
-<div class="dashed-border visual-thumbnail-wide" onclick="location.href='/gfx/bktglitch/';">
-  <div class="visual-thumbnail-wide-image right">    
-    <img src = "\assets\visual_previews\thumbnail_monoctrl.png">    
-    <div class="visual-thumbnail-wide-title right">
-        monoctrl
-    </div>
-  </div>  
-  <div class="visual-thumbnail-wide-description right">  
-    <div markdown="1">
+<div class="dashed-border visual-thumbnail-wide">
+
+<div class="visual-thumbnail-wide-image right">    
+<img src = "\assets\visual_previews\thumbnail_monoctrl.png">    
+<div class="visual-thumbnail-wide-title right">
+monoctrl
+</div>
+</div>  
+<div class="visual-thumbnail-wide-description right">  
+<div markdown="1">
 ## monoctrl
 _A Korg Monologue MIDI interface for REAPER 5._
 </div>    
-</div>  
 </div>
+<a href="/gfx/bktglitch/" class="div-link"></a>  
 </div>
+
+</div>
+
 <div class="subsection">
 <h3 class="visual-title">&gt; Tracks</h3>
 <div class="dashed-border">
