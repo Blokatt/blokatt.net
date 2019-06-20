@@ -7,7 +7,7 @@ The code below dynamically generates a sidebar nav of pages with
 {% if node.title != null %}
 {% if node.sidebar_link %}
 <a class="page-link {% if page.url == node.url %} active{% endif %}"
-    href="{{ site.baseurl }}{{ node.url }}">{% if page.url == node.url %}&gt; {% endif %}[{{ node.title }}]</a>
+    href="{{ site.baseurl }}{{ node.url }}">{% if page.url == node.url %}&gt; {% endif %}{{ node.title }}</a>
 {% endif %}
 {% endif %}
 {% endfor %}

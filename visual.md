@@ -105,7 +105,7 @@ _A glitch shader for GameMaker: Studio._
                     <source src="{{ item.thumbnail }}.mp4" type="video/mp4">
                     <source src="{{ item.thumbnail }}.ogv" type="video/ogg">
                   </video>
-                  <img class="visual-video-image" src="{{ item.thumbnail }}.png">
+                  <img class="visual-video-image visual-video-static" src="{{ item.thumbnail }}.png">
                 </div>
                 <!--<  img src="{{ item.thumbnail }}">!-->
               </a>

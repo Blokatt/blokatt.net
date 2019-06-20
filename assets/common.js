@@ -75,10 +75,11 @@ function mainAnimation() {
     });
     
     var viewHeight = $('.container').height();
-    glitchyTitles.forEach(function (item) {
+    glitchyTitles.forEach(function (item) {        
         //item.text("test");
         let currentText = item.text();
         let originalText = item.originalText;        
+        if (originalText === ">") return;
         let fromTop = $('.container').scrollTop();
         let scrollOffset = Math.max(0, Math.abs(viewHeight / 2 - item.position().top) - viewHeight / 2.25);
    
@@ -146,13 +147,23 @@ $(".visual-thumbnail").mouseleave(function () {
 });
 
 function hoverVideo(e) {
-    $('video', this).get(0).play();
+    $('video', this).get(0).currentTime = 0;
+    $('video', this).get(0).play();    
 }
 
-function hideVideo(e) {
-    $('video', this).get(0).currentTime = 0;
-    $('video', this).get(0).pause();
+function hideVideo(e) {    
+    $('video', this).get(0).pause();    
 }
+
+/*
+$(".visual-section").each(function() {
+    $(this).ready(function() {
+        console.log($(this));
+        $(this).css("opacity", "1.0");
+    });
+   //$(this).css("opacity", "1.0");
+});
+*/
 
 /*
 if ($(window).width() < 790) {
