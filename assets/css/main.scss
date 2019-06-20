@@ -10,6 +10,8 @@ $sidebar-link-color: red;
 $sidebar-text-color: red;
 $sidebar-icon-color: red;
 
+$background-wide-thumbnail: url('/assets/background_wide_thumbnail.png');
+
 //, #0f101d
 $sidebar-bg-color: #5e4c8a;
 $link-color: #6b3079;
@@ -32,10 +34,14 @@ $heading-color: #48286d !default;
 
 @import "hydeout";
 
+.sidebar-highlight {
+  color: $body-bg;
+}
+
 .link_icon{
     margin: -5px;
-    transform: rotate(180deg);   
-    -webkit-transform: rotate(180deg);   
+    transform: rotate(0deg);   
+    -webkit-transform: rotate(0deg);   
     transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);    
 }
 .link_icon:hover{    
@@ -305,8 +311,9 @@ hr {
 
   .visual-thumbnail-wide-title {          
     position: absolute;          
-    background: $body-muted;
-    background-blend-mode: lighten;
+    background-image: $background-wide-thumbnail;
+    background-attachment: fixed;
+ 
     color: $body-bg;
     width: 100%;        
     top: 18px;    
