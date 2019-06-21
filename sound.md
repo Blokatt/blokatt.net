@@ -14,24 +14,17 @@ Most of my music can be found on [Soundcloud](https://soundcloud.com/blokatt) an
 
 <div markdown="0">
 
+
 <div class="subsection">
 <h3 class="visual-title">&gt; Tools</h3>
-<div class="dashed-border visual-thumbnail-wide">
 
-<div class="visual-thumbnail-wide-image right">    
-<img src = "\assets\visual_previews\thumbnail_monoctrl.png">    
-<div class="visual-thumbnail-wide-title right">
-MonoCtrl
-</div>
-</div>  
-<div class="visual-thumbnail-wide-description right">  
-<div markdown="1">
-## MonoCtrl
+{% include wide-link.html
+title="MonoCtrl"
+thumbnail="monoctrl.png"
+url="/audio/monoctrl" 
+description="
 _A Korg Monologue MIDI interface for REAPER 5._
-</div>    
-</div>
-<a href="/audio/monoctrl/" class="div-link"></a>  
-</div>
+"%}
 
 </div>
 

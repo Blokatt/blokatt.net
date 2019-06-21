@@ -1,0 +1,21 @@
+{% assign align = "right" %}
+{% if include.align %}
+    {% assign align = include.align %}
+{% endif %}
+<div markdown="0">
+<div class="dashed-border visual-thumbnail-wide" {% if include.hover %} data-title="{{ include.hover }}" {% endif %}>
+    <div class="visual-thumbnail-wide-image {{ align }}">
+        <img src="\assets\visual_previews\thumbnail_{{ include.thumbnail }}">
+        <div class="visual-thumbnail-wide-title {{ align }}">
+            {{ include.title }}
+        </div>
+    </div>
+    <div class="visual-thumbnail-wide-description {{ align }}">
+<div markdown="1">
+## {{ include.title }}
+{{ include.description }}            
+</div>
+    </div>
+    <a href="{{ include.url }}" class="div-link" {% if include.target %} target="{{ include.target }}" {% endif %}></a>
+</div>
+</div>
