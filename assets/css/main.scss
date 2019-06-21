@@ -194,6 +194,27 @@ body {
     overflow: hidden;
 }
 
+.ratio-square {
+    padding-top: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.frame-fill {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
 .visual-preview-outer {
     position: relative;
     width: 100%;
@@ -210,6 +231,12 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.fill-square {
+    position: relative;
+    width: 100%;
+    height: 0;
 }
 
 .visual-preview-shadertoy {
@@ -360,6 +387,7 @@ hr {
     outline-style: dashed;
     outline-color: $body-muted;
     outline-color: $colour-border-purple;
+    background-image: $background-content-pronounced;
     outline-width: 2px;
 }
 

@@ -23,7 +23,7 @@ echo ""
 
 cd in
 
-for f in *.mp4
+for f in *.mp4 *.gif
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
@@ -92,7 +92,7 @@ echo ""
 
 cd in
 
-for f in *.mp4
+for f in *.mp4 *.gif
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
@@ -154,7 +154,7 @@ echo ""
 
 cd in
 
-for f in *.mp4
+for f in *.mp4 *.gif
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
@@ -222,7 +222,7 @@ echo ""
 
 cd in
 
-for f in *.mp4
+for f in *.mp4 *.gif
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"

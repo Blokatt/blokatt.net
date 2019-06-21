@@ -1,0 +1,10 @@
+---
+title:  "Basic PICO-8 3D Wireframe"
+thumbnail: "/assets/visual_previews/thumbnail_pico8-3d"
+permalink: /gfx/misc/pico8-3d/
+twitter_id: "1066757677404037121" 
+date: 2018-11-25 00:00:00
+layout: visual_iframe_square
+iframe_url: "/assets/visual_scripts/pico8-3d/projection.html"
+---
+First attempt at writing a basic 3D renderer from scratch. Might return to this in the future.
