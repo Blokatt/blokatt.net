@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Sound
+title: Audio
+permalink: /audio/
 sidebar_link: true
 sidebar_sort_order: 1
 ---
@@ -20,16 +21,16 @@ Most of my music can be found on [Soundcloud](https://soundcloud.com/blokatt) an
 <div class="visual-thumbnail-wide-image right">    
 <img src = "\assets\visual_previews\thumbnail_monoctrl.png">    
 <div class="visual-thumbnail-wide-title right">
-monoctrl
+MonoCtrl
 </div>
 </div>  
 <div class="visual-thumbnail-wide-description right">  
 <div markdown="1">
-## monoctrl
+## MonoCtrl
 _A Korg Monologue MIDI interface for REAPER 5._
 </div>    
 </div>
-<a href="/gfx/bktglitch/" class="div-link"></a>  
+<a href="/audio/monoctrl/" class="div-link"></a>  
 </div>
 
 </div>

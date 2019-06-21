@@ -11,9 +11,9 @@ I'm gonna have to write something here, aren't I?
 
 Generated in [Jekyll](https://jekyllrb.com/) using a modified version of the [Hydeout](https://github.com/fongandrew/hydeout) theme.
 
-- Some WebGL stuff here is powered by [three.js](https://threejs.org/).
-- The lovely font you should see all over this page is [Inconsolata](https://fonts.google.com/specimen/Inconsolata) by Raph Levien.
-- Icons by [Line Awesome](https://icons8.com/line-awesome).
-- Also using a few Jekyll scripts by [J.H. van der Schee](https://jekyllcodex.org/).
-- Video and image asset processing made possible with [FFmpeg](https://ffmpeg.org/), [ImageMagick](https://imagemagick.org/index.php) and [Gifsicle](https://www.lcdf.org/gifsicle/).
+- Some WebGL stuff here is powered by [three.js](https://threejs.org/){:target="_blank"}.
+- The lovely font you should see all over this page is [Inconsolata](https://fonts.google.com/specimen/Inconsolata){:target="_blank"} by Raph Levien.
+- Icons by [Line Awesome](https://icons8.com/line-awesome){:target="_blank"}.
+- Additional Jekyll scripts by [J.H. van der Schee](https://jekyllcodex.org/){:target="_blank"}.
+- Video and image asset processing made possible with [FFmpeg](https://ffmpeg.org/){:target="_blank"}, [ImageMagick](https://imagemagick.org/index.php){:target="_blank"} and [Gifsicle](https://www.lcdf.org/gifsicle/){:target="_blank"}.
 

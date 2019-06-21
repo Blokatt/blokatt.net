@@ -1,6 +1,7 @@
 ---
 # Jekyll needs front matter for SCSS files
 ---
+
 $sidebar-fg-color: #fff0ef !default;
 
 $sidebar-title-color: red;
@@ -54,6 +55,24 @@ $heading-color: #48286d !default;
 
 code {
     background-color: $code-background;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .highlight {
