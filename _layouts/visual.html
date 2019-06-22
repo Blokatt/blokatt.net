@@ -7,7 +7,7 @@ layout: post
 <div class ="subsection">
 <h4 class="visual-title">&gt; Pics</h4>    
     <div class="gallery-container">
-        {% for image in site.data.[page.gallery] %}
+        {% for image in site.data[page.gallery] %}
         <a class="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
             <img src="{{ image.thumbnail }}">
         </a>
