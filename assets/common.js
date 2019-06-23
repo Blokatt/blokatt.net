@@ -227,7 +227,12 @@ $(document).ready(function () {
 //$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
 $(".visual-video-image").bind("load", function () {
     //console.log($(this)); 
-    $(this).parent().css("width", "100%");
     $(this).css("opacity", "1.0");
-    $(this).prev().css("opacity", "1.0");
+    $(this).prev().css("opacity", "1.0");   
+    $(this).prev().css("width", "100%");
+    $(this).parent().css("width", "100%");     
+});
+
+$(".visual-video").bind("load", function () {    
+  //  $(this).parent().css("width", "100%");
 });
