@@ -14,6 +14,8 @@ $code-background: rgba(191, 174, 221, 0.12);
 $background-content: url('/assets/background_content.png');
 $background-wide-thumbnail: url('/assets/background_wide_thumbnail.png');
 $background-content-pronounced: url('/assets/background_content_pronounced.png');
+$background-stripe: url('/assets/sidebar_stripe.png');
+
 //, #0f101d
 $sidebar-bg-color: #5e4c8a;
 $link-color: #6b3079;
@@ -263,7 +265,7 @@ hr {
     min-width: 24px;
     height: 100%;
     display: block;
-    background-image: url('/assets/sidebar_stripe.png');
+    background-image: $background-stripe;
     background-position: right 0px;
     background-repeat: repeat-y;
 

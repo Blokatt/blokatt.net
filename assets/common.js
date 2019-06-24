@@ -19,14 +19,17 @@ function init() {
 
     //$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
 
+    
+}
+
+window.onload = function () {
     // in case something breaks
     $(".visual-video-image").each(function () {
         if ($(this).css("opacity") < 1.0) {
             $(this).css("opacity", "1.0");
         }
     });
-}
-
+};
 
 function responsiveElements() {
     if ($(window).width() < 790) {
