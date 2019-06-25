@@ -36,6 +36,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-seo-tag (2.5.0)
+      jekyll (~> 3.3)
     jekyll-theme-hydeout (3.7.1)
       jekyll (~> 3.4)
       jekyll-feed (~> 0.6)
@@ -82,6 +84,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-feed (~> 0.6)
+  jekyll-seo-tag
   jekyll-theme-hydeout (~> 3.4)
   tzinfo-data
   wdm (~> 0.1.0)

@@ -16,9 +16,9 @@
 title: Blokatt
 email: jan@blokatt.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Jan Vorisek | blokatt
+  Games, creative coding and audio by Jan Vorisek.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blokatt.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: http://blokatt.net # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: blokatt
 github_username:  blokatt
 soundcloud_username: blokatt
@@ -29,6 +29,27 @@ twitch_username: blokatt
 instagram_username:  blokatt
 
 previews: /assets/visual_previews/
+
+twitter:
+  username: blokatt
+  card: summary
+
+facebook:
+  publisher: blokattgames
+
+social:
+  name: Blokatt
+  links:
+    - https://twitter.com/blokatt
+    - https://www.facebook.com/blokattgames
+    - https://soundcloud.com/blokatt
+    - https://github.com/Blokatt/
+    - https://www.youtube.com/Blokatt
+    - https://www.twitch.tv/blokatt
+    - https://www.instagram.com/blokatt/
+    - https://blokatt.itch.io/
+    - https://gamejolt.com/@Blokatt
+    - https://www.shadertoy.com/user/Blokatt
 
 permalink: pretty
 # Build settings
@@ -48,6 +69,10 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-seo-tag
+
+
+twitter: blokatt
 
 collections:
   visuals:
@@ -62,3 +87,4 @@ exclude:
    - vendor/gems/
    - vendor/ruby/
    - tools
+
