@@ -5,13 +5,26 @@ green=`tput setaf 2`
 orange=`tput setaf 3`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
-
+INPUT=$(echo "*.mp4 *.gif")
 SKIPPED=0
 function print_skipped_and_reset { 
 	if [[ "$SKIPPED" > 0 ]]; then
 		echo "${cyan}$SKIPPED files skipped.${reset}"
 	fi;
 	SKIPPED=0
+}
+
+function png_convert {
+	magick convert "$f"[0] -color-matrix "6x3:  \
+									0.30 1.02 0.00 0.00 0.00 0.04 \
+									0.25 0.72 0.00 0.00 0.00 0.02 \
+									0.40 0.72 0.05 0.00 0.00 0.20 " "$THUMB"							
+
+	magick convert "$THUMB" -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"	
+}
+
+function png_convert_col {
+	magick convert "$f"[0] -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMBCOL"	
 }
 
 ##################################
@@ -23,7 +36,7 @@ echo ""
 
 cd in
 
-for f in *.mp4 *.gif
+for f in $INPUT
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
@@ -92,7 +105,7 @@ echo ""
 
 cd in
 
-for f in *.mp4 *.gif
+for f in $INPUT
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
@@ -154,7 +167,7 @@ echo ""
 
 cd in
 
-for f in *.mp4 *.gif
+for f in $INPUT
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
@@ -222,11 +235,12 @@ echo ""
 
 cd in
 
-for f in *.mp4 *.gif
+for f in $INPUT
 do
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
 	THUMB=$(echo "../out/thumbnail_"$NAME".png");	
+	THUMBCOL=$(echo "../out/colour_thumbnail_"$NAME".png");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -r 1 -vframes 1 -f image2 -vf scale=-1:140");
 	#ARGS0=$(echo " -y -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 1 -f mp4 /dev/null");
 	#ARGS1=$(echo " -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 2");
@@ -235,19 +249,8 @@ do
 		if [ "$THUMB" -ot "$f" ]; then
 			echo "${orange}$THUMB${reset}"
 			echo "Replacing."
-			
-			
-			magick convert "$f"[0] -color-matrix "6x3:  \
-									0.30 1.02 0.00 0.00 0.00 0.04 \
-									0.25 0.72 0.00 0.00 0.00 0.02 \
-									0.40 0.72 0.05 0.00 0.00 0.20 " "$THUMB"							
 
-			magick convert "$THUMB" -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"	
-
-			
-
-			#ffmpeg $ARGS0 && \
-			#ffmpeg $ARGS1 -y "$THUMB";
+			png_convert;
 		else
 			SKIPPED=$(($SKIPPED + 1))
 		fi;
@@ -255,14 +258,23 @@ do
 		echo "${orange}$THUMB${reset}"	
 		echo "New, converting."	
 
-		magick convert "$f"[0] -color-matrix "6x3: \
-									0.30 1.02 0.00 0.00 0.00 0.04 \
-									0.25 0.72 0.00 0.00 0.00 0.02 \
-									0.40 0.72 0.05 0.00 0.00 0.20 " "$THUMB"				
+		png_convert;		
+	fi;
 
-		magick convert "$THUMB"	-interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMB"		
-		#ffmpeg $ARGS0 && \
-		#ffmpeg $ARGS1 "$THUMB";		
+	if [ -f "$THUMBCOL" ]; then		
+		if [ "$THUMBCOL" -ot "$f" ]; then
+			echo "${orange}$THUMBCOL${reset}"
+			echo "Replacing."
+
+			png_convert_col;
+		else
+			SKIPPED=$(($SKIPPED + 1))
+		fi;
+	else
+		echo "${orange}$THUMBCOL${reset}"	
+		echo "New, converting."	
+
+		png_convert_col;		
 	fi;
 done
 

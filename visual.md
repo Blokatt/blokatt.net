@@ -23,7 +23,7 @@ _A glitch shader for GameMaker: Studio._
 <div markdown="0">
 <div class="subsection">
     <div class="visual-title-wrapper">
-      <h4 class="visual-title noauto">&gt;</h4>
+      <h4 class="visual-title noauto">&gt; Loading stuff...</h4>
     </div>
       <div class="visual-row">
         {% assign sorted = site.visuals | sort: 'date' | reverse %}
@@ -79,47 +79,52 @@ var typeClock = 0;
 var typeUnderscoreOpacity = 0.0;
 var titleGlitchProbability = 0;
 
-
 function changeTitle(title) {
     titleGlitchProbability = 1;
     titleTo = title;
 }
 
-function visualTitleUpdate() {
-    // * (titleTo == titleDefault || titleCurrent != titleTo)
-    titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
-    typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
-    if (Math.random() <= titleGlitchProbability) {
-        titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
-        titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
-    }
+$(document).ready(function() {
 
-    for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
-        if (titleCurrent.length < titleTo.length) {
-            titleCurrent = titleCurrent + randChar();
-        } else if (titleCurrent.length > titleTo.length) {
-            titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
-        }
+  
 
-        for (var i = 0; i < Math.min(titleCurrent.length, titleTo.length); ++i) {
-            if (titleTo[i] != titleCurrent[i] && Math.random() < .5) {
-                titleCurrent = titleCurrent.replaceAt(i, titleTo[i].toString());
-                break;
-            }
-        }
-    }
+  function visualTitleUpdate() {
+      // * (titleTo == titleDefault || titleCurrent != titleTo)
+      titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
+      typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
+      if (Math.random() <= titleGlitchProbability) {
+          titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
+          titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
+      }
 
-    $(".visual-title").html("&gt; " + titleCurrent + "<span style = \'opacity: " + typeUnderscoreOpacity + ";\'>_</span>");
-    requestAnimationFrame(visualTitleUpdate);
-}
-requestAnimationFrame(visualTitleUpdate);
+      for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
+          if (titleCurrent.length < titleTo.length) {
+              titleCurrent = titleCurrent + randChar();
+          } else if (titleCurrent.length > titleTo.length) {
+              titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
+          }
 
-var $win = $(window);
+          for (var i = 0; i < Math.min(titleCurrent.length, titleTo.length); ++i) {
+              if (titleTo[i] != titleCurrent[i] && Math.random() < .5) {
+                  titleCurrent = titleCurrent.replaceAt(i, titleTo[i].toString());
+                  break;
+              }
+          }
+      }
 
-function typeResize() {
-    var w = $(".content").width();
-    $(".visual-title").css("font-size", (w * .035));
-}
+      $(".visual-title").html("&gt; " + titleCurrent + "<span style = \'opacity: " + typeUnderscoreOpacity + ";\'>_</span>");
+      requestAnimationFrame(visualTitleUpdate);
+  }
+  requestAnimationFrame(visualTitleUpdate);
 
-$win.on('resize', typeResize);
+  var $win = $(window);
+
+  function typeResize() {
+      var w = $(".content").width();
+      $(".visual-title").css("font-size", (w * .035));
+  }
+
+  $win.on('resize', typeResize);
+
+});
 </script>

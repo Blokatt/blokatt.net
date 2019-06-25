@@ -6,20 +6,20 @@ $(window).resize(responsiveElements);
 
 var glitchyTitles = [];
 function init() {
-    $(".visual-title").each(function() {
-        var current = $(this);        
+    $(".visual-title").each(function () {
+        var current = $(this);
         if (current.hasClass("noauto")) return; // I realise this is an awful, awful hack.
-        current.originalText = current.text();        
-        glitchyTitles.push(current);               
+        current.originalText = current.text();
+        glitchyTitles.push(current);
     });
-   
-    glitchyTitles.forEach(function(item) {        
+
+    glitchyTitles.forEach(function (item) {
         console.log(item.originalText);
-    });     
+    });
 
     //$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
 
-    
+
 }
 
 window.onload = function () {
@@ -28,6 +28,7 @@ window.onload = function () {
         if ($(this).css("opacity") < 1.0) {
             $(this).css("opacity", "1.0");
         }
+        $(this).css("width", "100%");
     });
 };
 
@@ -35,7 +36,11 @@ function responsiveElements() {
     if ($(window).width() < 790) {
         activeLink = $('.page-title');
         $('.visual-full').attr('controls', '');
-       // $('.header-frame').height = 100;
+        // $('.header-frame').height = 100;
+        $('.visual-video-static').each(function () {
+            let name = $(this).attr("src");
+            $(this).attr("src", name.replace(/\/thumbnail_/, '\/colour_thumbnail_'));
+        });
     } else {
         if (activeLinkLetters) {
             if (activeLinkLetters[0] == '>') activeLinkLetters = activeLinkLetters.slice(2, activeLinkLetters.length);
@@ -88,17 +93,17 @@ function mainAnimation() {
         $(this).css('letter-spacing', (linkCharFade * (.08 + Math.sin(index * .5 + time / 100.0) * 0.04)).toString() + 'rem');
         //$(this).css('padding-right', (0.2 + Math.sin(index * .5 + time / 100) * 0.1).toString() + "rem");
     });
-    
+
     var viewHeight = $('.container').height();
-    
-    glitchyTitles.forEach(function (item) {        
+
+    glitchyTitles.forEach(function (item) {
         //item.text("test");
         let currentText = item.text();
-        let originalText = item.originalText;                
+        let originalText = item.originalText;
         let fromTop = $('.container').scrollTop();
         let scrollOffset = Math.max(0, Math.abs(viewHeight / 2 - item.position().top) - viewHeight / 2.25);
-   
-        
+
+
         //titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
         //let typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
         if (Math.random() <= 0.05 + scrollOffset * .05) {
@@ -115,7 +120,7 @@ function mainAnimation() {
         }
         item.text(currentText);
         //console.log(item.originalText);
-    }); 
+    });
 
     /*
     var hue = Math.sin(time / 3000) * 5;
@@ -163,11 +168,11 @@ $(".visual-thumbnail").mouseleave(function () {
 
 function hoverVideo(e) {
     $('video', this).get(0).currentTime = 0;
-    $('video', this).get(0).play();    
+    $('video', this).get(0).play();
 }
 
-function hideVideo(e) {    
-    $('video', this).get(0).pause();    
+function hideVideo(e) {
+    $('video', this).get(0).pause();
 }
 
 /*
@@ -231,11 +236,12 @@ $(document).ready(function () {
 $(".visual-video-image").bind("load", function () {
     //console.log($(this)); 
     $(this).css("opacity", "1.0");
-    $(this).prev().css("opacity", "1.0");   
-    $(this).prev().css("width", "100%");
-    $(this).parent().css("width", "100%");     
+    // $(this).prev().css("opacity", "1.0");   
+    // $(this).prev().css("width", "100%");
+    $(this).css("width", "100%");
+    $(this).parent().css("width", "100%");
 });
 
-$(".visual-video").bind("load", function () {    
-  //  $(this).parent().css("width", "100%");
+$(".visual-video").bind("load", function () {
+    //  $(this).parent().css("width", "100%");
 });
