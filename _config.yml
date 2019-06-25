@@ -28,7 +28,8 @@ youtube_username:  blokatt
 twitch_username: blokatt
 instagram_username:  blokatt
 
-previews: /assets/visual_previews/
+previews: /assets/gfx_thumbnail/
+graph: /assets/graph_image/
 
 twitter:
   username: blokatt

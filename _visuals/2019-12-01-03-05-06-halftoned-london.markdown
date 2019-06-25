@@ -1,6 +1,6 @@
 ---
 title:  "Halftoned London"
-thumbnail: "/assets/visual_previews/thumbnail_halftoned-london"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_halftoned-london"
 description: "CMYK halftone shader."
 date: 2019-01-12 03:05:06
 permalink: /gfx/misc/halftoned-london/

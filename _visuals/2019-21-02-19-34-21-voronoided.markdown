@@ -1,6 +1,6 @@
 ---
 title:  "Voronoided"
-thumbnail: "/assets/visual_previews/thumbnail_voronoided"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_voronoided"
 description: "Looks cool, but it's pretty slow."
 date: 2019-02-21 19:34:21
 shadertoy_id: "wdsXRN" 

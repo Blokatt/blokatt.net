@@ -130,7 +130,7 @@ function main() {
 
     requestAnimationFrame(drawScene);
     gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
-    neonTexture = loadTexture(gl, "/assets/visual_scripts/neon-glow/neon_tex.png");
+    neonTexture = loadTexture(gl, "/assets/gfx_script/neon-glow/neon_tex.png");
 
     passShaderProgram = shaderProgramFull(gl, vshPass, fshPass);
     horizontalBlurShaderProgram = shaderProgramFull(gl, vshBlur, fshBlurH);

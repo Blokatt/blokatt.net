@@ -1,8 +1,8 @@
 ---
 title:  "Graham Kartna - These Are The Shout"
 layout: visual_video
-thumbnail: "/assets/visual_previews/thumbnail_shout"
-video: "/assets/visual_full/full_shout"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_shout"
+video: "/assets/gfx_full/full_shout"
 permalink: /gfx/misc/shout/
 gallery: "gallery_shout"
 description: "Left click to rotate!"

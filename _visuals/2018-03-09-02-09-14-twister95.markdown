@@ -1,6 +1,6 @@
 ---
 title:  "Twister95"
-thumbnail: "/assets/visual_previews/thumbnail_twister95"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_twister95"
 description: "Left click to rotate!
 
 Just a little 90's screensaver-style twister effect.

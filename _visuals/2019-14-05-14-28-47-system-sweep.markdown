@@ -1,6 +1,6 @@
 ---
 title:  "System Sweep"
-thumbnail: "/assets/visual_previews/thumbnail_system-sweep"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_system-sweep"
 date: 2019-05-14 14:28:47
 shadertoy_id: "ttX3W2" 
 instagram_id: "Bxc7E5GCiwT"

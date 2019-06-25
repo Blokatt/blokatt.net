@@ -1,6 +1,6 @@
 ---
 title:  "Mandelburn"
-thumbnail: "/assets/visual_previews/thumbnail_mandelburn"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_mandelburn"
 description: "My attempt at rendering the Mandelbrot set as a bumpy texture. Multi-pass.
 Normal map is generated using a simple gradient, cleaned up a bit with the help of median filtering.
 This is as close as I could get to the look I wanted, so I'm calling it done!"

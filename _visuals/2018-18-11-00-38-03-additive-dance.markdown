@@ -1,6 +1,6 @@
 ---
 title:  "Additive Dance"
-thumbnail: "/assets/visual_previews/thumbnail_additive-dance"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_additive-dance"
 description: "Trying out inverse square law. 
 This time around, using dithering was pretty much required to avoid banding (because maths and such)!
 More to come!

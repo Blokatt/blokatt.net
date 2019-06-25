@@ -1,11 +1,13 @@
 ---
 title:  "Neon Glow"
-thumbnail: "/assets/visual_previews/thumbnail_neon-glow"
+description: "A multipass glow shader demo."
+image: "/assets/graph_image/meta_neon-glow.jpg"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_neon-glow"
 date: 2019-06-08 22:27:00 +0300
 twitter_id: "1136676263635116032"
 permalink: /gfx/misc/neon-glow/
 source_code: "https://github.com/Blokatt/NeonGlow" 
 layout: visual_canvas
-canvas_script: "/assets/visual_scripts/neon-glow/neon-glow.js"
+canvas_script: "/assets/gfx_script/neon-glow/neon-glow.js"
 ---
 A post-processsing neon/glow effect done in two-passes using [Gaussian blurring](https://en.wikipedia.org/wiki/Gaussian_blur). Originally made in GameMaker:Studio (see source code), subsequently ported to WebGL.

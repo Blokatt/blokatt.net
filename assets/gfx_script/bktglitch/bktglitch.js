@@ -154,8 +154,8 @@ function main() {
 
     requestAnimationFrame(drawScene);
     gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
-    bcgTexture = loadTexture(gl, "/assets/visual_scripts/bktglitch/town_tex.png");
-    //neonTexture = loadTexture(gl, "/assets/visual_scripts/neon-glow/neon_tex.png");
+    bcgTexture = loadTexture(gl, "/assets/gfx_script/bktglitch/town_tex.png");
+    //neonTexture = loadTexture(gl, "/assets/gfx_script/neon-glow/neon_tex.png");
     passShaderProgram = shaderProgramFull(gl, vshPass, fshPass);
 
     var glitchShaderProgram = shaderProgramFull(gl, vshPass, fshGlitch);    

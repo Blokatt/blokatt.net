@@ -1,10 +1,10 @@
 ---
 title:  "Terrain"
-thumbnail: "/assets/visual_previews/thumbnail_terrain"
-video: "/assets/visual_full/full_terrain"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_terrain"
+video: "/assets/gfx_full/full_terrain"
 description: "It rotates, it's glitchy, it's transparent."
 permalink: /gfx/misc/terrain/
-gif: "/assets/visual_gif/terrain.gif"
+gif: "/assets/gfx_gif/terrain.gif"
 instagram_id: "BeOIh1GDo"
 twitter_id: "831880856725762048" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/terrain" 

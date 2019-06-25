@@ -1,10 +1,10 @@
 ---
 title:  "Fork it."
-thumbnail: "/assets/visual_previews/thumbnail_fork-it"
-video: "/assets/visual_full/full_fork-it"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_fork-it"
+video: "/assets/gfx_full/full_fork-it"
 description: "Forks'n'sockets."
 
-gif: "/assets/visual_gif/fork-it.gif"
+gif: "/assets/gfx_gif/fork-it.gif"
 instagram_id: "BhPhKxbDSIA"
 twitter_id: "982336542113804288" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ForkIt" 

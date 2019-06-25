@@ -114,7 +114,7 @@ function copy_assets {
 	for f in ./out/*.$1
 	do
 		NAME=$(basename "$f");	
-		TARGET="../../assets/visual_full/""$NAME"	
+		TARGET="../../assets/gfx_full/""$NAME"	
 		
 		if [ -f "$TARGET" ]; then
 			if [ "$TARGET" -ot "$f" ]; then	

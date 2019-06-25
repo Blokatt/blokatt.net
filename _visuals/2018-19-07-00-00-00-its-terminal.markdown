@@ -1,10 +1,10 @@
 ---
 title:  "It's terminal."
-thumbnail: "/assets/visual_previews/thumbnail_its-terminal"
-video: "/assets/visual_full/full_its-terminal"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_its-terminal"
+video: "/assets/gfx_full/full_its-terminal"
 description: "ASCII"
 
-gif: "/assets/visual_gif/its-terminal.gif"
+gif: "/assets/gfx_gif/its-terminal.gif"
 instagram_id: "BlaZui_Dagt"
 twitter_id: "1019921961043062784" 
 source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ItsTerminal" 

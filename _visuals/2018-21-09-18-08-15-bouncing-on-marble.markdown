@@ -1,6 +1,6 @@
 ---
 title:  "Bouncing on Marble"
-thumbnail: "/assets/visual_previews/thumbnail_bouncing-on-marble"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_bouncing-on-marble"
 description: "Rotozoomer."
 date: 2018-09-21 18:08:15
 gallery: "gallery_bouncing-on-marble"

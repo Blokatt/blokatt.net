@@ -75,7 +75,7 @@ echo ""
 for f in ./out/*.webm
 do
 	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_previews/""$NAME"	
+	TARGET="../../assets/gfx_thumbnail/""$NAME"	
 	
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
@@ -138,7 +138,7 @@ echo ""
 for f in ./out/*.ogv
 do
 	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_previews/""$NAME"	
+	TARGET="../../assets/gfx_thumbnail/""$NAME"	
 	
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
@@ -206,7 +206,7 @@ echo ""
 for f in ./out/*.mp4
 do
 	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_previews/""$NAME"	
+	TARGET="../../assets/gfx_thumbnail/""$NAME"	
 	
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
@@ -289,7 +289,7 @@ echo ""
 for f in ./out/*.png
 do
 	NAME=$(basename "$f");	
-	TARGET="../../assets/visual_previews/""$NAME"	
+	TARGET="../../assets/gfx_thumbnail/""$NAME"	
 	
 	if [ -f "$TARGET" ]; then
 		if [ "$TARGET" -ot "$f" ]; then	
