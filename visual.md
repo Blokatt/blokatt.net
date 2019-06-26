@@ -69,62 +69,10 @@ _Various PICO-8 experiments that fit in a single tweet!_
   "
 %}
 
-
-<script>
-var charsTyped = 0;
-var titleDefault = "";
-var titleCurrent = "Loading stuff...";
-var titleTo = titleCurrent;
-var typeClock = 0;
-var typeUnderscoreOpacity = 0.0;
-var titleGlitchProbability = 0;
-
-function changeTitle(title) {
-    titleGlitchProbability = 1;
-    titleTo = title;
-}
-
-$(document).ready(function() {
-
-  
-
-  function visualTitleUpdate() {
-      // * (titleTo == titleDefault || titleCurrent != titleTo)
-      titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
-      typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
-      if (Math.random() <= titleGlitchProbability) {
-          titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
-          titleCurrent = titleCurrent.replaceAt(Math.random() * titleCurrent.length, randChar());
-      }
-
-      for (var j = 0; j < 1 + Math.round(Math.random() * 1.0); ++j) {
-          if (titleCurrent.length < titleTo.length) {
-              titleCurrent = titleCurrent + randChar();
-          } else if (titleCurrent.length > titleTo.length) {
-              titleCurrent = titleCurrent.substring(0, titleCurrent.length - 1);
-          }
-
-          for (var i = 0; i < Math.min(titleCurrent.length, titleTo.length); ++i) {
-              if (titleTo[i] != titleCurrent[i] && Math.random() < .5) {
-                  titleCurrent = titleCurrent.replaceAt(i, titleTo[i].toString());
-                  break;
-              }
-          }
-      }
-
-      $(".visual-title").html("&gt; " + titleCurrent + "<span style = \'opacity: " + typeUnderscoreOpacity + ";\'>_</span>");
-      requestAnimationFrame(visualTitleUpdate);
-  }
+<script defer>
+$(document).ready(function () {    
   requestAnimationFrame(visualTitleUpdate);
-
   var $win = $(window);
-
-  function typeResize() {
-      var w = $(".content").width();
-      $(".visual-title").css("font-size", (w * .035));
-  }
-
   $win.on('resize', typeResize);
-
 });
 </script>

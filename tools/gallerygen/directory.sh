@@ -4,6 +4,7 @@ green=`tput setaf 2`
 orange=`tput setaf 3`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
+shopt -s nullglob
 
 function get_image_info {
 	NAME="${f%%.*}"

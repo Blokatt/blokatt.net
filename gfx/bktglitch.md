@@ -4,7 +4,7 @@ date: 2017-12-26
 twitter_id: "945829792972189696"
 youtube_id: "nWcZyYbcu_M"
 reddit_id: "7mgvm3"
-permalink: /gfx/bktglitch
+permalink: /gfx/bktglitch/
 layout: visual_canvas
 canvas_script: "/assets/gfx_script/bktglitch/bktglitch.js"
 ---
