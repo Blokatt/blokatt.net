@@ -11,7 +11,7 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
 
 {% include wide-link.html  
   title="bktGlitch"
-  thumbnail="bktglich.jpg"
+  thumbnail="bktglitch.jpg"
   url="/gfx/bktglitch/"
   hover="If it ain't broke, break it!"
   description="

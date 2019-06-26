@@ -402,6 +402,10 @@ iframe {
     display: inline-block;
 }
 
+.visual-thumbnail-wide-image img {
+    mix-blend-mode: multiply;
+}
+
 .visual-thumbnail-wide-image {
     width: 100%;
     -webkit-user-select: none;
@@ -468,7 +472,18 @@ iframe {
     overflow: auto;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
+    line-height: 1.2rem;
+    top: 0.25rem;
     -webkit-transition: all 300ms ease-in;
+}
+
+.visual-thumbnail-wide-description p {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.visual-thumbnail-wide-description h2 {
+    font-size: 1.25rem;
 }
 
 .visual-thumbnail-wide-description.left {

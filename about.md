@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 sidebar_link: true
 sidebar_sort_order: 4
 ---
@@ -11,7 +12,7 @@ Because nobody wants to read an essay, I'll just go ahead and keep it short.
 - **Online alias:** Blokatt
 - **Born:** 1997
 - **Location:** Czech Republic
-- **Primary areas of interest:** Graphics programming/creative coding (OpenGL), desktop application programming, video games development
+- **Primary areas of interest:** Graphics programming/creative coding (OpenGL), desktop programming, video games development, the demoscene
 - **Secondary areas of interest:** Low-level programming, music/sound design, video editing
 - **Main languages:** C/C++, GLSL, Python, Processing, GML, C#/Java, front-end web stuff
 - **Also exploring (2019):** Rust, DSP programming, embedded programming, 3D modeling

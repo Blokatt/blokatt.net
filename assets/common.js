@@ -178,7 +178,7 @@ if ($(window).width() < 790) {
 
 function wideShow(e) {
     $(this).children('.visual-thumbnail-wide-image')
-        .css("width", "25%")
+        .css("width", "15%")
         .css("-webkit-filter", (!wideFilterSwapped) ? "url(#visual-duotone)" : "none")
         .css(".filter", (!wideFilterSwapped) ? "url(#visual-duotone)" : "none")
         .css("-webkit-transition", "all 200ms ease-out")
