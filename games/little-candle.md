@@ -20,7 +20,7 @@ Might crash on newer systems.
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://blokatt.net/data/old/LC_Beta_1.2.rar" text="Download (Win32, 4.1MB)" %}
+{% include download-link.html link="https://dl.blokatt.net/bin/misc/LC_Beta_1.2.rar" text="Download (Win32, 4.1MB)" %}
 </div>
 
 {% include lightbox.html %}

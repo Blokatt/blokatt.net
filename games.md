@@ -8,6 +8,7 @@ sidebar_sort_order: 2
 I'm currently taking a hiatus from solo gamedev to work on my other skills.   
 Here are a few games I've made, mostly for game jams. **Quality may vary.**
 
+I have also collaborated on a number of games as sound and/or music person, more on that [in the audio section](/audio/).
 
 <div class="subsection">
 <h4 class="visual-title">&gt; 0x0D - Made in 48 hours, 1st place @ gm(48) #20</h4>    
@@ -84,8 +85,8 @@ _A Twitch chat-controlled Hangman clone._
   target="_blank"
   url="https://gm48.net/game/79/cannon-cave"  
   description="
-_Bad, procedurally generated survival platformer where you can't attack directly.      
-Made in 48 hours for the 16th gm(48) game jam while enduring a toothache._
+_Procedural survival platformer where you can't attack directly.      
+Made in 48 hours for the 16th gm(48) game jam. IT SUCKS._
   "
 %} 
 
@@ -127,8 +128,7 @@ Made in 72 hours for the Indies VS. PewDiePie game jam._
   align="left"  
   title="/m (2014)"
   thumbnail="slash.png"
-  target="_blank"
-  url="https://gamejolt.com/games/glucose-overdose/166387"  
+  url="/games/slash-em/" 
   description="
 _Bully members of IRC channels while escaping the furious moderators.   
 Made in 48 hours for the 12th gm(48) game jam, placed 3rd._

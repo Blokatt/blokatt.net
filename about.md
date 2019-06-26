@@ -12,12 +12,12 @@ Because nobody wants to read an essay, I'll just go ahead and keep it short.
 - **Online alias:** Blokatt
 - **Born:** 1997
 - **Location:** Czech Republic
-- **Primary areas of interest:** Graphics programming/creative coding (OpenGL), desktop programming, video games development, the demoscene
-- **Secondary areas of interest:** Low-level programming, music/sound design, video editing
+- **Primary focus:** Graphics programming/creative coding (OpenGL), desktop programming, video games development, the demoscene
+- **Secondary focus:** Low-level programming, music/sound design, video editing
 - **Main languages:** C/C++, GLSL, Python, Processing, GML, C#/Java, front-end web stuff
 - **Also exploring (2019):** Rust, DSP programming, embedded programming, 3D modeling
 
-### [Here's my GitHub profile, of course.](https://github.com/Blokatt)
+### Obligatory link to my GitHub profile is [here.](https://github.com/Blokatt)
 
 More info can be found in the respective categories of this site.   
 You can find me all around the internet, see the sidebar on the left for social media links and whatnot.

@@ -21,7 +21,7 @@ It’s about a person who has to recover lost parts of their soul from limbo aft
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://blokatt.net/data/old/Choice.rar" text="Download (Win32, 10.1MB)" %}
+{% include download-link.html link="https://dl.blokatt.net/bin/misc/Choice.rar" text="Download (Win32, 10.1MB)" %}
 </div>
 
 {% include lightbox.html %}

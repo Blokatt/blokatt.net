@@ -20,7 +20,7 @@ Oh yes, Colour Rage, this one’s pretty good, I’d say, I made it for a one we
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://blokatt.net/data/old/colourrage.zip" text="Download (Win32, 9.6MB)" %}
+{% include download-link.html link="https://dl.blokatt.net/bin/misc/colourrage.zip" text="Download (Win32, 9.6MB)" %}
 </div>
 
 {% include lightbox.html %}
