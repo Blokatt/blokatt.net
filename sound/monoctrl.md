@@ -12,18 +12,21 @@ MonoCtrl _[monocontrol]_ is a control interface plugin for the [Korg Monologue](
 
 Supports [Cockos REAPER](https://www.reaper.fm/) version 5 and up.
 
-## Features:   
+This was my first more serious reverse-engineering project, you can read more about the development and the tools developed in the process here.
+
+[GitHub repository (includes various SysEx utilities)](https://github.com/Blokatt/FX4Reaper/tree/master/monoctrl){:target="_blank"}   
+[REAPER Forums thread.](https://forum.cockos.com/showthread.php?t=217123){:target="_blank"}
+
+<div class="subsection">
+<h4 class="visual-title">&gt; Features</h4>    
 - Two-way CC/PC sync
 - Automatic preset requesting via SysEx
 - Parameter randomisation/mutation
 - User preset support
 - MIDI passthrough options
 - SysEx-safe MIDI channel selection
+</div>
 
-This was my first more serious reverse-engineering project, you can read more about the development and the tools developed in the process here.
-
-[GitHub repository (includes various SysEx utilities)](https://github.com/Blokatt/FX4Reaper/tree/master/monoctrl){:target="_blank"}   
-[REAPER Forums thread.](https://forum.cockos.com/showthread.php?t=217123){:target="_blank"}
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
 <div class="dashed-border">

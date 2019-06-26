@@ -163,6 +163,13 @@ body {
     border-color: $body-bg;
 }
 
+
+.content h2>a {
+    background-image: $background-content-pronounced;
+    background-attachment: fixed;
+}
+
+
 .content a {
     font-weight: bold;
     -webkit-transition: 0.25s all;
@@ -330,10 +337,6 @@ strong {
 }
 
 
-
-
-
-
 @media only screen and (max-height: 677px) and (min-width: 49rem) {
     #sidebar {
         background-attachment: scroll;
@@ -390,11 +393,15 @@ strong {
 .dashed-border {
     margin-top: 16px;
     margin-bottom: 16px;
-    outline-style: dashed;
-    outline-color: $body-muted;
-    outline-color: $colour-border-purple;
+    border-style: dashed;
+    border-color: $body-muted;
+    border-color: $colour-border-purple;
     background-image: $background-content-pronounced;
-    outline-width: 2px;
+    background-attachment: fixed;
+    border-width: 2px;
+
+    outline: rgba(56, 50, 85, 0.1) solid 4px;
+    outline-offset: -9px;
 }
 
 iframe {
@@ -568,6 +575,7 @@ iframe {
     height: 140px;
     overflow: hidden;
     background-image: $background-content-pronounced;
+    background-attachment: fixed;
     /*object-fit: contain;*/
     /*       object-fit: fill; */
 

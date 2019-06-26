@@ -1,0 +1,9 @@
+<div markdown="0">
+    <div class="gallery-container">
+        {% for image in site.data[include.id] %}
+        <a class="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
+            <img src="{{ image.thumbnail }}">
+        </a>
+        {% endfor %}
+    </div>
+</div>

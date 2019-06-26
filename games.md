@@ -17,8 +17,7 @@ Here are a few games I've made, mostly for game jams. **Quality may vary.**
 </div>
 
 <div class="subsection">
-<h3 class="visual-title">&gt; The released stuff</h3>
-
+<h3 class="visual-title">&gt; In progress?</h3>
 {% include wide-link.html  
   title="Glucose Overdose (2016, WIP)"
   thumbnail="glucose.png"
@@ -29,7 +28,10 @@ _Speedrunning platformer where you chase after a piece of candy!
 Originally made in 48 hours for the 19th gm(48)._
   "
 %} 
+</div>
 
+<div class="subsection">
+<h3 class="visual-title">&gt; The released stuff</h3>
 {% include wide-link.html  
   align="left"  
   title="0x0D (2016)"
@@ -135,9 +137,8 @@ Made in 48 hours for the 12th gm(48) game jam, placed 3rd._
 
 {% include wide-link.html  
   title="Cute Robot Kidnappers (2014)"
-  thumbnail="kidnappers.png"
-  target="_blank"
-  url="https://gamejolt.com/games/glucose-overdose/166387"  
+  thumbnail="kidnappers.png"  
+  url="/games/cute-robot-kidnappers/"  
   description="
 _Sneak around turrets and escape from an underground base.   
 Made in 48 hours for the 11th gm(48) game jam._
@@ -183,8 +184,7 @@ Made for a halloween game competition, won._
 {% include wide-link.html    
   title="Choice (2012)"
   thumbnail="choice.png"
-  target="_blank"
-  url="https://gamejolt.com/games/glucose-overdose/166387"  
+  url="/games/choice/"  
   description="
 _Recover your shattered soul from limbo to come to peace with death.      
 Czech only._
@@ -194,9 +194,18 @@ Czech only._
 {% include wide-link.html  
   align="left" 
   title="Colour Rage (2011)"
-  thumbnail="rage.png"
-  target="_blank"
-  url="https://gamejolt.com/games/glucose-overdose/166387"  
+  thumbnail="rage.png"  
+  url="/games/colour-rage/"  
+  description="
+_Fight back against hostile colours!   
+Czech only._
+  "
+%} 
+
+{% include wide-link.html    
+  title="MindFight (2011)"
+  thumbnail="mindfight.png"  
+  url="/games/mindfight/"  
   description="
 _Destroy bad thoughts to save your host being from depression.   
 Czech only._
@@ -204,10 +213,10 @@ Czech only._
 %} 
 
 {% include wide-link.html    
+  align="left" 
   title="Little Candle (2010)"
-  thumbnail="candle.png"
-  target="_blank"
-  url="https://gamejolt.com/games/light-kitty/20592"  
+  thumbnail="candle.png"  
+  url="/games/little-candle/"  
   description="
 _Transfer light using a candle while avoiding obstacles.     
 First game I've ever released! Czech only._
