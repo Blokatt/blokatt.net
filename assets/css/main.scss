@@ -258,6 +258,10 @@ hr {
     border: none;
 }
 
+strong {
+    color: $body-color;
+}
+
 #sidebar-stripe {
     position: relative;
     float: right;
