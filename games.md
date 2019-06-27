@@ -4,6 +4,7 @@ title: Games
 permalink: /games/
 sidebar_link: true
 sidebar_sort_order: 2
+description: Things I've put together that resemble video games.
 ---
 I'm currently taking a hiatus from solo gamedev (after 10+ years) due to general burnout and to work on my other skills.   
 Here are a few games I've made, mostly for game jams. **Quality may vary.** Some of my best work sadly still remains unreleased to this day.

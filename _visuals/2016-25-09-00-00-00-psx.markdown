@@ -1,7 +1,6 @@
 ---
 title:  "PSX Shader"
 thumbnail: "/assets/gfx_thumbnail/thumbnail_psx"
-description: "The Utah Teapot. I think."
 video: "/assets/gfx_full/full_psx"
 permalink: /gfx/misc/psx/
 gif: "/assets/gfx_gif/psx.gif"
@@ -10,6 +9,8 @@ gallery: "gallery_psx"
 reddit_id: "86pdqf"
 date: 2016-09-25 00:00:00
 layout: visual_video
+image: /assets/graph_image/og_psx.png
+description: "A shader emulating the classic look of PSX games."
 ---
 My first attempt at creating a shader that operates on 3D geometry. It's an emulation of the look of classic PSX games from the 90s.   
 Unreleased, might revisit this in the future.

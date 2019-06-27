@@ -2,12 +2,12 @@
 title:  "Colour Rage"
 permalink: /games/colour-rage/
 layout: post
+description: "A shoot-em-up from 2011. Battle against hostile colours."
 ---
 Oh yes, Colour Rage, this one’s pretty good, I’d say, I made it for a one week long czech gamedev contest. It even supports custom levels.
 <div class="subsection">
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2011
-- **Status:** Finished
 - **Genre:** Shoot-em-up, I think
 - **Controls:** Arrow keys, QWE keys
 - **Language:** Czech (there’s not a lot of text)

@@ -2,16 +2,17 @@
 title:  "Choice"
 permalink: /games/choice/
 layout: post
+description: "A platformer game from 2012. Recover your shattered soul from limbo."
 ---
 Another rather "emotional" game, a platformer with a clever gravity switching mechanic.   
 It’s about a person who has to recover lost parts of their soul from limbo after taking their life…
 <div class="subsection">
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2012
-- **Statu**s: Finished
-- **Genre**: Platformer
-- **Contr**ols: Arrow keys, X key
-- **Langu**age: Czech (there’s little text)
+- **Status:** Finished
+- **Genre:** Platformer
+- **Controls:** Arrow keys, X key
+- **Language:** Czech (there’s little text)
 </div>
 
 <div class="subsection">

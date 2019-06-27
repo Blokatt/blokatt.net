@@ -13,5 +13,7 @@ reddit_id: "8acp8w"
 permalink: /gfx/misc/fork-it/
 date: 2018-04-06 00:00:00
 layout: visual_video
+description: "Or don't."
+image: /assets/graph_image/og_fork-it.png
 ---
 Yet another exercise mainly meant to improve my 3D modeling skills, this time with some inverse culling-based [cel shading](https://en.wikipedia.org/wiki/Cel_shading). Made in Processing.

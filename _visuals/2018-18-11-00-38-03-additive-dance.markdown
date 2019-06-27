@@ -12,4 +12,6 @@ shadertoy_id: "XtyfDD"
 twitter_id: "1068629160871034883"
 instagram_id: "Bq26cSqg-Ks"
 layout: shadertoy
+description: "Dancing lights, yay!"
+image: /assets/graph_image/og_additive-dance.png
 ---

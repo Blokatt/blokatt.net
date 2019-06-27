@@ -2,7 +2,7 @@
 title:  "n = 10"
 thumbnail: "/assets/gfx_thumbnail/thumbnail_n-equals-10"
 video: "/assets/gfx_full/full_n-10"
-description: "Lovely fractal trees in the neighbourhood."
+description: "Lovely fractal trees in the local neighbourhood."
 permalink: /gfx/misc/n-10/
 gif: "/assets/gfx_gif/n-10.gif"
 instagram_id: "BeOKSUuDzxK"
@@ -12,6 +12,7 @@ gallery: "gallery_n-10"
 reddit_id: "7e49jo"
 date: 2017-11-19 00:00:00
 layout: visual_video
+image: /assets/graph_image/og_n-10.png
 ---
 Rather lovely fractal trees composited into a photo.   
 Written in Processing.

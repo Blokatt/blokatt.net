@@ -2,7 +2,6 @@
 title:  "Unstable Teapot"
 thumbnail: "/assets/gfx_thumbnail/thumbnail_unstable-teapot"
 video: "/assets/gfx_full/full_unstable-teapot"
-description: "The Utah Teapot. I think."
 permalink: /gfx/misc/unstable-teapot/
 gif: "/assets/gfx_gif/unstable-teapot.gif"
 instagram_id: "BeOJCQWDTDK"
@@ -11,6 +10,8 @@ source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/unstableTea
 reddit_id: "7h6wc1"
 date: 2017-12-03 00:00:00
 layout: visual_video
+description: "The Utah Teapot being disassembled and reassembled, forever."
+image: /assets/graph_image/og_unstable-teapot.png
 ---
 Experimenting on the classic [Utah teapot](https://en.wikipedia.org/wiki/Utah_teapot) model with a custom OBJ renderer.   
 Written in Processing.

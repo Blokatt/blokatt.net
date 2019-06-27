@@ -4,6 +4,7 @@ title: Graphics
 permalink: /gfx/
 sidebar_link: true
 sidebar_sort_order: 0
+description: Explorations of (real-time) computer graphics.
 ---
 <div class="subsection">
 Here are some things I've made that somehow relate to computer graphics, generative art, creative coding or *whatever

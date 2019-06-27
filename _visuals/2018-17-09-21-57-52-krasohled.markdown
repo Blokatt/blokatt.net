@@ -9,5 +9,7 @@ gallery: "gallery_krasohled"
 instagram_id: "Bq252HmCoHF"
 twitter_id: "1042772348351533056" 
 layout: shadertoy
+description: "Don't stare into it for too long."
+image: /assets/graph_image/og_krasohled.png
 ---
 Creating kaleidoscope-like patterns via texture mirroring.

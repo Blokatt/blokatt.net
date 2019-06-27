@@ -9,6 +9,8 @@ instagram_id: "BwIltbqAe8p"
 twitter_id: "1116439281898278912"
 reddit_id: "bcaxqr"
 layout: shadertoy
+description: "An exercise in FBM."
+image: /assets/graph_image/og_deterioration.png
 ---
 A rusty-looking surface created using an implementation of [fractal brownian motion](https://thebookofshaders.com/13/), a really
 simple, yet effective method of creating different types of textures from smoke and clouds to terrain.   

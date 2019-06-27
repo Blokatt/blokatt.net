@@ -4,6 +4,7 @@ title: Audio
 permalink: /audio/
 sidebar_link: true
 sidebar_sort_order: 1
+description: Making some noise.
 ---
 <div class="subsection">
 Apart from programming, I also do audio design and some music-making here and there.

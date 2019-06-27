@@ -11,5 +11,7 @@ gallery: "gallery_mandelburn"
 twitter_id: "1073985649261375489"
 instagram_id: "BrZGXFLFE4_"
 layout: shadertoy
+description: "A real-time visualisation of a bumpy Mandelbrot set."
+image: /assets/graph_image/og_mandelburn.png
 ---
 A "burnt-in" multipass visualisation of a [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) with median filtered generated bump map.  

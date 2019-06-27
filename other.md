@@ -4,6 +4,7 @@ title: Stuff
 permalink: /other/
 sidebar_link: true
 sidebar_sort_order: 3
+description: Miscellaneous things, good and bad. Also known as the dumping grounds.
 ---
 If it doesn't fit in the other categories and I released it, it goes here!   
 **UNDER CONSTRUCTION, this is just some of the stuff posted on my older website, I still haven't gone through the archives.**

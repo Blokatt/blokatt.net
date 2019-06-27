@@ -10,6 +10,8 @@ gallery: "gallery_system-sweep"
 permalink: /gfx/misc/system-sweep/
 reddit_id: "bwe55z"
 layout: shadertoy
+description: "Enter the tunnel."
+image: /assets/graph_image/og_system-sweep.png
 ---
 My _lo-fi_ take on the classic demoscene tunnel effect.   
 [Procedural drone audio included, visit the ShaderToy page to hear it!](https://www.shadertoy.com/view/ttX3W2)

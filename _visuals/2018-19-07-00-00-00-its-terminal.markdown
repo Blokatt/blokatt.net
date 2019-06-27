@@ -13,6 +13,8 @@ reddit_id: "905hxl"
 permalink: /gfx/misc/its-terminal/
 date: 2018-07-19 00:00:00
 layout: visual_video
+description: "An animated ASCII-art piece."
+image: /assets/graph_image/og_its-terminal.png
 ---
 An ASCII-art piece made in Processing using a custom shader, as well as my first attempt at modelling something more complex in Blender. The font used to generate the gradient texture is [Perfect DOS VGA 437](https://www.dafont.com/perfect-dos-vga-437.font).
 

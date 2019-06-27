@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 sidebar_link: true
 sidebar_sort_order: 4
+description: README.TXT
 ---
 <div class="subsection">
 Because nobody wants to read an essay, I'll just go ahead and keep it short.

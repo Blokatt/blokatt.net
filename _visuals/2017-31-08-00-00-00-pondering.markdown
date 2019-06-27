@@ -2,7 +2,7 @@
 title:  "Pondering"
 thumbnail: "/assets/gfx_thumbnail/thumbnail_pondering"
 video: "/assets/gfx_full/full_pondering"
-description: "Something to stare into."
+description: "..."
 permalink: /gfx/misc/pondering/
 gif: "/assets/gfx_gif/pondering.gif"
 instagram_id: "BeOJJdXj7_r"
@@ -11,6 +11,7 @@ source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/pondering"
 reddit_id: "6x5jca"
 date: 2017-08-31 00:00:00
 layout: visual_video
+image: /assets/graph_image/og_pondering.png
 ---
 Written in Processing.
 

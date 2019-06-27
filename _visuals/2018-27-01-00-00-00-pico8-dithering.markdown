@@ -3,7 +3,6 @@ title:  "PICO-8 palette dithering demo"
 thumbnail: "/assets/gfx_thumbnail/thumbnail_pico8-dithering"
 video: "/assets/gfx_full/full_pico8-dithering"
 description: "Bayer dithering based on the PICO-8 palette."
-
 gif: "/assets/gfx_gif/pico8-dithering.gif"
 instagram_id: "Bebkgx5jwsZ"
 twitter_id: "956972652647854081" 
@@ -12,5 +11,6 @@ reddit_id: "7t8oxi"
 permalink: /gfx/misc/pico8-dithering/
 date: 2018-01-27 00:00:00
 layout: visual_video
+image: /assets/graph_image/og_pico8-dithering.png
 ---
 Simple GLSL Bayer dithering using the 16-colour PICO-8 palette. Written in Processing.

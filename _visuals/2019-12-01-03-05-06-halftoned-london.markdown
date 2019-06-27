@@ -7,10 +7,7 @@ permalink: /gfx/misc/halftoned-london/
 shadertoy_id: "wssGzs" 
 twitter_id: "1085980839840763904"
 layout: shadertoy
+description: "A shader emulation of halftone printing."
+image: /assets/graph_image/og_halftoned-london.png
 ---
 A GLSL emulation of [CMYK halftone](https://en.wikipedia.org/wiki/Halftone) [printing](https://en.wikipedia.org/wiki/Screen_angle).
-
-| Key      | Action        | 
-|----------|:-------------:|
-| Mouse X  | Time shift    |
-| Mouse Y  | Point size    |

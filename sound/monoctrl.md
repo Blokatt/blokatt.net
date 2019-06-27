@@ -7,6 +7,8 @@ reddit_id: "ap86p5"
 source_code: "https://github.com/Blokatt/FX4Reaper/tree/master/monoctrl"
 permalink: /audio/monoctrl/
 layout: visual
+description: "A Korg Monologue interface plugin for REAPER 5."
+image: /assets/graph_image/og_monoctrl.png
 ---
 MonoCtrl _[monocontrol]_ is a control interface plugin for the [Korg Monologue](https://www.korg.com/us/products/synthesizers/monologue/){:target="_blank"}   synthesiser. 
 

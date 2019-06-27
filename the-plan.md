@@ -1,10 +1,10 @@
 # blokatt.net - The home stretch
 
 - SEO
-    - Homepage
-    - Categories
+    - ~~Homepage~~
+    - ~~Categories~~
     - GFX pages
-    - Games pages
+    - Games page
 - noscript support
 - ~~Add FITd to games section~~
 - ~~Add page for matrix tool~~

@@ -2,6 +2,7 @@
 title:  "Cute Robot Kidnappers"
 permalink: /games/cute-robot-kidnappers/
 layout: post
+description: "A stealth game from 2014. Escape from a secret base of evil drones!"
 ---
 My first gm(48) entry!   
 A rather difficult, but simple stealth game. You wake up in an unknown place filled with deadly drones. Escape.   
@@ -10,7 +11,6 @@ Simple as that.
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2014
 - **Game jam:** gm(48) #11 (48 hours)
-- **Status:** Finished
 - **Genre:** Stealth FPS
 - **Controls:** Mouse, WASD
 </div>

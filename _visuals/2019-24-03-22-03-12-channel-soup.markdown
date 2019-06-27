@@ -9,6 +9,8 @@ instagram_id: "BwIlVOqghJR"
 reddit_id: "bejsht"
 twitter_id: "1116393342420570112"
 layout: shadertoy
+description: "Yummy."
+image: /assets/graph_image/og_channel-soup.png
 ---
 Originally written on my phone (using [Shader Editor](https://play.google.com/store/apps/details?id=de.markusfisch.android.shadereditor&hl=en)). Later improved in Shadertoy. The smoke effect is achieved using FBM.
 

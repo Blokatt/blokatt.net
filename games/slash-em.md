@@ -2,6 +2,7 @@
 title:  "/m"
 permalink: /games/slash-em/
 layout: post
+description: "A puzzle/action game from 2014. Annihilate IRC channels with annoyance."
 ---
 Another gm(48) entry, this one won 3rd place [(trophy)](https://i.imgur.com/AuQgXUo.png)!   
 In _[Netslash]_, you play as member of an IRC chat, whose goal is to drive all users off selected channels whilst avoiding the ban hammer.   

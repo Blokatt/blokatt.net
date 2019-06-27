@@ -13,6 +13,7 @@ gallery: "gallery_impossi-box"
 permalink: /gfx/misc/impossibox/
 date: 2018-01-11 00:00:00
 layout: visual_video
+image: /assets/graph_image/og_impossi-box.png
 ---
 Screen-space thresholded hyper-energised [metaballs](https://en.wikipedia.org/wiki/Metaballs) inside a cube.   
 Written in Processing.

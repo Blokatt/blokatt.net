@@ -13,5 +13,7 @@ instagram_id: "Bq20XytgbxJ"
 gallery: "gallery_twister95"
 twitter_id: "1036724857864683525" 
 layout: shadertoy
+description: "'90's screensaver'-style twister effect."
+image: /assets/graph_image/og_twister95.png
 ---
 '90's screensaver'-style [twister effect](https://democyclopedia.wordpress.com/2015/11/29/t-comme-twister/) with cubemap reflections and Bayer dithering. 

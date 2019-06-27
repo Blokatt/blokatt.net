@@ -2,12 +2,12 @@
 title:  "Mindfight"
 permalink: /games/mindfight/
 layout: post
+description: "A top-down action game from 2010. Defeat bad thoughts."
 ---
 I made this experimental game for a small czech gamedev contest (won 2nd place). You play as a thought whose goal is to cure its owner from depression. I still can’t understand how I came up with something like this (I was 13).
 <div class="subsection">
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2010
-- **Status:** Finished
 - **Genre:** Top-down thing
 - **Controls:** Mouse
 - **Language:** Czech

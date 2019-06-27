@@ -8,5 +8,7 @@ instagram_id: "BuRk0G7gtpF"
 twitter_id: "1098712743639699457"
 permalink: /gfx/misc/voronoided/
 layout: shadertoy
+description: "A straightforward real-time naive implementation of a Voronoi diagram."
+image: /assets/graph_image/og_voronoided.png
 ---
 A straightforward naive implementation of a [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram).

@@ -2,6 +2,7 @@
 title:  "Little Candle"
 permalink: /games/little-candle/
 layout: post
+description: "My first game from 2010."
 ---
 My first released game, made in Game Maker 6 back in 2010. You play as a candle whose objective is to deliver light accross levels.  
 Might crash on newer systems.
