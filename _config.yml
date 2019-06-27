@@ -31,8 +31,6 @@ instagram_username:  blokatt
 previews: /assets/gfx_thumbnail/
 graph: /assets/graph_image/
 
-google_analytics: UA-43106845-2
-
 twitter:
   username: blokatt
   card: summary
@@ -55,11 +53,10 @@ social:
     - https://www.shadertoy.com/user/Blokatt
 
 permalink: pretty
-# Build settings
-markdown:         kramdown
-highlighter:      rouge
 
-paginate:         5
+markdown: kramdown
+highlighter: rouge
+paginate: 5
 
 disqus:
   shortname: blokatt
@@ -73,9 +70,6 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
-
-
-twitter: blokatt
 
 collections:
   visuals:
