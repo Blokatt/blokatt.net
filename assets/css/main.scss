@@ -164,11 +164,10 @@ body {
 }
 
 
-.content h2>a {
+.content h2>a, h3>a {
     background-image: $background-content-pronounced;
     background-attachment: fixed;
 }
-
 
 .content a {
     font-weight: bold;
