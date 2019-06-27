@@ -23,11 +23,12 @@ I'm on [Game Jolt](https://gamejolt.com/@Blokatt) and [itch.io](https://blokatt.
 <h3 class="visual-title">&gt; In progress?</h3>
 {% include wide-link.html  
   title="Glucose Overdose (2016, WIP)"
+  align="left"  
   thumbnail="glucose.png"
   target="_blank"
   url="https://twitter.com/i/moments/781611844674981888"  
   description="
-_Speedrunning platformer where you chase after a piece of candy!   
+_Speedrunning platformer where you chase after candy!   
 Originally made in 48 hours for the 19th gm(48)._
   "
 %} 
@@ -35,6 +36,17 @@ Originally made in 48 hours for the 19th gm(48)._
 
 <div class="subsection">
 <h3 class="visual-title">&gt; The released stuff</h3>
+{% include wide-link.html    
+  title="fiTD (2018)"
+  thumbnail="fitd.png"
+  target="_blank"
+  url="https://github.com/Blokatt/fiTD"  
+  description="
+_A console-based TD game.   
+My first big C++ project._
+  "
+%} 
+
 {% include wide-link.html  
   align="left"  
   title="0x0D (2016)"
@@ -65,7 +77,7 @@ Made in 48 hours for the 18th gm(48) game jam_
   target="_blank"
   url="https://gamejolt.com/games/ripesc/121775"  
   description="
-_An experimental rhythm game controlled only using one button.   
+_A rhythm game controlled with a single button.   
 Originally made in 48 hours for the 17th gm(48) game jam_
   "
 %} 
@@ -87,7 +99,7 @@ _A Twitch chat-controlled Hangman clone._
   target="_blank"
   url="https://gm48.net/game/79/cannon-cave"  
   description="
-_Procedural survival platformer where you can't attack directly.      
+_Procedural survival platformer where you can't attack.      
 Made in 48 hours for the 16th gm(48) game jam. IT SUCKS._
   "
 %} 
@@ -121,7 +133,7 @@ Made in 48 hours for the 14th gm(48) game jam, placed 2nd._
   target="_blank"
   url="https://blokatt.itch.io/feeling-explosive"  
   description="
-_Fast-paced floaty precision platformer that limits your inputs.   
+_Fast-paced that limits your inputs.   
 Made in 72 hours for the Indies VS. PewDiePie game jam._
   "
 %} 
@@ -132,7 +144,7 @@ Made in 72 hours for the Indies VS. PewDiePie game jam._
   thumbnail="slash.png"
   url="/games/slash-em/" 
   description="
-_Bully members of IRC channels while escaping the furious moderators.   
+_Cause havoc in IRC channels.   
 Made in 48 hours for the 12th gm(48) game jam, placed 3rd._
   "
 %} 
@@ -188,7 +200,7 @@ Made for a halloween game competition, won._
   thumbnail="choice.png"
   url="/games/choice/"  
   description="
-_Recover your shattered soul from limbo to come to peace with death.      
+_Recover your shattered soul from limbo.      
 Czech only._
   "
 %} 
@@ -209,7 +221,7 @@ Czech only._
   thumbnail="mindfight.png"  
   url="/games/mindfight/"  
   description="
-_Destroy bad thoughts to save your host being from depression.   
+_Destroy bad thoughts inside a mind.   
 Czech only._
   "
 %} 
