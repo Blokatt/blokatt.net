@@ -59,6 +59,18 @@ code {
     background-color: $code-background;
 }
 
+.lead {
+  text-align: center;
+}
+
+@media (min-width: $large-breakpoint) {
+    #sidebar-icon-links {
+      margin-left: 0;
+      justify-content: flex-start;    
+    }
+}
+      
+
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -85,22 +97,15 @@ code {
     color: $body-bg;
 }
 
-.link_icon {
+.link-icon {
     margin: -5px;
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -o-transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0.8;        
+    transition: opacity 1.0s;
 }
 
-.link_icon:hover {
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+.link-icon:hover {
+    opacity: 1.0;        
+    transition: opacity 0.1s;
 }
 
 .page-link {
