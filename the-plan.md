@@ -1,16 +1,16 @@
 # blokatt.net - The home stretch
 
-- SEO
+- ~~SEO~~
     - ~~Homepage~~
     - ~~Categories~~
-    - GFX pages
-    - Games page
+    - ~~GFX pages~~
+    - ~~Games page~~
 - noscript support
 - ~~Add FITd to games section~~
 - ~~Add page for matrix tool~~
 - Alt image banner
 - Article: MonoCtrl
-- Article: Website launch
+- ~~Article: Website launch~~
 - ~~Cleanup~~
     - ~~Bash scripts~~
     - ~~CSS~~

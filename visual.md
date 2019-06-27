@@ -60,7 +60,6 @@ _Hardware-accelerated convolution kernel visualiser with a shader exporter._
                   </video>
                   <img class="visual-video-image visual-video-static" src="{{ item.thumbnail }}.png">
                 </div>
-                <!--<  img src="{{ item.thumbnail }}">!-->
               </a>
             </div>
           </div>

@@ -4,7 +4,7 @@ permalink: /games/colour-rage/
 layout: post
 description: "A shoot-em-up from 2011. Battle against hostile colours."
 ---
-Oh yes, Colour Rage, this one’s pretty good, I’d say, I made it for a one week long czech gamedev contest. It even supports custom levels.
+Fast-paced action game originally made for a Czech gamedev competition where it won 2nd place. It even supports custom levels, albeit in the worst way possible, by loading actual GML code from text files.
 <div class="subsection">
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2011

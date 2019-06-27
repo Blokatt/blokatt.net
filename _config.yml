@@ -31,6 +31,8 @@ instagram_username:  blokatt
 previews: /assets/gfx_thumbnail/
 graph: /assets/graph_image/
 
+google_analytics: UA-43106845-2
+
 twitter:
   username: blokatt
   card: summary
