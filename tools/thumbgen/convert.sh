@@ -1,4 +1,5 @@
 #/bin/bash
+# This script generates thumbnails for the graphics section
 
 red=`tput setaf 1`
 green=`tput setaf 2`
@@ -15,6 +16,7 @@ function print_skipped_and_reset {
 }
 
 function png_convert {
+	# Colour tint
 	magick convert "$f"[0] -color-matrix "6x3:  \
 									0.30 1.02 0.00 0.00 0.00 0.04 \
 									0.25 0.72 0.00 0.00 0.00 0.02 \
@@ -27,12 +29,11 @@ function png_convert_col {
 	magick convert "$f"[0] -interlace Plane -ordered-dither o8x8,7,6,7 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -strip -thumbnail '150x150^' "$THUMBCOL"	
 }
 
+
 ##################################
 
-echo "${orange}WEBM pass.${reset}"
-echo "Converting."
-echo ""
-
+echo -e "${orange}WEBM pass.${reset}"
+echo "Converting..."
 
 cd in
 
@@ -68,9 +69,7 @@ cd ..
 
 print_skipped_and_reset
 
-echo ""
-echo "Copying."
-echo ""
+echo -e "\nCopying..."
 
 for f in ./out/*.webm
 do
@@ -93,14 +92,14 @@ do
 done
 
 print_skipped_and_reset
-
-##################################
-
-##################################
-
-echo "${orange}OGV pass.${reset}"
-echo "Converting."
 echo ""
+##################################
+
+##################################
+
+echo -e "${orange}OGV pass.${reset}"
+echo "Converting..."
+
 
 
 cd in
@@ -131,9 +130,7 @@ cd ..
 
 print_skipped_and_reset
 
-echo ""
-echo "Copying."
-echo ""
+echo -e "\nCopying..."
 
 for f in ./out/*.ogv
 do
@@ -156,14 +153,13 @@ do
 done
 
 print_skipped_and_reset
-
-##################################
-
-##################################
-
-echo "${orange}MP4 pass.${reset}"
-echo "Converting."
 echo ""
+##################################
+
+##################################
+
+echo -e "${orange}MP4 pass.${reset}"
+echo "Converting..."
 
 cd in
 
@@ -173,35 +169,26 @@ do
 	EXTENSION="${f##*.}"
 	THUMB=$(echo "../out/thumbnail_"$NAME".mp4");	
 	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -profile:v baseline -level 3.0 -crf 20 -r 30");
-	#ARGS0=$(echo " -y -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 1 -f mp4 /dev/null");
-	#ARGS1=$(echo " -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 2");
 	
 	if [ -f "$THUMB" ]; then		
 		if [ "$THUMB" -ot "$f" ]; then
 			echo "${orange}$THUMB${reset}"
 			echo "Replacing."
-			ffmpeg $ARGS -n "$THUMB";		
-			#ffmpeg $ARGS0 && \
-			#ffmpeg $ARGS1 -y "$THUMB";
+			ffmpeg $ARGS -n "$THUMB";				
 		else
 			SKIPPED=$(($SKIPPED + 1))
 		fi;
 	else
 		echo "${orange}$THUMB${reset}"	
 		echo "New, converting."	
-		ffmpeg $ARGS -n "$THUMB";		
-		#ffmpeg $ARGS0 && \
-		#ffmpeg $ARGS1 "$THUMB";		
+		ffmpeg $ARGS -n "$THUMB";				
 	fi;
 done
 
 print_skipped_and_reset
-
 cd ..
 
-echo ""
-echo "Copying."
-echo ""
+echo -e "\nCopying..."
 
 for f in ./out/*.mp4
 do
@@ -224,14 +211,14 @@ do
 done
 
 print_skipped_and_reset
-
-##################################
-
-##################################
-
-echo "${orange}PNG pass.${reset}"
-echo "Converting."
 echo ""
+##################################
+
+##################################
+
+echo -e "${orange}PNG pass.${reset}"
+echo "Converting..."
+
 
 cd in
 
@@ -279,12 +266,9 @@ do
 done
 
 print_skipped_and_reset
-
 cd ..
 
-echo ""
-echo "Copying."
-echo ""
+echo -e "\nCopying..."
 
 for f in ./out/*.png
 do
@@ -307,13 +291,10 @@ do
 done
 
 print_skipped_and_reset
+echo ""
 ##################################
 
+# Remove 1st passlog files
 rm 'ffmpeg2pass-0.log' 2>/dev/null
 rm 'ffmpeg2pass-0.log.mbtree' 2>/dev/null
 
-# find *.mp4 *.avi | sed 's/\./ /g' | awk '{ printf "
-# ffmpeg -i %s.%s -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -r 30 -n out/thumbnail_%s.webm; \n", $1, $2, $1 }' > run.sh
-
-# ./run.sh
-# rm run.sh

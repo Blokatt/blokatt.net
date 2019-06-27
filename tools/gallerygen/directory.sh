@@ -1,4 +1,7 @@
 #/bin/bash
+# This script converts a gallery (1st arg) into properly processed images
+# with thumbnails, accompanied by a metadata YAML file
+
 red=`tput setaf 1`
 green=`tput setaf 2`
 orange=`tput setaf 3`
@@ -6,7 +9,7 @@ cyan=`tput setaf 6`
 reset=`tput sgr0`
 shopt -s nullglob
 
-function get_image_info {
+function get_image_info {	
 	NAME="${f%%.*}"
 	EXTENSION="${f##*.}"
 	OUTEXT="jpg"
@@ -35,8 +38,8 @@ else
 	cd $1
 	FILES=$(ls *.{gif,png} | sort -V | tr '\n' ' ')	
 	
-	# Avoid needless processing
-
+	# Avoid needless processing, not all cases are covered but
+	# generally, it does the job
 	SKIPDIRECTORY=true
 
 	for f in $FILES; do
@@ -51,13 +54,12 @@ else
 		echo Skipping.
 		exit 0
 	fi
-
-	##
-
+		
 	rm "$METADATA" 2> /dev/null
 
 	for f in $FILES; do
 		get_image_info		
+		# In PNGs, the Description teXt chunk is used in the caption metadata.
 		DESCRIPTION="$(magick identify -format "%[Description]" $f 2>/dev/null)"
 		
 		if [[ $f -nt $THUMBOUTPATH || ! -f $THUMBOUTPATH ]]; then
@@ -67,11 +69,11 @@ else
 				#strip gamma
 				magick convert -strip -interlace Plane "$f" "$OUTPATH" 
 			fi
-			if [[ "$EXTENSION" == "gif" ]]; then
-				#magick convert -strip -thumbnail '240x140^' "$f" "$THUMBOUTPATH"
-				#gifsicle "$f" --colors=255 --resize-touch-width 240 -o "$THUMBOUTPATH"
+			if [[ "$EXTENSION" == "gif" ]]; then			
 				gifsicle --colors=255 "$f" -o "$THUMBOUTPATH"				
 				gifsicle -U -O3 --colors=32 --dither=ordered --resize-touch-width 240 "$THUMBOUTPATH" -o "$THUMBOUTPATH"
+
+				# Cropping
 				W=$(magick identify -ping -format "%w" $THUMBOUTPATH[0])
 				H=$(magick identify -ping -format "%h" $THUMBOUTPATH[0])
 				X0=0
@@ -100,6 +102,7 @@ else
 		fi	
 		cp -R -u "$f" "$OUTPATH"
 
+		# Metadata
 		echo "- image: /assets/galleries/$GALLERY/$f" >> $METADATA
 		echo "  thumbnail: /assets/galleries/$GALLERY/thumbnail_$NAME.$OUTEXT" >> $METADATA
 		if [ ! -z "$DESCRIPTION" ]; then
@@ -112,6 +115,7 @@ else
 	cd ..
 	cd ..
 
+	# Copy stuff over
 	mkdir -p "../../assets/galleries/$GALLERY" && cp -R -u "./out/$GALLERY" "../../assets/galleries/"
 	mkdir -p "../../_data" && cp -u "./out/data/gallery_$GALLERY.yaml" "../../_data/gallery_$GALLERY.yaml"
 fi

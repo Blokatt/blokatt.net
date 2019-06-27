@@ -10,7 +10,7 @@ Here are a few games I've made, mostly for game jams. **Quality may vary.** Some
 
 I have also collaborated on a number of games as sound and/or music person, more on that [in the audio section](/audio/).
 
-I'm on [Game Jolt](https://gamejolt.com/@Blokatt) and [itch.io](https://blokatt.itch.io/) too.
+You can also find me on [Game Jolt](https://gamejolt.com/@Blokatt) and [itch.io](https://blokatt.itch.io/).
 
 <div class="subsection">
 <h4 class="visual-title">&gt; 0x0D - Made in 48 hours, 1st place @ gm(48) #20</h4>    

@@ -14,7 +14,7 @@ Because nobody wants to read an essay, I'll just go ahead and keep it short.
 - **Location:** Czech Republic
 - **Primary focus:** Graphics programming/creative coding (OpenGL), desktop programming, video games development, the demoscene
 - **Secondary focus:** Low-level programming, music/sound design, video editing
-- **Main languages:** C/C++, GLSL, Python, Processing, GML, C#/Java, front-end web stuff
+- **Main languages:** C/C++, Qt, GLSL, Python, Lua, Processing, GML, C# .NET/Java, front-end web stuff
 - **Also exploring (2019):** Rust, DSP programming, embedded programming, 3D modeling
 
 ### Obligatory link to my GitHub profile is [here.](https://github.com/Blokatt)

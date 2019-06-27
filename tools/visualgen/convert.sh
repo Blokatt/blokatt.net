@@ -1,21 +1,23 @@
 #/bin/bash
 
+# This script converts assets from
+# ./in/ to H.264, VP9, OGV an PNG,
+# stored in the ./out/ folder
+
 red=`tput setaf 1`
 green=`tput setaf 2`
 orange=`tput setaf 3`
 cyan=`tput setaf 6`
 reset=`tput sgr0`
 
+# Temporary lossless H.264 file, used to convert into other formats
+# due to FFmpeg sometimes having trouble with GIFs
 TEMPVID='/tmp/.temp.mkv'
 
 WEBMSKIPPED=0
 OGVSKIPPED=0
 MP4SKIPPED=0
 PNGSKIPPED=0
-
-function test { 
-	echo "asd$1"
-}
 
 function print_skipped_and_reset { 
 	if [[ "$WEBMSKIPPED" > 0 ]]; then
@@ -53,55 +55,28 @@ timestamp() {
 
 function make_webm {
 	make_temp_vid
-	echo "$(timestamp):$green $f -> $OUT$reset"
-	ARGS=$(echo " -hide_banner -loglevel panic -i "$f" -an -c:v libvpx-vp9 -crf 5 -b:v 5M");
-	ARGS0=$(echo " -y -hide_banner -loglevel panic -i $TEMPVID -c:v libvpx-vp9 -b:v 10M -pass 1 -an -f webm /dev/null");
-	ARGS1=$(echo " -y -hide_banner -loglevel panic -i $TEMPVID -c:v libvpx-vp9 -b:v 10M -pass 2 -an");
+	echo "$(timestamp):$green $f -> $OUT$reset"	
 	ffmpeg -y -hide_banner -loglevel panic -i "$f" -c:v libvpx-vp9 -pass 1 -b:v 2600K -threads 8 -speed 4 \
     -tile-columns 6 -frame-parallel 1 \
   	-an -f webm /dev/null
    	ffmpeg -i -hide_banner -loglevel panic "$f" -c:v libvpx-vp9 -pass 2 -b:v 2600K -threads 8 -speed 1 \
   	-tile-columns 6 -frame-parallel 1 -auto-alt-ref 1 -lag-in-frames 25 \
   	-an -f webm "$OUT"
-
-
-	#ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 1800k \
-	#-minrate 900k -maxrate 2610k \
-	#-quality good -crf 32 -c:v libvpx-vp9 -an \
-	#-pass 1 -speed 0 "$OUT" && \
-	#ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -b:v 1800k \
-	#-minrate 900k -maxrate 2610k \
-	#-quality good -crf 32 -c:v libvpx-vp9 -an \
-	#-pass 2 -speed 1 -y "$OUT"
-
-	#ffmpeg $ARGS0 && \
-	#ffmpeg $ARGS1 "$OUT";
 } 
 
 function make_ogv {
 	make_temp_vid
-	echo "$(timestamp):$orange $f -> $OUT$reset"
-	ARGS=$(echo " -hide_banner -loglevel panic -i $TEMPVID -an -c:v libtheora -b:v 10M");
-	ffmpeg $ARGS -y "$OUT";
+	echo "$(timestamp):$orange $f -> $OUT$reset"	
+	ffmpeg  -hide_banner -loglevel panic -i $TEMPVID -an -c:v libtheora -b:v 10M -y "$OUT";
 } 
 
 function make_mp4 {
 	make_temp_vid
 	echo "$(timestamp):$cyan $f -> $OUT$reset"
-	#ARGS0=$(echo " -y -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 1 -f mp4 /dev/null");
-	#ARGS1=$(echo " -i "$f" -movflags +faststart -preset veryslow -vf scale=-1:140 -an -b:v 250k -r 30 -pass 2");
-	
-	#ARGS=$(echo " -hide_banner -loglevel panic -i $TEMPVID -movflags +faststart -preset veryslow -an -vf "format=yuv420p" -profile:v baseline -level 3.0 -crf 25");
-	#ffmpeg $ARGS -n "$OUT";		
-	
 	ffmpeg -hide_banner -loglevel panic -y -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pix_fmt yuv420p -profile:v baseline -level 3 -pass 1 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" -an -f mp4 /dev/null && \
 	ffmpeg -hide_banner -loglevel panic -i "$TEMPVID" -c:v libx264 -movflags +faststart -preset veryslow -b:v 3000k -pix_fmt yuv420p -profile:v baseline -level 3 -pass 2 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" -an "$OUT"
-
-	#ffmpeg $ARGS0 && \
-	#ffmpeg $ARGS1 "$OUT";	
-
-
 } 
+
 function make_png {
 	make_temp_vid
 	echo "$(timestamp):$orange $f -> $OUT$reset"
@@ -131,7 +106,6 @@ function copy_assets {
 }
 
 ##################################
-echo -e "\nFull visual convertor.\n"
 echo "Conversion: "
 
 SDIR="$PWD"
@@ -226,11 +200,6 @@ print_skipped_and_reset
 
 ##################################
 
+# Get rid of 1st pass log files
 rm 'ffmpeg2pass-0.log' 2>/dev/null
 rm 'ffmpeg2pass-0.log.mbtree' 2>/dev/null
-
-# find *.mp4 *.avi | sed 's/\./ /g' | awk '{ printf "
-# ffmpeg -i %s.%s -vf scale=-1:140 -an -c:v libvpx-vp9 -b:v 0 -r 30 -n out/OUTnail_%s.webm; \n", $1, $2, $1 }' > run.sh
-
-# ./run.sh
-# rm run.sh
