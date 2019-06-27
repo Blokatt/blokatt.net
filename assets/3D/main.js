@@ -81,20 +81,14 @@ function animate() {
         model.position.z = 0.111111;
         model.position.y = 0.887044;
     }
-    //model.rotation.y += .01;
-    //light.position.y += .01;
-
-    //camera.position.x = -.1;
-    //camera.position.y = 3;
-    //camera.position.z = 2.6;
     camera.position.x = 4.05667;
     camera.position.y = 3.92538;
     camera.position.z = .411046;
 
     camera.rotation.x = .05;
-    camera.rotation.y = Math.PI / 2 - .1;
-    //camera.rotation.y = -.1;
+    camera.rotation.y = Math.PI / 2 - .1;    
     camera.rotation.z = .08;
+    
     effect.uniforms['tSize'].value = [window.innerWidth, window.innerHeight];
     effect.uniforms['time'].value = timer.getElapsedTime();
     composer.render();

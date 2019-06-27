@@ -1,8 +1,15 @@
 var activeLink;
 var activeLinkLetters;
+var glitchyTitles = [];
+var time = 0;
+var timePrev = 0;
+var linkCharFade = 0.0;
+
 $(document).ready(init);
 
-var glitchyTitles = [];
+String.prototype.replaceAt = function (index, replacement) {
+    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+}
 
 function mobileLayout() {
     return ($(window).width() < 790);
@@ -23,8 +30,8 @@ function responsiveElements() {
 
         wideFilterSwapped = true;
         $(".visual-thumbnail-wide").unbind('mouseenter mouseleave');
-        typeResize();        
-        $(".header-frame").attr("height",  "100");
+        typeResize();
+        $(".header-frame").attr("height", "100");
     } else {
         if (activeLinkLetters) {
             if (activeLinkLetters[0] == '>') activeLinkLetters = activeLinkLetters.slice(2, activeLinkLetters.length);
@@ -50,34 +57,17 @@ function responsiveElements() {
             activeLink.append("<span class=\"page-link-char\">" + currentValue);
         });
     }
-    
-}
-/*
-    if ($(window).width() < 790) {
-        $('.visual-full').attr('controls', '');
-    } else {
-        $('.visual-full').removeAttr('controls');
-    }
-    */
-var time = 0;
-var timePrev = 0;
-var linkCharFade = 0.0;
 
-String.prototype.replaceAt = function (index, replacement) {
-    return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-}
-
-function randChar() {
-    return String.fromCharCode(33 + Math.round(Math.random() * 93));
 }
 
 function mainAnimation() {
+    // Active category link animation
+
     if (timePrev != 0) {
         time += (Date.now() - timePrev);
     }
     timePrev = Date.now();
     linkCharFade = Math.min(1., time / 200.0);
-    //$('.page-link.active').css('letter-spacing', (.05 + Math.sin(time / 1000) * 0.05).toString() + 'rem');          
     $('.page-link-char').each(function (index) {
         $(this).css('font-weight', (2000 + Math.sin(index * .5 + time / 200) * 2000.).toString());
         $(this).css('opacity', (.75 + Math.sin(index * .5 + time / 200) * .25).toString());
@@ -88,15 +78,11 @@ function mainAnimation() {
     var viewHeight = $('.container').height();
 
     glitchyTitles.forEach(function (item) {
-        //item.text("test");
         let currentText = item.text();
         let originalText = item.originalText;
         let fromTop = $('.container').scrollTop();
         let scrollOffset = Math.max(0, Math.abs(viewHeight / 2 - item.position().top) - viewHeight / 2.25);
 
-
-        //titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
-        //let typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
         if (Math.random() <= 0.05 + scrollOffset * .05) {
             currentText = currentText.replaceAt(Math.random() * currentText.length, randChar());
             currentText = currentText.replaceAt(Math.random() * currentText.length, randChar());
@@ -110,8 +96,9 @@ function mainAnimation() {
             }
         }
         item.text(currentText);
-        //console.log(item.originalText);
     });
+
+    // Sidebar gradient, apparently slow
 
     /*
     var hue = Math.sin(time / 3000) * 5;
@@ -148,15 +135,6 @@ $(".visual-thumbnail").each(function (i, obj) {
     });
 });
 
-
-$(".visual-thumbnail").hover(function () {
-    changeTitle($(this).data('title'));
-});
-
-$(".visual-thumbnail").mouseleave(function () {
-    changeTitle(titleDefault);
-});
-
 function hoverVideo(e) {
     $('video', this).get(0).currentTime = 0;
     $('video', this).get(0).play();
@@ -166,19 +144,7 @@ function hideVideo(e) {
     $('video', this).get(0).pause();
 }
 
-/*
-$(".visual-section").each(function() {
-    $(this).ready(function() {
-        console.log($(this));
-        $(this).css("opacity", "1.0");
-    });
-   //$(this).css("opacity", "1.0");
-});
-*/
-
-/*
-if ($(window).width() < 790) {
-*/
+// Wide thumbnails
 
 function wideShow(e) {
     $(this).children('.visual-thumbnail-wide-image')
@@ -208,6 +174,7 @@ function wideHide(e) {
     changeTitle(titleDefault);
 }
 
+// GFX title stuff
 
 var charsTyped = 0;
 var titleDefault = "";
@@ -217,10 +184,23 @@ var typeClock = 0;
 var typeUnderscoreOpacity = 0.0;
 var titleGlitchProbability = 0;
 
+function randChar() {
+    return String.fromCharCode(33 + Math.round(Math.random() * 93));
+}
+
 function changeTitle(title) {
     titleGlitchProbability = 1;
     titleTo = title;
 }
+
+$(".visual-thumbnail").hover(function () {
+    changeTitle($(this).data('title'));
+});
+
+$(".visual-thumbnail").mouseleave(function () {
+    changeTitle(titleDefault);
+});
+
 
 function typeResize() {
     var w = $(".content").width();
@@ -228,7 +208,6 @@ function typeResize() {
 }
 
 function visualTitleUpdate() {
-    // * (titleTo == titleDefault || titleCurrent != titleTo)
     titleGlitchProbability = Math.max(0.1, titleGlitchProbability - .025);
     typeUnderscoreOpacity = (Math.sin(Date.now() * .02) * .5 + .5);
     if (Math.random() <= titleGlitchProbability) {
@@ -255,7 +234,7 @@ function visualTitleUpdate() {
     requestAnimationFrame(visualTitleUpdate);
 }
 
-
+/////////
 
 function init() {
     $(".visual-title").each(function () {
@@ -264,8 +243,8 @@ function init() {
         current.originalText = current.text();
         glitchyTitles.push(current);
     });
+    
     responsiveElements();
-
     changeTitle(titleDefault);
 
     $(".visual-video-image").on("load", function () {
@@ -280,14 +259,5 @@ function init() {
         }
     });
 
-    $(".visual-video").bind("load", function () {
-        //  $(this).parent().css("width", "100%");
-    });
-
-
     $(window).resize(responsiveElements);
-    //$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
-
-    //$(".visual-video-image").bind("load", function () { console.log("ready"); $(this).css("opacity", "1.0"); });
-
 }

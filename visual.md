@@ -18,6 +18,17 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
 _A glitch shader for GameMaker: Studio._
   "
 %} 
+{% include wide-link.html  
+  align="left"
+  title="Convolution visualiser (WIP)"
+  thumbnail="convolution.png"
+  url="/gfx/convolution/"
+  hover="No, not that Matrix."
+  description="
+_Hardware-accelerated convolution kernel visualiser with a shader exporter._
+  "
+%} 
+
 </div>
 
 <div markdown="0">
@@ -57,8 +68,7 @@ _A glitch shader for GameMaker: Studio._
   <hr style="margin-top: 10px; margin-bottom: 5px;">
   </div>
 
-{% include wide-link.html
-  align="left"
+{% include wide-link.html  
   target="_blank"
   title="PICO-8 Tweetcarts"
   thumbnail="tweetcarts.png"
