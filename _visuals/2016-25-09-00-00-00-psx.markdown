@@ -1,0 +1,14 @@
+---
+title:  "PSX Shader"
+thumbnail: "/assets/gfx_thumbnail/thumbnail_psx"
+description: "The Utah Teapot. I think."
+video: "/assets/gfx_full/full_psx"
+permalink: /gfx/misc/psx/
+gif: "/assets/gfx_gif/psx.gif"
+twitter_id: "780016303176318976" 
+reddit_id: "86pdqf"
+date: 2016-09-25 00:00:00
+layout: visual_video
+---
+Experimenting on the classic [Utah teapot](https://en.wikipedia.org/wiki/Utah_teapot) model with a custom OBJ renderer.   
+Written in Processing.

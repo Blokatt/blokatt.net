@@ -5,10 +5,12 @@ permalink: /games/
 sidebar_link: true
 sidebar_sort_order: 2
 ---
-I'm currently taking a hiatus from solo gamedev to work on my other skills.   
-Here are a few games I've made, mostly for game jams. **Quality may vary.**
+I'm currently taking a hiatus from solo gamedev (after 10+ years) due to general burnout and to work on my other skills.   
+Here are a few games I've made, mostly for game jams. **Quality may vary.** Some of my best work sadly still remains unreleased to this day.
 
 I have also collaborated on a number of games as sound and/or music person, more on that [in the audio section](/audio/).
+
+I'm on [Game Jolt](https://gamejolt.com/@Blokatt) and [itch.io](https://blokatt.itch.io/) too.
 
 <div class="subsection">
 <h4 class="visual-title">&gt; 0x0D - Made in 48 hours, 1st place @ gm(48) #20</h4>    
@@ -23,7 +25,7 @@ I have also collaborated on a number of games as sound and/or music person, more
   title="Glucose Overdose (2016, WIP)"
   thumbnail="glucose.png"
   target="_blank"
-  url="https://gamejolt.com/games/glucose-overdose/166387"  
+  url="https://twitter.com/i/moments/781611844674981888"  
   description="
 _Speedrunning platformer where you chase after a piece of candy!   
 Originally made in 48 hours for the 19th gm(48)._
