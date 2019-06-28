@@ -10,4 +10,4 @@ source_code: "https://github.com/Blokatt/NeonGlow"
 layout: visual_canvas
 canvas_script: "/assets/gfx_script/neon-glow/neon-glow.js"
 ---
-A post-processsing neon/glow effect done in two-passes using [Gaussian blurring](https://en.wikipedia.org/wiki/Gaussian_blur). Originally made in GameMaker:Studio (see source code), subsequently ported to WebGL.
+A post-processsing neon/glow effect done in two-passes using [Gaussian blurring](https://en.wikipedia.org/wiki/Gaussian_blur). Originally made in GameMaker:Studio (see source code), subsequently ported to [WebGL](http://127.0.0.1:4000/assets/gfx_script/neon-glow/neon-glow.js).

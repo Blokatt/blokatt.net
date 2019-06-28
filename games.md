@@ -6,8 +6,8 @@ sidebar_link: true
 sidebar_sort_order: 2
 description: Things I've put together that resemble video games.
 ---
-I'm currently taking a hiatus from solo gamedev (after 10+ years) due to general burnout and to work on my other skills.   
-Here are a few games I've made, mostly for game jams. **Quality may vary.** Some of my best work sadly still remains unreleased to this day.
+Since 2017, I've been taking a hiatus from solo gamedev (after 10+ years) due to general burnout and to work on my other skills.    
+Here are a few games that I've put togehter, mostly for game jams. **Quality may vary.** Some of my best work sadly still remains unreleased to this day.
 
 I have also collaborated on a number of games as sound and/or music person, more on that [in the audio section](/audio/).
 
