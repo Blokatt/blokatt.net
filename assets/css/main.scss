@@ -60,6 +60,7 @@ code {
 
 .lead {
   text-align: center;
+  white-space: nowrap;
 }
 
 @media (min-width: $large-breakpoint) {

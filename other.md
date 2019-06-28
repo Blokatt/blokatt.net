@@ -44,7 +44,7 @@ _Play with sand in your browser!_
   target="_blank"
   url="https://blokatt.itch.io/gm48tt"  
   description="
-_Automatic screen captue tool designed   
+_Automatic screen capture tool designed   
 for users of GameMaker._
   "
 %} 

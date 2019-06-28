@@ -15,7 +15,7 @@ I believe this fresh format will let me share the various types of my work in th
 To make this all possible, I also had to solve a number of issues related to automatic conversion of media assets, gallery generation, image captioning, etc. The resulting _extremely_ fine-tuned Bash scripts (yes, really), as well as a more detailed technical write-up should be available in a week or so.
 
 Of course, some content might still be missing and the CSS gets wonky here and there, but all
-of these issues and more will hopefully get ironed out in the near feature as I gather feedback.
+of these issues and more will hopefully get ironed out in the near future as I gather feedback.
 
 I'm still on the fence when it comes to enabling Disqus comments, but I'll be more than happy to
 hear your thoughts on the redesign on Twitter or via email.  
