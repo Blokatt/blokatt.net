@@ -13,7 +13,7 @@ function mouseMoved( evt ) {
 }
 
 function init() {
-    renderer = new THREE.WebGLRenderer({ canvas: headerCanvas, antialias: true, alpha: true });
+    renderer = new THREE.WebGLRenderer({ canvas: headerCanvas, antialias: false, alpha: true });
     renderer.setSize(w, h);
     renderer.gammaOutput = true;
     renderer.gammaFactor = 2.2;
