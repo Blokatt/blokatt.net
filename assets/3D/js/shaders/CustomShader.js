@@ -11,14 +11,16 @@ var frag = `
 	uniform vec2 tSize;
 	uniform sampler2D tDiffuse;
 	uniform sampler2D tBayer;
+	uniform vec4 blend;
 	varying vec2 vUv;
 	vec4 dither(vec4 col, vec2 frag){    
 		float nColR = 3.;
 		float nColG = 3.;
-		float nColB = 3.;							
-		vec3 downsampled = vec3(floor((col.r + texture2D(tBayer, mod(frag / 8., 1.)).r / nColR) * nColR) / nColR,
-								floor((col.g + texture2D(tBayer, mod(frag / 8., 1.)).r / nColG) * nColG) / nColG,
-								floor((col.b + texture2D(tBayer, mod(frag / 8., 1.)).r / nColB) * nColB) / nColB); 
+		float nColB = 3.;					
+		vec4 texel = texture2D(tBayer, mod(frag / 8., 1.));	
+		vec3 downsampled = vec3(floor((col.r + texel.r / nColR) * nColR) / nColR,
+								floor((col.g + texel.r / nColG) * nColG) / nColG,
+								floor((col.b + texel.r / nColB) * nColB) / nColB); 
 		return vec4((downsampled.rgb ), col.a);
 	}
 
@@ -31,7 +33,7 @@ var frag = `
 		float t = (.1 * sin(uv.x * 10. + time) + (.05 * sin(uv.x * 5. + time)) - (.025 * cos(uv.x * 20. - time * 5. + .2)) + (.005 * sin(uv.x * 50. - time * 5. + .4))) * .5 - .05;
 		color *= 1. - 1.5 * smoothstep(.1 + t, .01 + t, uv.y);
 		color = mix(color, vec4(vec3(1., 1., 1.) * (color.r + color.b + color.r) / 3., 1.), .75);
-		return dither(color * vec4(.95, .86, .8, 1.), frag);
+		return dither(color * vec4(.95, .86, .8, 1.) * blend, frag);
 	}
 
 	void main() {		
@@ -53,16 +55,14 @@ THREE.BktCustom = {
 	uniforms: {
 		"tBayer": { value: null },
 		"tDiffuse": { value: null },
-		"tSize":    { value: new THREE.Vector2( 256, 256 ) },
-		"center":   { value: new THREE.Vector2( 0.5, 0.5 ) },
-		"angle":    { value: 1.57 },
-		"time": 	{ value: 0.},
-		"scale":    { value: 1.0 }
-
+		"tSize": { value: [256, 256] },
+		"center": { value: [0.5, 0.5] },
+		"angle": { value: 1.57 },
+		"time": { value: 0. },
+		"scale": { value: 1.0 },
+		"blend": { value: [1., 1., 1., 1.] }
 	},
 
 	vertexShader: vert,
-
 	fragmentShader: frag
-
 };
