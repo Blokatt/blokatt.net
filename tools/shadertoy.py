@@ -1,8 +1,10 @@
+#Initially used to generate posts for my shader
+
 import json
 import urllib.request
 from datetime import datetime
 
-KEY = "ftrtwh"
+KEY = " "
 
 def generate_post(shader_id):
     shader = json.loads(urllib.request.urlopen("https://www.shadertoy.com/api/v1/shaders/%s?key=%s" % (shader_id, KEY)).read())["Shader"]["info"]
