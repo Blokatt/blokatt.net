@@ -1,8 +1,9 @@
 
-var model, timer, scene, camera, w, h, renderer, light, loader, bayerTexture, effect, rand, fade, zoom;
+var model, timer, scene, camera, w, h, renderer, light, loader, bayerTexture, effect, rand, fade, fadeIn, zoom;
 w = window.innerWidth;
 h = window.innerHeight;
 fade = 0.0;
+fadeIn = 0.0;
 rand = Math.random() * 6.28;
 zoom = 150.0 + Math.floor(Math.random() * 3.0) * 25.0;
 init();
@@ -91,11 +92,12 @@ function animate() {
         model.rotation.y = .05 + Math.sin(timer.getElapsedTime() * .5 - 1.5 + rand) * .5;
         model.rotation.z = .25 * Math.sin(timer.getElapsedTime() * 1.);
         model.position.x = 0.027778;
-        model.position.z = 0.111111;
+        model.position.z = Math.sin(timer.getElapsedTime() * .3 + 1.8) * .1;        
         model.position.y = 0.887044 + Math.sin(timer.getElapsedTime() * 1.1 + .6) * .5;      
         model.scale.z = 2 - fade;  
         model.scale.y = .5 + fade * .5;  
         fade = Math.min(1.0, fade + (1 - fade) * .05);
+        fadeIn = Math.min(1.0, fadeIn + .2);
     }
 
     camera.position.x = 4.05667;
@@ -106,7 +108,7 @@ function animate() {
     camera.rotation.y = Math.PI / 2 - .1;    
     camera.rotation.z = .08;
      
-    effect.uniforms['blend'].value = [1.05 * fade, 1.0 * fade, 1.1 * fade, 1.0 * fade];
+    effect.uniforms['blend'].value = [1.05 * fadeIn, 1.0 * fadeIn, 1.1 * fadeIn, 1.0];
     effect.uniforms['tSize'].value = [window.innerWidth, window.innerHeight];
     effect.uniforms['time'].value = timer.getElapsedTime();
     composer.render();
