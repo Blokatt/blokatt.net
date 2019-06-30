@@ -5,14 +5,8 @@ layout: post
 
 {% if page.gallery %}
 <div class ="subsection">
-<h4 class="visual-title">&gt; Pics</h4>    
-    <div class="gallery-container">
-        {% for image in site.data[page.gallery] %}
-        <a class="gallery-item" href="{{ image.image }}" title="{{ image.description }}">
-            <img src="{{ image.thumbnail }}">
-        </a>
-        {% endfor %}
-    </div>
+<h4 class="visual-title">&gt; Pics</h4>        
+    {% include gallery.html id=page.gallery %}
 </div>
 {% endif %}
 

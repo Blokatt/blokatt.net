@@ -13,6 +13,7 @@ There's actually a slightly better version of this (screenshots below) sitting o
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2014
 - **Game jam:** gm(48) #12 (48 hours)
+- **Engine:** Game Maker: Studio
 - **Genre:** Arcade
 - **Controls:** Mouse, WASD
 </div>

@@ -9,8 +9,8 @@ It’s about a person who has to recover lost parts of their soul from limbo aft
 <div class="subsection">
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2012
-- **Status:** Finished
 - **Genre:** Platformer
+- **Engine:** Game Maker 8
 - **Controls:** Arrow keys, X key
 - **Language:** Czech (there’s little text)
 </div>

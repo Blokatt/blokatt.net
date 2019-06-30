@@ -9,6 +9,7 @@ Fast-paced action game originally made for a Czech gamedev competition where it 
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2011
 - **Genre:** Shoot-em-up, I think
+- **Engine:** Game Maker 8
 - **Controls:** Arrow keys, QWE keys
 - **Language:** Czech (there’s not a lot of text)
 </div>

@@ -10,6 +10,7 @@ Might crash on newer systems.
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2010
 - **Status:** Beta, never finished
+- **Engine:** Game Maker 6
 - **Genre:** Arcade (?)
 - **Controls:** Arrow keys
 </div>
