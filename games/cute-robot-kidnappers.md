@@ -11,6 +11,7 @@ Simple as that.
 <h4 class="visual-title">&gt; Basic info</h4>    
 - **Year:** 2014
 - **Game jam:** gm(48) #11 (48 hours)
+- **Engine:** Game Maker: Studio
 - **Genre:** Stealth FPS
 - **Controls:** Mouse, WASD
 </div>
