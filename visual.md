@@ -52,7 +52,7 @@ _Hardware-accelerated convolution kernel visualiser with a shader exporter._
               <a href="{{ item.url }}">
 
                 <div class="visual-video">
-                  <video class="visual-video-image" playsinline muted loop preload="metadata"
+                  <video class="visual-video-image" playsinline muted loop preload="none"
                     poster="{{ item.thumbnail }}.png">
                     <source src="{{ item.thumbnail }}.webm" type="video/webm">
                     <source src="{{ item.thumbnail }}.mp4" type="video/mp4">
