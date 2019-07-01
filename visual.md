@@ -21,10 +21,10 @@ _A glitch shader for GameMaker: Studio._
 %} 
 {% include wide-link.html  
   align="left"
-  title="Convolution visualiser (WIP)"
+  title="Convolution Visualiser (WIP)"
   thumbnail="convolution.png"
   url="/gfx/convolution/"
-  hover="No, not that Matrix."
+  hover="Enter the matrix."
   description="
 _Hardware-accelerated convolution kernel visualiser with a shader exporter._
   "
@@ -69,6 +69,7 @@ _Hardware-accelerated convolution kernel visualiser with a shader exporter._
   </div>
 
 {% include wide-link.html  
+  align="left"
   target="_blank"
   title="PICO-8 Tweetcarts"
   thumbnail="tweetcarts.png"
@@ -76,6 +77,17 @@ _Hardware-accelerated convolution kernel visualiser with a shader exporter._
   hover="Relatively decipherable."
   description="
 _Various PICO-8 experiments that fit in a single tweet!_
+  "
+%}
+
+{% include wide-link.html    
+  target="_blank"
+  title="Processing Sketch Repository"
+  thumbnail="processing.png"
+  url="https://github.com/Blokatt/ProcessingStuff"
+  hover="Need. More. Stars."
+  description="
+_A popular repo containing all my sketches shown here._
   "
 %}
 
