@@ -20,6 +20,10 @@ $sidebar-bg-color: #5e4c8a;
 $link-color: #6b3079;
 $sidebar-sticky: false;
 
+$alt-text-colour: rgb(234, 191, 255);
+$sidebar-icon-shadow-active: rgba(234, 191, 255, 0.5);
+$sidebar-icon-shadow: rgba(234, 191, 255, 0.0);
+
 $body-bg: #ffeaea !default;
 
 $root-font-family: "Inconsolata",
@@ -100,13 +104,49 @@ code {
 .link-icon {
     margin: -5px;
     opacity: 0.8;        
+
+    -webkit-filter:drop-shadow(7px 7px 0 $sidebar-icon-shadow)
+           drop-shadow(-5px -7px 0 $sidebar-icon-shadow)
+           drop-shadow(7px -7px 0 $sidebar-icon-shadow)
+           drop-shadow(-7px 7px 0 $sidebar-icon-shadow);        
+
+            filter:drop-shadow(7px 7px 0 $sidebar-icon-shadow)
+           drop-shadow(-5px -7px 0 $sidebar-icon-shadow)
+           drop-shadow(7px -7px 0 $sidebar-icon-shadow)
+           drop-shadow(-7px 7px 0 $sidebar-icon-shadow);
+
+    -webkit-transition: opacity 1.0s;
+
+    -o-transition: opacity 1.0s;
+
     transition: opacity 1.0s;
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    -o-transition: filter 0.5s;
+    transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
 }
 
 .link-icon:hover {
     opacity: 1.0;        
-    transition: opacity 0.1s;
+    -webkit-transition: opacity 0.1s;        
+    -o-transition: opacity 0.1s;        
+    transition: opacity 0.1s;    
+    -webkit-transition: -webkit-filter 0.25s;    
+    transition: -webkit-filter 0.25s;    
+    -o-transition: filter 0.25s;    
+    transition: filter 0.25s;    
+    transition: filter 0.25s, -webkit-filter 0.25s;
+    -webkit-filter:drop-shadow(1px 1px 0 $sidebar-icon-shadow-active)
+           drop-shadow(-1px -1px 0 $sidebar-icon-shadow-active)
+           drop-shadow(1px -1px 0 $sidebar-icon-shadow-active)
+           drop-shadow(-1px 1px 0 $sidebar-icon-shadow-active);
+            filter:drop-shadow(1px 1px 0 $sidebar-icon-shadow-active)
+           drop-shadow(-1px -1px 0 $sidebar-icon-shadow-active)
+           drop-shadow(1px -1px 0 $sidebar-icon-shadow-active)
+           drop-shadow(-1px 1px 0 $sidebar-icon-shadow-active);
 }
+
 
 .page-link {
     border-radius: 1px;
@@ -829,5 +869,5 @@ iframe {
 
 
 body {
-    color: rgb(234, 191, 255);
+    color: $alt-text-colour;
 }
