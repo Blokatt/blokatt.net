@@ -116,7 +116,6 @@ code {
            drop-shadow(-7px 7px 0 $sidebar-icon-shadow);
 
     -webkit-transition: opacity 1.0s;
-
     -o-transition: opacity 1.0s;
 
     transition: opacity 1.0s;
@@ -132,11 +131,11 @@ code {
     -webkit-transition: opacity 0.1s;        
     -o-transition: opacity 0.1s;        
     transition: opacity 0.1s;    
-    -webkit-transition: -webkit-filter 0.25s;    
-    transition: -webkit-filter 0.25s;    
-    -o-transition: filter 0.25s;    
-    transition: filter 0.25s;    
-    transition: filter 0.25s, -webkit-filter 0.25s;
+    -webkit-transition: -webkit-filter 0.05s;    
+    transition: -webkit-filter 0.05s;    
+    -o-transition: filter 0.05s;    
+    transition: filter 0.05s;    
+    transition: filter 0.05s, -webkit-filter 0.05s;
     -webkit-filter:drop-shadow(1px 1px 0 $sidebar-icon-shadow-active)
            drop-shadow(-1px -1px 0 $sidebar-icon-shadow-active)
            drop-shadow(1px -1px 0 $sidebar-icon-shadow-active)
