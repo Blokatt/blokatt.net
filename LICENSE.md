@@ -1,5 +1,4 @@
-The following license only applies to provided script files, all media assets remain (c) 2019 Jan Vorisek unless stated otherwise.
-
+All media assets and binaries remain (c) Jan Vorisek, unless stated otherwise.   
 
 ---
 
