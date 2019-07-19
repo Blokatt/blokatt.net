@@ -1,5 +1,5 @@
 # blokatt.net
-My personal website, made in Jekyll. Still in the process of cleaning this up.
+This is the source code of my personal website, live at [blokatt.net](https://blokatt.net/).
 
 The **tools** folder contains useful scripts used to convert/generate galleries, thumbnails and general video assets.
 
