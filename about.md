@@ -10,7 +10,7 @@ description: README.TXT
 Because nobody wants to read an essay, I'll just go ahead and keep it short.
 
 - **Full name:** Jan Vorisek
-- **Online alias:** Blokatt
+- **Online aliases:** Blokatt, Kešu
 - **Born:** 1997
 - **Location:** Czech Republic
 - **Primary focus:** Graphics programming/creative coding (OpenGL), desktop programming, video games development, the demoscene
