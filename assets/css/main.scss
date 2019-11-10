@@ -10,6 +10,7 @@ $sidebar-text-color: red;
 $sidebar-icon-color: red;
 
 $code-background: rgba(191, 174, 221, 0.12);
+$image-shadow: rgba(191, 174, 221, 0.25);
 
 $background-content: url('/assets/background_content.png');
 $background-wide-thumbnail: url('/assets/background_wide_thumbnail.png');
@@ -866,6 +867,14 @@ iframe {
     opacity: 0.0;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+    -webkit-box-shadow: 8px 8px 0px -3px $image-shadow;
+    -moz-box-shadow: 8px 8px 0px -3px $image-shadow;
+    box-shadow: 8px 8px 0px -3px $image-shadow;
+}
 
 body {
     color: $alt-text-colour;
