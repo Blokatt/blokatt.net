@@ -7,4 +7,4 @@ date: 2018-11-25 00:00:00
 layout: visual_iframe_square
 iframe_url: "/assets/gfx_script/pico8-3d/projection.html"
 ---
-First attempt at writing a basic 3D renderer from scratch. Might return to this in the future.
+First attempt at writing a basic PICO-8 3D renderer from scratch. Might return to this in the future.

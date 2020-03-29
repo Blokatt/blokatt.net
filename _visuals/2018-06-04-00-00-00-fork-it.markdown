@@ -16,4 +16,4 @@ layout: visual_video
 description: "Or don't."
 image: /assets/graph_image/og_fork-it.png
 ---
-Yet another exercise mainly meant to improve my 3D modeling skills, this time with some inverse culling-based [cel shading](https://en.wikipedia.org/wiki/Cel_shading). Made in Processing.
+Yet another exercise mainly meant to improve my 3D modeling skills, this time with some front-face culling-based [cel shading](https://en.wikipedia.org/wiki/Cel_shading). Made in Processing.
