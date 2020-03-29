@@ -1,25 +1,24 @@
 ---
 layout: page
-title: Who?
-permalink: /about/
+title: Meta
+permalink: /meta/
 sidebar_link: true
 sidebar_sort_order: 4
-description: README.TXT
+description: Meta
 ---
 <div class="subsection">
 Because nobody wants to read an essay, I'll just go ahead and keep it short.
 
-- **Full name:** Jan Vorisek
-- **Online aliases:** Blokatt, Kešu
-- **Occupation:** Junior Programmer at SCS Software
+- **Name:** Jan Vorisek (?)
+- **Occupation:** Junior Programmer at [SCS Software](https://scssoft.com/){:target="_blank"}
 - **Born:** 1997
 - **Location:** Czech Republic
-- **Primary focus:** Graphics programming, creative coding, the demoscene and gamedev
+- **Primary focus:** Graphics programming, creative coding, gamedev
 - **Secondary focus:** Low-level programming, music and sound design, video editing
-- **Most of the time:** C/C++, GLSL/HLSL/Cg, Python
+- **Often:** C/C++, GLSL/HLSL/Cg, Python
 - **Sometimes:** Processing, Lua, GML, C#, Java, JSFX, front-end web stuff
 
-*[Jan Vorisek]: Voříšek, technically. Not that I'm gonna ask you to type that, let alone pronounce it.
+*[(?)]: Voříšek, technically. Not that I'm gonna ask you to type that, let alone pronounce it.
 
 ### Obligatory link to my GitHub profile is [here.](https://github.com/Blokatt)
 
