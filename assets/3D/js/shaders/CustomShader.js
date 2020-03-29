@@ -13,32 +13,42 @@ var frag = `
 	uniform sampler2D tBayer;
 	uniform vec4 blend;
 	varying vec2 vUv;
-	vec4 dither(vec4 col, vec2 frag){    
-		float nColR = 3.;
-		float nColG = 3.;
-		float nColB = 3.;					
-		vec4 texel = texture2D(tBayer, mod(frag / 8., 1.));	
-		vec3 downsampled = vec3(floor((col.r + texel.r / nColR) * nColR) / nColR,
-								floor((col.g + texel.r / nColG) * nColG) / nColG,
-								floor((col.b + texel.r / nColB) * nColB) / nColB); 
-		return vec4((downsampled.rgb ), col.a);
+
+	vec3 dither(vec3 col, vec2 frag){    
+		const float nColR = 6.;
+		const float nColG = 6.;
+		const float nColB = 6.;					
+		float threshold = texture2D(tBayer, mod(frag / 8., 1.)).r;	
+		vec3 downsampled = vec3(floor((col.r + threshold / nColR) * nColR) / nColR,
+								floor((col.g + threshold / nColG) * nColG) / nColG,
+								floor((col.b + threshold / nColB) * nColB) / nColB); 
+		return downsampled;
 	}
 
-	vec4 image(vec2 uv){
-		vec2 res = vec2(tSize.x, tSize.y);
+	vec4 image(vec2 uv, float t){
 		vec2 frag = vec2(gl_FragCoord.x, gl_FragCoord.y);
-		vec4 color = texture2D( tDiffuse, vec2(floor(uv.x * res.x) / res.x, floor(uv.y * res.y) / res.y));
-		//color = vec4(color.r * .55, color.g * 1.1, color.b * .81 * (min(1., uv.y + .5)), color.a);	
-		//color = (color - .5) * 2. + .5;	
-		float t = (.1 * sin(uv.x * 10. + time) + (.05 * sin(uv.x * 5. + time)) - (.025 * cos(uv.x * 20. - time * 5. + .2)) + (.005 * sin(uv.x * 50. - time * 5. + .4))) * .5 - .05;
+		vec4 color = texture2D(tDiffuse, vec2(floor(uv.x * tSize.x) / tSize.x, floor(uv.y * tSize.y) / tSize.y)) * vec4(1.1, 1.02, 1.05, 1.0);
+		float off = (.1 * sin(uv.x * 10. + t) + (.05 * sin(uv.x * 5. + t)) - (.025 * cos(uv.x * 20. - t * 5. + .2)) + (.005 * sin(uv.x * 50. - t * 5. + .4))) * .5 - .05;
+		vec2 borderTime = vec2(t * 3.5 + uv.yx * 2.5);
+
+		vec3 background = vec3(0., 0., .2) + vec3(.05, 0., .2) * floor(fract((-uv.x + uv.y) * 10. + t) + .5);
+		color = vec4(mix(background, color.rgb, min(1., color.a * 1.5)), 1.0);	
+
+		color += vec4(0.05, 0.0, 0.55, 0.0) * (min(1.0,   step(uv.x, .015 + .02 * (sin(borderTime.x		  ) * .5 + .5)) +
+														step(	   .985 - .02 * (sin(borderTime.x + 1.57) * .5 + .5), uv.x) +
+														step(uv.y, .015 + .02 * (sin(borderTime.y + 0.78) * .5 + .5)) +
+														step(	   .985 - .02 * (sin(borderTime.y + 2.35) * .5 + .5), uv.y)));
 		
-		color *= 1. - 1.5 * smoothstep(.1 + t, .01 + t, uv.y);
-		color = mix(color, vec4(vec3(1., 1., 1.) * (color.r + color.b + color.r) / 3., color.a), .75);		
-		return dither(color * vec4(.95, .86, .8, 1.) * blend, frag);
+		color = mix(color, vec4(vec3(color.r + color.b + color.r) / 3., color.a), .75);		
+		
+		return vec4(dither(color.rgb * vec3(.95, .86, .8), frag) - (1.0 - blend.rrr), color.a);
 	}
 
 	void main() {		
-		gl_FragColor = vec4(image(vec2(vUv.x - .0025, vUv.y)).r, image(vUv).g, image(vec2(vUv.x + .0025, vUv.y)).b, image(vUv).a);
+		gl_FragColor = vec4(image(vec2(vUv.x - .0025, vUv.y), time).r,
+							image(vUv, time + 0.15).g,
+							image(vec2(vUv.x + .0025, vUv.y), time + 0.3).b,
+							image(vUv, time).a);
 
 	}
 `;

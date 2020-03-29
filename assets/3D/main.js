@@ -9,10 +9,6 @@ zoom = 150.0 + Math.floor(Math.random() * 3.0) * 25.0;
 init();
 animate();
 
-function mouseMoved( evt ) {
-    console.log("move");    
-}
-
 function init() {
     renderer = new THREE.WebGLRenderer({ canvas: headerCanvas, antialias: false, alpha: true });
     renderer.setSize(w, h);
@@ -28,12 +24,10 @@ function init() {
     loader.load('assets/av.glb', function (gltf) {
         model = gltf.scene;
         model.traverse((node) => {
-            if (node.isMesh) {
-                //node.material.shading = THREE.SmoothShading; // <=r86
+            if (node.isMesh) {                
                 node.material.flatShading = false; // r87+
                 node.material.needsUpdate = true;
-                node.material.transparent = false;
-                // node.material.depthTest = true;
+                node.material.transparent = false;                
                 node.material.color.setHex(0xffffff);
             }
         });
@@ -75,15 +69,11 @@ function onWindowResize() {
     camera.left = w / -zoom;
     camera.right = w / zoom
     camera.top = h / zoom;
-    camera.bottom = h / - zoom;
-    //camera.aspect = window.innerWidth / window.innerHeight;
+    camera.bottom = h / - zoom;    
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
     composer.setSize(window.innerWidth, window.innerHeight);
 }
-
-
-
 
 function animate() {
     requestAnimationFrame(animate);
@@ -97,7 +87,7 @@ function animate() {
         model.scale.z = 2 - fade;  
         model.scale.y = .5 + fade * .5;  
         fade = Math.min(1.0, fade + (1 - fade) * .05);
-        fadeIn = Math.min(1.0, fadeIn + .2);
+        fadeIn = Math.min(1.0, fadeIn + .1);
     }
 
     camera.position.x = 4.05667;
@@ -112,6 +102,5 @@ function animate() {
     effect.uniforms['tSize'].value = [window.innerWidth, window.innerHeight];
     effect.uniforms['time'].value = timer.getElapsedTime();
     composer.render();
-    //renderer.render(scene, camera);
 }
 
