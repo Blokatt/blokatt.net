@@ -5,7 +5,7 @@ h = window.innerHeight;
 fade = 0.0;
 fadeIn = 0.0;
 rand = Math.random() * 6.28;
-zoom = 150.0 + Math.floor(Math.random() * 3.0) * 25.0;
+zoom = 250.0 + Math.floor(Math.random() * 3.0) * 50.0;
 init();
 animate();
 
@@ -21,8 +21,9 @@ function init() {
     timer = new THREE.Clock(true);
     loader = new THREE.GLTFLoader();
 
-    loader.load('assets/av.glb', function (gltf) {
+    loader.load('assets/av2.glb', function (gltf) {
         model = gltf.scene;
+   
         model.traverse((node) => {
             if (node.isMesh) {                
                 node.material.flatShading = false; // r87+
@@ -31,17 +32,20 @@ function init() {
                 node.material.color.setHex(0xffffff);
             }
         });
+
         scene.add(gltf.scene);
     }, undefined, function (error) {
         console.error(error);
     });
 
 
-
-    light = new THREE.PointLight(0x7A2020, 5, 5);
+    light = new THREE.PointLight(0x7A2020, 50, 8);
     light.castShadow = true;
-    light.position.set(2.91251, 4.2293, -0.003803);
+    light.position.set(2.91251, 4.2293, 5.0);
     scene.add(light);
+
+    const ambientLight = new THREE.AmbientLight(0x400040); // soft white light
+    scene.add(ambientLight);
 
     document.body.appendChild(renderer.domElement);
 
@@ -58,6 +62,9 @@ function init() {
     effect.uniforms['scale'].value = 2;    
     effect.uniforms['tBayer'].value = bayerTexture;
     effect.uniforms['time'].value = timer.getElapsedTime();
+
+    camera.position.z = 10.0;
+    camera.rotation.x = .05;   
 
     composer.addPass(effect);
     effect.renderToScreen = true;
@@ -77,30 +84,33 @@ function onWindowResize() {
 
 function animate() {
     requestAnimationFrame(animate);
-
+    var t = timer.getElapsedTime();
     if (typeof model !== 'undefined') {
-        model.rotation.y = .05 + Math.sin(timer.getElapsedTime() * .5 - 1.5 + rand) * .5;
-        model.rotation.z = .25 * Math.sin(timer.getElapsedTime() * 1.);
-        model.position.x = 0.027778;
-        model.position.z = Math.sin(timer.getElapsedTime() * .3 + 1.8) * .1;        
-        model.position.y = 0.887044 + Math.sin(timer.getElapsedTime() * 1.1 + .6) * .5;      
-        model.scale.z = 2 - fade;  
-        model.scale.y = .5 + fade * .5;  
-        fade = Math.min(1.0, fade + (1 - fade) * .05);
+
+        fade = Math.min(1.0, fade + (1 - fade) * .04);
         fadeIn = Math.min(1.0, fadeIn + .1);
+        
+        model.position.y = Math.sin(-t *.5) * .05 + 0.5;
+
+        model.scale.y = 0.5 + fade * 0.5;
+        model.scale.z = 3.0 - 2.0 * fade;
+
+        var quatRoll = new THREE.Quaternion();
+        quatRoll.setFromAxisAngle(new THREE.Vector3(-0.707, 0.707, 0), 0.807 + Math.sin(t * 1.0) * .15 + 2.0 * (1.0 - fade));
+
+        var quatPitch = new THREE.Quaternion();
+        quatPitch.setFromAxisAngle(new THREE.Vector3(0.707, 0.707, 0.0), Math.sin(t * 0.5 + .1) * .2);
+
+        var quatCombined = new THREE.Quaternion().multiplyQuaternions(quatRoll, quatPitch);
+
+        model.setRotationFromQuaternion(quatCombined);
     }
 
-    camera.position.x = 4.05667;
-    camera.position.y = 3.92538;
-    camera.position.z = .411046;
+    camera.rotation.z = .08 + (1.0 - fade);
 
-    camera.rotation.x = .05;
-    camera.rotation.y = Math.PI / 2 - .1;    
-    camera.rotation.z = .08;
-     
     effect.uniforms['blend'].value = [1.05 * fadeIn, 1.0 * fadeIn, 1.1 * fadeIn, 1.0];
     effect.uniforms['tSize'].value = [window.innerWidth, window.innerHeight];
-    effect.uniforms['time'].value = timer.getElapsedTime();
+    effect.uniforms['time'].value = t;
     composer.render();
 }
 

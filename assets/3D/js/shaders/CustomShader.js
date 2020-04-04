@@ -61,8 +61,8 @@ void main() {
 	gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0);
 }
 `
-THREE.BktCustom = {
 
+THREE.BktCustom = {
 	uniforms: {
 		"tBayer": { value: null },
 		"tDiffuse": { value: null },
