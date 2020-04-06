@@ -103,16 +103,16 @@ function animate() {
         fade = Math.min(1.0, fade + (1 - fade) * .04);
         fadeIn = Math.min(1.0, fadeIn + .1);
         rollProgress = Math.min(1.0, rollProgress + .01);
-        model.position.y = Math.sin(-t *.5) * .05 + 0.5;
+        model.position.y = Math.sin(-t * 1.25) * .05 + 0.5;
 
         model.scale.y = 0.5 + fade * 0.5;
         model.scale.z = 3.0 - 2.0 * fade;
 
         var quatRoll = new THREE.Quaternion();
-        quatRoll.setFromAxisAngle(new THREE.Vector3(-0.707, 0.707, 0), 0.807 + Math.sin(t * 1.0) * .15 + 2.0 * (1.0 - fade) + aileronRoll(rollProgress));
+        quatRoll.setFromAxisAngle(new THREE.Vector3(-0.707, 0.707, 0), 0.807 + Math.sin(t * 2.25 + 1.2) * .04 + Math.sin(t * 0.25 + 2.2) * .2 + 2.0 * (1.0 - fade) + aileronRoll(rollProgress));
 
         var quatPitch = new THREE.Quaternion();
-        quatPitch.setFromAxisAngle(new THREE.Vector3(0.707, 0.707, 0.0), Math.sin(t + .1) * .3);
+        quatPitch.setFromAxisAngle(new THREE.Vector3(0.707, 0.707, 0.0), Math.sin(t * 1.25 + .5) * .1 + Math.sin(t * 2.5 + 1.8) * .01);
 
         var quatCombined = new THREE.Quaternion().multiplyQuaternions(quatRoll, quatPitch);
 
