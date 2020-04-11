@@ -7,6 +7,7 @@ sidebar_sort_order: 4
 description: Meta
 ---
 <div class="subsection">
+<h4 class="visual-title">&gt; The gist</h4>
 Because nobody wants to read an essay, I'll just go ahead and keep it short.
 
 - **Name:** Jan Vorisek (?)
@@ -30,7 +31,7 @@ You can find me all around the internet, see the sidebar on the left for social 
 </div>
 
 <div class="subsection">
-<h3 class="visual-title">&gt; Technical stuff</h3>
+<h4 class="visual-title">&gt; Technical stuff</h4>
 
 Generated in [Jekyll](https://jekyllrb.com/) using a modified version of the [Hydeout](https://github.com/fongandrew/hydeout) theme.
 
