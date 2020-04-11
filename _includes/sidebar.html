@@ -1,65 +1,33 @@
 <div id="sidebar">
-
-  <header>    
+  <header>
     <p>
-
-    <div class="header-logo" style="position:relative;">
-    <iframe class="header-frame" src="/assets/3D/glHeader.html" scrolling="no" height="200"></iframe>    
-    <a href="{{ site.baseurl }}/" style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; border: none; z-index:2;"></a>
-    </div>
-    
+      <div class="header-logo" style="position:relative;">
+        <iframe class="header-frame" src="/assets/3D/glHeader.html" scrolling="no" height="200"></iframe>
+        <a href="{{ site.baseurl }}/"
+          style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; border: none; z-index:2;"></a>
+      </div>
     </p>
-
-
-    <!--
-    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-      <a href="{{ site.baseurl }}/">
-        {% unless page.url == "/" %}
-          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
-        {% endunless %}
-        {{ site.title }}
-      </a>
-    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
-    -->
     <p class="lead">Jan Vorisek | <span style="color:#ffeaea">blokatt</span></p>
   </header>
   {% include sidebar-nav-links.html %}
-
   {% if site.version %}
-    <span class="site-version">Currently v{{ site.version }}</span>
+  <span class="site-version">Currently v{{ site.version }}</span>
   {% endif %}
-
   {% include sidebar-icon-links.html %}
   {% include copyright.html %}
-
-
 </div>
 <div id="sidebar-stripe">
 </div>
-  <script>
-  /*
-    var sidebarPageLinkMaxY = 0;
-    var sidebarHeight = 0;
-    if ($('#sidebar').height) {
-      sidebarHeight = $('#sidebar').height();
-      sidebarPageLinkMaxY = sidebarHeight - $('#sidebar-icon-links').position().top;          
-      //alert(sidebarPageLinkMaxY);
+{% if page.layout != "index" %}
+<style>
+  @media only screen and (max-width: 49rem) {
+    #sidebar {
+      background-position: right 50% bottom -135px;
     }
 
-    document.styleSheets[0].insertRule(' @media only screen and(max - height:' + (sidebarHeight - 111).toString() + 'px) and(min - width: 49rem) { #sidebar { background - attachment: scroll; background - position: right 50 % top ' + (sidebarPageLinkMaxY + 111).toString() + 'px; } }', 0);
-
-  */
-  </script>
-  
-
-  {% if page.layout != "index" %}
-  <style>
-    @media only screen and (max-width: 49rem) {
-      #sidebar {
-        background-position: right 50% bottom -135px;
-      }
-      .header-logo {
-        display: none;
-      }
+    .header-logo {
+      display: none;
     }
-  </style>{% endif %}
+  }
+</style>
+{% endif %}
