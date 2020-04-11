@@ -58,9 +58,6 @@ markdown: kramdown
 highlighter: rouge
 paginate: 5
 
-disqus:
-  shortname: blokatt
-
 kramdown:  
   parse_block_html: true
   
@@ -85,3 +82,5 @@ exclude:
    - vendor/ruby/
    - tools
 
+sass:
+  style: compressed
