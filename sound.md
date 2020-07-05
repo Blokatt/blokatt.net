@@ -48,6 +48,6 @@ _A Korg Monologue MIDI interface for REAPER 5._
 <div class="subsection">
 <h3 class="visual-title">&gt; Vids</h3>
 <div class="dashed-border">
-<div class='embed-container'><iframe src="https://www.youtube.com/embed/videoseries?list=PLRo09G4sY3VfJTrtM-xvnJZd-u7R8SVLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
+<div class='embed-container'><iframe src="https://www.youtube.com/embed/videoseries?list=PLRo09G4sY3VfJTrtM-xvnJZd-u7R8SVLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 </div>
