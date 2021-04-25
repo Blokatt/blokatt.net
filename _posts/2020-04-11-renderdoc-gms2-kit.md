@@ -18,7 +18,7 @@ Even if you're learning graphics programming solely in the GML realm, RenderDoc 
 
 *[PowerShell]: Currently working as of April 2020.
 
-## [Quick, click here to get to the repo!](https://github.com/Blokatt/renderdoc-gms2-kit){:target="_blank"}
+## [Quick, click here to get to the repo!](https://github.com/{{ site.github_username }}/renderdoc-gms2-kit){:target="_blank"}
 </div>
 
 <div class="subsection">

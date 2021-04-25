@@ -7,7 +7,7 @@ permalink: /gfx/misc/n-10/
 gif: "/assets/gfx_gif/n-10.gif"
 instagram_id: "BeOKSUuDzxK"
 twitter_id: "932374666081193989" 
-source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/nEquals10" 
+source_code: "/ProcessingStuff/tree/master/nEquals10" 
 gallery: "gallery_n-10"
 reddit_id: "7e49jo"
 date: 2017-11-19 00:00:00

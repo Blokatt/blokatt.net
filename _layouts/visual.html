@@ -20,7 +20,7 @@ layout: post
     <a target="_blank" href="https://www.shadertoy.com/view/{{ page.shadertoy_id }}">[ShaderToy]</a>
     {% endif %}
     {% if page.source_code %}
-    <a target="_blank" href="{{ page.source_code }}">[Source code]</a>
+    <a target="_blank" href="https://github.com/{{ site.github_username }}{{ page.source_code }}">[Source code]</a>
     {% endif %}
     {% if page.reddit_id %}
     <a target="_blank" href="https://redd.it/{{ page.reddit_id }}">[Reddit]</a>
@@ -29,7 +29,7 @@ layout: post
     <a target="_blank" href="https://www.youtube.com/watch?v={{ page.youtube_id }}">[YouTube]</a>
     {% endif %}
     {% if page.twitter_id %}
-    <a target="_blank" href="https://twitter.com/blokatt/status/{{ page.twitter_id }}">[Twitter]</a>
+    <a target="_blank" href="https://twitter.com/{{ site.twitter_username}}/status/{{ page.twitter_id }}">[Twitter]</a>
     {% endif %}
     {% if page.instagram_id %}
     <a target="_blank" href="https://www.instagram.com/p/{{ page.instagram_id }}">[Instagram]</a>

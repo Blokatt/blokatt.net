@@ -4,7 +4,7 @@ date: 2019-02-09
 twitter_id: "1081565158919544832"
 youtube_id: "B2Gf053Wkdk"
 reddit_id: "ap86p5"
-source_code: "https://github.com/Blokatt/FX4Reaper/tree/master/monoctrl"
+source_code: "/FX4Reaper/tree/master/monoctrl"
 permalink: /audio/monoctrl/
 layout: visual
 description: "A Korg Monologue interface plugin for REAPER 5."
@@ -16,7 +16,7 @@ Supports [Cockos REAPER](https://www.reaper.fm/) version 5 and up.
 
 This was my first more serious reverse-engineering project, you can read more about the development and the tools developed in the process here.
 
-[GitHub repository (includes various SysEx utilities)](https://github.com/Blokatt/FX4Reaper/tree/master/monoctrl){:target="_blank"}   
+[GitHub repository (includes various SysEx utilities)](https://github.com/{{ site.github_username }}/FX4Reaper/tree/master/monoctrl){:target="_blank"}   
 [REAPER Forums thread.](https://forum.cockos.com/showthread.php?t=217123){:target="_blank"}
 
 <div class="subsection">

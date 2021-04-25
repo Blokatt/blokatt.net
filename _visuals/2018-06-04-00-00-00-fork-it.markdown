@@ -7,7 +7,7 @@ description: "Forks'n'sockets."
 gif: "/assets/gfx_gif/fork-it.gif"
 instagram_id: "BhPhKxbDSIA"
 twitter_id: "982336542113804288" 
-source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/ForkIt" 
+source_code: "/ProcessingStuff/tree/master/ForkIt" 
 gallery: "gallery_fork-it"
 reddit_id: "8acp8w"
 permalink: /gfx/misc/fork-it/

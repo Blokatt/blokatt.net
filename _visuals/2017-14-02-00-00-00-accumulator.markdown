@@ -6,7 +6,7 @@ description: "My first Processing sketch."
 permalink: /gfx/misc/accumulator/
 gif: "/assets/gfx_gif/accumulator.gif"
 twitter_id: "831608990006177792" 
-source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/accumulator" 
+source_code: "/ProcessingStuff/tree/master/accumulator" 
 
 date: 2017-02-14 00:00:00
 layout: visual_video

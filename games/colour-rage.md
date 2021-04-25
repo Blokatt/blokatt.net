@@ -21,7 +21,7 @@ Fast-paced action game originally made for a Czech gamedev competition where it 
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://dl.blokatt.net/bin/misc/colourrage.zip" text="Download (Win32, 9.6MB)" %}
+{% include download-link.html link="/bin/misc/colourrage.zip" text="Download (Win32, 9.6MB)" %}
 </div>
 
 {% include lightbox.html %}

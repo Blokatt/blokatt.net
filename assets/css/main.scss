@@ -158,6 +158,7 @@ code {
     -webkit-transition: background-color 1.0s;
     -o-transition: background-color 1.0s;
     transition: background-color 1.0s;
+    text-transform: lowercase; /* it looks cool, shut up */
 }
 
 .page-link:hover {

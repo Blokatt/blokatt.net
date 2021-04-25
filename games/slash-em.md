@@ -25,7 +25,7 @@ There's actually a slightly better version of this (screenshots below) sitting o
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://dl.blokatt.net/bin/misc/slash_em.zip" text="Download (Win32, 2.4MB)" %}
+{% include download-link.html link="/bin/misc/slash_em.zip" text="Download (Win32, 2.4MB)" %}
 </div>
 
 <div class="subsection">

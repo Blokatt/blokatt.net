@@ -6,12 +6,14 @@ sidebar_link: true
 sidebar_sort_order: 2
 description: Things I've put together that resemble video games.
 ---
-Since 2019, I've been putting my gamedev skills to work at [SCS Software](https://scssoft.com/) as a junior programmer.
-Here are a few games that I've put togehter before that, mostly for game jams. **Quality may vary.** Some of my best work sadly still remains unreleased to this day. I plan on returning to solo gamedev eventually, though.
+Since 2019, I've been putting my gamedev skills to work at [SCS Software](https://scssoft.com/) as a programmer.
+Here are a few games-ish made before that, mostly for game jams. Unsurprisingly, the ones I happened to be
+the most proud of never saw the light of day, but I hope you can find some enjoyment in what I managed to
+actually finish over the years, at least.
 
 I have also collaborated on a number of games as sound and/or music person, more on that [in the audio section](/audio/).
 
-You can also find me on [Game Jolt](https://gamejolt.com/@Blokatt) and [itch.io](https://blokatt.itch.io/).
+You can also find me on [Game Jolt](https://gamejolt.com/@odditica) and [itch.io](https://odditica.itch.io/).
 
 <div class="subsection">
 <h4 class="visual-title">&gt; 0x0D - Made in 48 hours, 1st place @ gm(48) #20</h4>    
@@ -21,35 +23,20 @@ You can also find me on [Game Jolt](https://gamejolt.com/@Blokatt) and [itch.io]
 </div>
 
 <div class="subsection">
-<h3 class="visual-title">&gt; In progress?</h3>
-{% include wide-link.html  
-  title="Glucose Overdose (2016, WIP)"
-  align="left"  
-  thumbnail="glucose.png"
-  target="_blank"
-  url="https://twitter.com/i/moments/781611844674981888"  
-  description="
-_Speedrunning platformer where you chase after candy!   
-Originally made in 48 hours for the 19th gm(48)._
-  "
-%} 
-</div>
-
-<div class="subsection">
 <h3 class="visual-title">&gt; The released stuff</h3>
 {% include wide-link.html    
   title="fiTD (2018)"
+  align="left"
   thumbnail="fitd.png"
   target="_blank"
-  url="https://github.com/Blokatt/fiTD"  
+  url="https://github.com/odditica/fiTD"  
   description="
 _A console-based TD game.   
-My first big C++ project._
+My first C++ project._
   "
 %} 
 
-{% include wide-link.html  
-  align="left"  
+{% include wide-link.html      
   title="0x0D (2016)"
   thumbnail="0x0d.png"
   target="_blank"
@@ -61,15 +48,28 @@ Made in 48 hours for 20th gm(48) game jam, won 1st place_
 %} 
 
 {% include wide-link.html  
+  title="Glucose Overdose (2016, abandoned)"
+  align="left"  
+  thumbnail="glucose.png"
+  target="_blank"
+  url="https://twitter.com/i/moments/781611844674981888"  
+  description="
+_Speedrunning platformer where you chase after candy!   
+Originally made in 48 hours for the 19th gm(48)._
+  "
+%}
+
+{% include wide-link.html  
   title="A Game About Something (2016)"
   thumbnail="agas.png"
   target="_blank"
-  url="https://blokatt.itch.io/agas"  
+  url="https://odditica.itch.io/agas"  
   description="
 _The result of a chaotic thought process.   
 Made in 48 hours for the 18th gm(48) game jam_
   "
 %} 
+
 
 {% include wide-link.html  
   align="left"  
@@ -87,7 +87,7 @@ Originally made in 48 hours for the 17th gm(48) game jam_
   title="Twitch Plays Hangman (2015)"
   thumbnail="hangman.png"
   target="_blank"
-  url="https://github.com/Blokatt/TwitchPlaysHangman"  
+  url="https://github.com/odditica/TwitchPlaysHangman"  
   description="
 _A Twitch chat-controlled Hangman clone._
   "
@@ -109,7 +109,7 @@ Made in 48 hours for the 16th gm(48) game jam. IT SUCKS._
   title="SPECTRALIZER (2015)"
   thumbnail="spectralizer.png"
   target="_blank"
-  url="https://blokatt.itch.io/spectralizer"  
+  url="https://odditica.itch.io/spectralizer"  
   description="
 _Survival arena with an online leaderboard.   
 Made in 48 hours for the 15th gm(48) game jam._
@@ -132,7 +132,7 @@ Made in 48 hours for the 14th gm(48) game jam, placed 2nd._
   title="Feeling Explosive (2014)"
   thumbnail="explosive.png"
   target="_blank"
-  url="https://blokatt.itch.io/feeling-explosive"  
+  url="https://odditica.itch.io/feeling-explosive"  
   description="
 _Fast-paced that limits your inputs.   
 Made in 72 hours for the Indies VS. PewDiePie game jam._
@@ -165,7 +165,7 @@ Made in 48 hours for the 11th gm(48) game jam._
   title="I Rarely Go Outside (2014)"
   thumbnail="irgo.png"
   target="_blank"
-  url="https://blokatt.itch.io/i-rarely-go-outside"  
+  url="https://odditica.itch.io/i-rarely-go-outside"  
   description="
 _Joel has to deal with an unfortunate situation.      
 Made in 48 hours for Ludum Dare #29._

@@ -8,7 +8,7 @@ gif: "/assets/gfx_gif/impossi-box.gif"
 instagram_id: "BeOE6ZajeSX"
 twitter_id: "951243357623332865" 
 reddit_id: "7pk85o"
-source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/impossiBox" 
+source_code: "/ProcessingStuff/tree/master/impossiBox" 
 gallery: "gallery_impossi-box"
 permalink: /gfx/misc/impossibox/
 date: 2018-01-11 00:00:00

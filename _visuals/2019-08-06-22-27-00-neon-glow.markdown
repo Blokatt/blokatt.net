@@ -6,7 +6,7 @@ thumbnail: "/assets/gfx_thumbnail/thumbnail_neon-glow"
 date: 2019-06-08 22:27:00 +0300
 twitter_id: "1136676263635116032"
 permalink: /gfx/misc/neon-glow/
-source_code: "https://github.com/Blokatt/NeonGlow" 
+source_code: "/NeonGlow" 
 layout: visual_canvas
 canvas_script: "/assets/gfx_script/neon-glow/neon-glow.js"
 ---

@@ -3,7 +3,7 @@ title:  "Heater"
 thumbnail: "https://www.shadertoy.com/media/shaders/WdlGWX.jpg"
 description: "!! If the audio doesn't play, click the shader preview window right after refreshing the page !!
 Feedback.
-Music: https://soundcloud.com/blokatt/lineman-splice"
+Music: https://soundcloud.com/{{ site.soundcloud_username }}/lineman-splice"
 date: 2019-01-16 16:19:09
 categories: visual shader glsl retro music dither visualizer rainbow feedback milkdrop
 shadertoy_id: "WdlGWX" 

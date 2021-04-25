@@ -19,6 +19,8 @@ you wanna call it*! My main focus has always been real-time rendering, so that's
 _A glitch shader for GameMaker: Studio._
   "
 %} 
+<!--
+Note to self: don't keep abandoned projects up
 {% include wide-link.html  
   align="left"
   title="Convolution Visualiser (WIP)"
@@ -29,7 +31,7 @@ _A glitch shader for GameMaker: Studio._
 _Hardware-accelerated convolution kernel visualiser with a shader exporter._
   "
 %} 
-
+!-->
 </div>
 
 <div markdown="0">
@@ -84,7 +86,7 @@ _Various PICO-8 experiments that fit in a single tweet!_
   target="_blank"
   title="Processing Sketch Repository"
   thumbnail="processing.png"
-  url="https://github.com/Blokatt/ProcessingStuff"
+  url="https://github.com/odditica/ProcessingStuff"
   hover="Need. More. Stars."
   description="
 _A popular repo containing all my sketches shown here._

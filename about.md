@@ -11,23 +11,34 @@ description: Meta
 Because nobody wants to read an essay, I'll just go ahead and keep it short.
 
 - **Name:** Jan Vorisek (?)
-- **Occupation:** Junior Programmer at [SCS Software](https://scssoft.com/){:target="_blank"}
+- **At some point went by:** Odditica, Blokatt, Kešu
+- **Occupation:** Junior Programmer at [SCS Software](https://scssoft.com/){:target="_blank"} (since 2019)
 - **Born:** 1997
-- **Location:** Czech Republic
-- **Primary focus:** Graphics programming, creative coding, gamedev
-- **Secondary focus:** Low-level programming, music and sound design, video editing
-- **Often:** C/C++, GLSL/HLSL/Cg, Python
-- **Sometimes:** Processing, Lua, GML, C#, Java, JSFX, front-end web stuff
+- **Location:** Prague, Czech Republic
+- **Mainly:** Graphics programming, creative coding and visual arts, gamedev
+- **Sometimes:** Low-level programming, music and sound design, video production
+- **The list™:** C/C++, GLSL/HLSL/Cg, Python/Perl/Bash, Processing/Java, PICO-8/Lua, GML, C#, JSFX, front-end web stuff
 
+*[Blokatt]: 2013-2021
+*[Kešu]: Posílám pozdravy Velkýmu Chytrákovi.
 *[(?)]: Voříšek, technically. Not that I'm gonna ask you to type that, let alone pronounce it.
+*[C/C++]: Pretty much used on a daily basis. Rust coming soon™.
+*[GLSL/HLSL/Cg]: Yep, always fun.
+*[Python/Perl/Bash]: The occasional scripting, you know the drill.
+*[Processing/Java]: Fun for immediate mode-like graphics prototyping and the occasional sketch, I suppose. Pretends not to be Java, but totally is. 
+*[PICO-8/Lua]: Yeah, that's still a thing.
+*[GML]: Made games with this one for years. These days, not so much. 
+*[C#]: Good WinForms memories and the occasional Unity doodling.
+*[JSFX]: I like pretending to know how to write VSTs.
+*[front-end web stuff]: You're looking at it, make your own judgement.
 
-### Obligatory link to my GitHub profile is [here.](https://github.com/Blokatt)
+### Obligatory link to my GitHub profile is [here.](https://github.com/{{ site.github_username }})
 
 More info can be found in the respective categories of this site.   
 You can find me all around the internet, see the sidebar on the left for social media links and whatnot.
 
 <h2>I can be reached at
-<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#97;&#110;&#64;&#98;&#108;&#111;&#107;&#97;&#116;&#116;&#46;&#110;&#101;&#116;">&#106;&#97;&#110;&#64;&#98;&#108;&#111;&#107;&#97;&#116;&#116;&#46;&#110;&#101;&#116;</a>.</h2>
+<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#097;&#110;&#064;&#111;&#100;&#100;&#105;&#116;&#105;&#099;&#097;&#046;&#102;&#121;&#105;">&#106;&#097;&#110;&#064;&#111;&#100;&#100;&#105;&#116;&#105;&#099;&#097;&#046;&#102;&#121;&#105;</a>.</h2>
 </div>
 
 <div class="subsection">

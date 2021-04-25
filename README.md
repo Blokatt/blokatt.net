@@ -1,5 +1,5 @@
-# blokatt.net
-This is the source code of my personal website, live at [blokatt.net](https://blokatt.net/).
+# odditica.fyi
+This is the source code of my personal website, live at [odditica.fyi](https://odditica.fyi/).
 
 The **tools** folder contains useful scripts used to convert/generate galleries, thumbnails and general video assets.
 

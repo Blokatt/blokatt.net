@@ -13,43 +13,46 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Blokatt
-email: jan@blokatt.net
+title: Odditica.
+email: jan@odditica.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Games, creative coding and audio by Jan Vorisek.
+  Various techy and artsy things by Jan Vorisek.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://blokatt.net # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: blokatt
-github_username:  blokatt
-soundcloud_username: blokatt
-itchio_username:  blokatt
-gamejolt_username: blokatt
-youtube_username:  blokatt
-twitch_username: blokatt
-instagram_username:  blokatt
+url: https://odditica.fyi # the base hostname & protocol for your site, e.g. http://example.com
+dl_url: https://dl.odditica.fyi
+
+twitter_username: odditica
+soundcloud_username: odditica
+itchio_username:  odditica
+gamejolt_username: odditica
+youtube_username:  odditica
+twitch_username: odditica
+github_username: odditica
+instagram_username:  odditica
+facebook_username: odditica
 
 previews: /assets/gfx_thumbnail/
 graph: /assets/graph_image/
 
 twitter:
-  username: blokatt
+  username: odditica
   card: summary
 
 facebook:
-  publisher: blokattgames
+  publisher: odditica
 
 social:
-  name: Blokatt
+  name: odditica
   links:
-    - https://twitter.com/blokatt
-    - https://www.facebook.com/blokattgames
-    - https://soundcloud.com/blokatt
-    - https://github.com/Blokatt/
-    - https://www.youtube.com/Blokatt
-    - https://www.twitch.tv/blokatt
-    - https://www.instagram.com/blokatt/
-    - https://blokatt.itch.io/
-    - https://gamejolt.com/@Blokatt
+    - https://twitter.com/odditica
+    - https://www.facebook.com/odditica
+    - https://soundcloud.com/odditica
+    - https://github.com/odditica/
+    - https://www.youtube.com/odditica
+    - https://www.twitch.tv/odditica
+    - https://www.instagram.com/odditica/
+    - https://odditica.itch.io/
+    - https://gamejolt.com/@odditica
     - https://www.shadertoy.com/user/Blokatt
 
 permalink: pretty

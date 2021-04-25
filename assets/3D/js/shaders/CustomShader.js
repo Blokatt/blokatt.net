@@ -1,6 +1,7 @@
 /**
- * @author blokatt
+ * @author odditica
  * 
+ * note: this is old and awful, don't write shaders like this
  */
 
 var frag = `

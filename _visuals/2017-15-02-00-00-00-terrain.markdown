@@ -7,7 +7,7 @@ permalink: /gfx/misc/terrain/
 gif: "/assets/gfx_gif/terrain.gif"
 instagram_id: "BeOIh1GDo"
 twitter_id: "831880856725762048" 
-source_code: "https://github.com/Blokatt/ProcessingStuff/tree/master/terrain" 
+source_code: "/ProcessingStuff/tree/master/terrain" 
 
 date: 2017-02-15 00:00:00
 layout: visual_video

@@ -21,7 +21,7 @@ I made this experimental game for a small Czech gamedev contest (won 2nd place).
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://dl.blokatt.net/bin/misc/mindfight_1.1.rar" text="Download (Win32, 10.03MB)" %}
+{% include download-link.html link="/bin/misc/mindfight_1.1.rar" text="Download (Win32, 10.03MB)" %}
 </div>
 
 {% include lightbox.html %}

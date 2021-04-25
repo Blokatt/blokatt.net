@@ -10,7 +10,7 @@ description: Making some noise.
 Apart from programming, I also do audio design and some music-making here and there.
 Not counting the two synths and a portable recorder I use, my main tools of choice are Cockos REAPER and MilkyTracker (for the _really_ old-school stuff). As far as inspiration and my musical output go, I suppose you could place it somewhere in the techno/ambient/braindance/chiptune area.
 
-Most of my music can be found on [Soundcloud](https://soundcloud.com/blokatt) and [The Mod Archive](https://modarchive.org/index.php?request=view_profile&query=91413).
+Most of my music can be found on [Soundcloud](https://soundcloud.com/{{ site.soundcloud_username }}) and [The Mod Archive](https://modarchive.org/index.php?request=view_profile&query=91413).
 </div>
 
 <div markdown="0">

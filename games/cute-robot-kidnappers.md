@@ -23,7 +23,7 @@ Simple as that.
 
 <div class="subsection">
 <h4 class="visual-title">&gt; Get</h4>    
-{% include download-link.html link="https://dl.blokatt.net/bin/misc/CuteRobotKidnappers.rar" text="Download (Win32, 2.8MB)" %}
+{% include download-link.html link="/bin/misc/CuteRobotKidnappers.rar" text="Download (Win32, 2.8MB)" %}
 </div>
 
 <div class="subsection">
