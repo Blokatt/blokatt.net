@@ -115,8 +115,7 @@ $(document).bind('scroll', positionStripe);
 
 function positionStripe() {
     var scrollAmount = - ($(document).scrollTop()) * .1;
-    $("#sidebar-stripe-inner").css("background-position", "right " + scrollAmount.toString() + "px")
-        .css("opacity", "0.75");
+    $("#sidebar-stripe-parallax").css("background-position", "right " + scrollAmount.toString() + "px");
 }
 
 

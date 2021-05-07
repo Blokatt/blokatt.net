@@ -7,7 +7,7 @@
           style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:100%; border: none; z-index:2;"></a>
       </div>
     </p>
-    <p class="lead">jan vorisek | <span style="color:#ffeaea">odditica</span></p>
+    <p class="lead">jan vorisek |&nbsp;<span style="color:#ffeaea">odditica</span></p>
   </header>
   {% include sidebar-nav-links.html %}
   {% if site.version %}
@@ -16,8 +16,9 @@
   {% include sidebar-icon-links.html %}
   {% include copyright.html %}
 </div>
-<div class="sidebar-stripe">
-  <div id="sidebar-stripe-inner"></div>
+<div class="sidebar-stripe-wrapper">
+  <div id="sidebar-stripe-background"></div>
+  <div id="sidebar-stripe-parallax"></div>
 </div>
 {% if page.layout != "index" %}
 <style>
