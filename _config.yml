@@ -87,3 +87,6 @@ exclude:
 
 sass:
   style: compressed
+
+jekyll_tidy:
+  exclude: []

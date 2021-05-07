@@ -111,11 +111,11 @@ function mainAnimation() {
 }
 window.requestAnimationFrame(mainAnimation);
 
-$('.container').bind('scroll', positionStripe);
+$(document).bind('scroll', positionStripe);
 
 function positionStripe() {
-    let scrollAmount = - ($('.container').scrollTop()) * .1;
-    $("#sidebar-stripe").css("background-position", "right " + scrollAmount.toString() + "px")
+    var scrollAmount = - ($(document).scrollTop()) * .1;
+    $("#sidebar-stripe-inner").css("background-position", "right " + scrollAmount.toString() + "px")
         .css("opacity", "0.75");
 }
 

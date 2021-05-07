@@ -1,0 +1,8 @@
+{% if paginator.previous_page %}
+<div class="pagination">
+  <a class="pagination-item newer"
+     href="{{ paginator.previous_page_path | relative_url }}">
+    <i class="fa fa-backward" aria-hidden="true"></i>
+  </a>
+</div>
+{% endif %}
