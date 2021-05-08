@@ -96,7 +96,5 @@ _A popular repo containing all my sketches shown here._
 <script defer>
 $(document).ready(function () {    
   requestAnimationFrame(visualTitleUpdate);
-  var $win = $(window);
-  $win.on('resize', typeResize);
 });
 </script>

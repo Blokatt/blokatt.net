@@ -63,7 +63,7 @@ code {
 
 
 
-@media (min-width: $large-breakpoint) {
+@media screen and (min-width: $large-breakpoint) {
 	#sidebar-icon-links {
 	  margin-left: 0;
 	  justify-content: flex-start;    
@@ -146,9 +146,13 @@ code {
 .page-link {
 	border-radius: 1px;
 	border: rgba(154, 135, 234, 0.1) 2px dashed;
-
 	margin: 2px;
-	padding-left: 5px;
+	padding-left: 0px;
+	
+	@media screen and (min-width: $large-breakpoint) {
+		padding-left: 5px;
+	}
+
 	background-color: rgba(154, 135, 234, 0.1);
 	-webkit-transition: background-color 1.0s;
 	-o-transition: background-color 1.0s;
@@ -164,11 +168,7 @@ code {
 	transition: background-color 0.05s;
 }
 
-@media only screen and (max-width: $large-breakpoint) {
-	.page-link {
-		padding-left: 0px;
-	}
-}
+
 
 
 article+*,
@@ -202,6 +202,11 @@ body {
 	border-style: dotted;
 	border-width: 2px;
 	border-color: $body-bg;    
+	height: 100px;
+
+	@media screen and (min-width: $large-breakpoint) {
+		height: 200px;
+	}
 }
 
 .header-logo {
@@ -327,8 +332,12 @@ strong {
 	left: $sidebar-width;
 	width: 24px;
 	min-width: 24px;
-	display: block;
+	display: none;
 	@extend .gradient;	
+	
+	@media screen and (min-width: $large-breakpoint) {
+		display: block;
+	}
 }
 
 #sidebar-stripe-background {
@@ -346,7 +355,7 @@ strong {
 	background-image: $background-stripe;
 	background-position: right 0px;
 	background-repeat: repeat-y;
-	display: block;
+	
 	position: fixed;
 	opacity: 0.85;
 }
@@ -364,24 +373,17 @@ strong {
 	}
 
 	p.lead {
-		display: flex;
+		display: none;			
 		justify-content: center;
 		overflow: visible;
 		white-space: nowrap;
+
+		@media screen and (min-width: $large-breakpoint) {
+			display: flex !important;	
+		}
 	}
+}
 	
-}
-
-@media only screen and (max-width: $large-breakpoint) {
-	.sidebar-stripe-wrapper {
-		display: none;
-	}
-
-	#sidebar p.lead {	
-		display: none;
-	}
-}
-
 .defs-only {
 	position: absolute;
 	height: 0;
@@ -390,24 +392,9 @@ strong {
 	left: -100%;
 }
 
-@media only screen and (max-width: $large-breakpoint) {
-	#sidebar {
-		background-position: right 50% bottom -50px;
-	}
-}
-
-
 .visual-video video {
 	z-index: 0;
 	display: none;
-}
-
-
-@media only screen and (max-height: 677px) and (min-width: 49rem) {
-	#sidebar {
-		background-attachment: scroll;
-		background-position: right 50% top 417px;
-	}
 }
 
 .visual-row {
@@ -438,22 +425,23 @@ strong {
 	overflow: hidden;
 	padding: 5px;
 	-webkit-box-flex: 0;
-	-ms-flex: 0 1 20%;
-	flex: 0 1 20%;
-}
+	-ms-flex: 0 1 33%;
+	flex: 0 1 33%;
 
-@media only screen and (max-width: 600px) {
-	.visual-section {
+
+	@media screen and (min-width: 600px) {		
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		overflow: hidden;
 		padding: 5px;
 		-webkit-box-flex: 0;
-		-ms-flex: 0 1 33%;
-		flex: 0 1 33%;
+		-ms-flex: 0 1 20%;
+		flex: 0 1 20%;
 	}
 }
+
+
 
 .dashed-border {
 	margin-top: 16px;
@@ -671,6 +659,12 @@ iframe {
 	-webkit-transition: opacity 2.5s;
 	-o-transition: opacity 2.5s;
 	transition: opacity 2.5s;
+	video {
+		display: none;
+		@media screen and (min-width: $large-breakpoint) {
+			display: block;
+		}
+	}
 }
 
 .visual-video-static {
@@ -680,7 +674,7 @@ iframe {
 }
 
 
-@media only screen and (min-width: $large-breakpoint) {
+@media screen and (min-width: $large-breakpoint) {
 	.visual-video img {
 		left: 0;
 		top: 0;
@@ -778,13 +772,14 @@ iframe {
 	position: sticky;
 	top: -60px;
 	z-index: 2;
-}
+	display: none;
 
-@media only screen and (max-width:790px) {
-	.visual-title-wrapper {
-		display: none;
+	@media screen and (min-width: $large-breakpoint) {
+		display: block;
 	}
 }
+
+
 
 .visual-video-image::-webkit-media-controls {
 	display: none !important;
