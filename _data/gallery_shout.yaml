@@ -30,7 +30,7 @@
 
 - image: /assets/galleries/shout/shout_8.png
   thumbnail: /assets/galleries/shout/thumbnail_shout_8.jpg
-  description: "Depth/position map used by the water shader. In order to increase precision, float bit packing had to be used."
+  description: "Depth map used by the water shader. Processing only supports 8-bit RGBA textures, so I had to use bit-packing. The visualisation looks kinda cool."
 
 - image: /assets/galleries/shout/shout_9.png
   thumbnail: /assets/galleries/shout/thumbnail_shout_9.jpg
