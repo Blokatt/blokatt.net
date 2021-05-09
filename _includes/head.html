@@ -1,0 +1,56 @@
+{% assign build = site.time | date:'?v=%s' %}
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>
+    {% if page.title == "Home" %}
+    {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
+    {% else %}
+    {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url | append: build }}" />
+  {% include font-includes.html %}
+
+  <!-- Icons -->
+  {% include favicons.html %}
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS"
+    href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/assets/jquery-3.4.1.min.js">\x3C/script>')</script>
+
+  <img src="{{ "/assets/background_content.png" | append: build }}" style="display: none;"></img>
+  <img src='/assets/background_wide_thumbnail.png' style="display: none;"></img>
+  <img src='/assets/background_content_pronounced.png' style="display: none;"></img>
+
+  <link rel="stylesheet" href="{{ "/assets/galleries/lightbox.css" | append: build }}">
+  <meta name="theme-color" content="#1d0c33" />
+
+  <meta name="twitter:widgets:theme" content="dark">
+  <meta name="twitter:dnt" content="on">
+
+  <svg class="defs-only">
+    <filter id="visual-duotone" x="0" y="0" height="100%" width="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="
+              0.30 1.02 0.00 0.04 0.00
+              0.25 0.72 0.00 0.02 0.00
+              0.40 0.72 0.05 0.20 0.00
+              0.00 0.00 0.00 1.00 0.00        
+          " />
+    </filter>
+  </svg>
+
+  {% seo %}
+</head>
