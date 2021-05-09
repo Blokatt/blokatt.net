@@ -55,6 +55,8 @@ $box-shadow-size: 1px !default;
 $box-shadow-opacity: 0.16 !default;
 $default-box-shadow: $box-shadow-size $box-shadow-size $box-shadow-size $image-shadow;
 
+$sidebar-vertical-breakpoint: 42rem;
+
 @import "hydeout";
 
 code {
@@ -358,7 +360,10 @@ strong {
 	flex: 0 0 auto;
 	padding: $section-spacing;
 	overflow: visible;
-	
+
+	@media screen and (max-height: $sidebar-vertical-breakpoint) and (min-width: $large-breakpoint) {
+		position: absolute;
+	}
 
 	a {
 		color: $sidebar-fg-color;
