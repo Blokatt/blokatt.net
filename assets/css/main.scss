@@ -8,14 +8,14 @@ $body-bg: #ffeaea !default;
 $sidebar-fg-color: $body-bg !default;
 
 $sidebar-title-color: $body-bg;
-$sidebar-link-color: red;
-$sidebar-text-color: red;
-$sidebar-icon-color: red;
+$sidebar-link-color: $body-bg;
+$sidebar-text-color: $body-bg;
+$sidebar-icon-color: $body-bg;
 
 $code-background: rgba(191, 174, 221, 0.12);
 $image-shadow: rgba(191, 174, 221, 0.45);
 
-$background-content: url('/assets/background_content.png');
+$background-content: url('/assets/background_content.png?v1.1');
 $background-wide-thumbnail: url('/assets/background_wide_thumbnail.png');
 $background-content-pronounced: url('/assets/background_content_pronounced.png');
 $background-stripe: url('/assets/sidebar_stripe.png');
@@ -209,8 +209,7 @@ body {
 
 
 .content h2>a, h3>a {
-	background-image: $background-content-pronounced;
-	background-attachment: fixed;
+	background: $background-content-pronounced repeat fixed; 
 	padding: 0em 0.1em;
 }
 
@@ -442,8 +441,7 @@ strong {
 	border-style: dashed;
 	border-color: $colour-border-purple;
 	border-width: 2px;
-	background-image: $background-content-pronounced;
-	background-attachment: fixed;
+	background: $background-content-pronounced repeat fixed; 
 
 	outline: rgba(56, 50, 85, 0.1) solid 4px;
 	outline-offset: -9px;
@@ -609,8 +607,7 @@ iframe {
 	width: 140px;
 	height: 140px;
 	overflow: hidden;
-	background-image: $background-content-pronounced;
-	background-attachment: fixed;
+	background: $background-content-pronounced repeat fixed; 
 	/*object-fit: contain;*/
 	/*       object-fit: fill; */
 
@@ -737,8 +734,7 @@ iframe {
 }
 
 .visual-title {
-	background-image: $background-content-pronounced;
-	background-attachment: fixed;
+	background: $background-content-pronounced repeat fixed; 
 }
 
 .visual-title-wrapper {    
@@ -761,16 +757,12 @@ iframe {
 }
 
 .content {
-	background-image: $background-content;
-	background-attachment: fixed;    
-	background-repeat: repeat;
+	background: $background-content repeat fixed; 
 }
 
 @media (min-width: $large-breakpoint) {
 	.container {
-		background-attachment: fixed;
-		background-image: $background-content;        
-		background-repeat: repeat;
+		background: $background-content repeat fixed; 
 	}
 }
 
@@ -880,8 +872,7 @@ abbr {
   text-decoration: none;
   
   > a {
-    background-image: $background-content-pronounced;
-	background-attachment: fixed;
+    background: $background-content-pronounced repeat fixed; 
 	border-radius: 0px;
 	border-width: 0px;
     box-shadow: $default-box-shadow;
@@ -898,8 +889,7 @@ abbr {
 }
 
 .pagination-item {
-	background-image: $background-content-pronounced;
-	background-attachment: fixed;
+	background: $background-content-pronounced repeat fixed; 
 	font-size: 2em;
 	font-weight: 800;
 	text-decoration: none;		
