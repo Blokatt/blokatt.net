@@ -209,9 +209,12 @@ body {
 	background-color: #1a1527;
 }
 
+.talkyard-comments {
+	background: $body-bg $background-content repeat fixed; 
+}
 
 .content h2>a, h3>a {
-	background: $background-content-pronounced repeat fixed; 
+	background: $body-bg $background-content-pronounced repeat fixed; 
 	padding: 0em 0.1em;
 }
 
@@ -762,12 +765,12 @@ iframe {
 }
 
 .content {
-	background: $background-content repeat fixed; 
+	background: $body-bg $background-content repeat fixed; 
 }
 
 @media (min-width: $large-breakpoint) {
 	.container {
-		background: $background-content repeat fixed; 
+		background: $body-bg $background-content repeat fixed; 
 	}
 }
 
